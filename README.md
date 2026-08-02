@@ -50,3 +50,8 @@ skills-cn/
 ## 许可证
 
 本站代码 MIT。收录的 skill 版权归各自原作者,详见各页面合规信息。
+
+## 部署状态
+
+- 线上站点: https://skills-cn.pages.dev
+- 部署方式: GitHub → Cloudflare Pages 自动部署(git 推送即更新)
