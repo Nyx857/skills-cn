@@ -1,0 +1,16 @@
+{
+  "name": "skills-cn",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SkillsCN · 中文 AI 技能库 — 面向中文用户的 AI agent skills 导航与一键安装平台",
+  "type": "module",
+  "scripts": {
+    "gen": "node scripts/generate.mjs",
+    "dev": "npm run gen && vitepress dev docs",
+    "build": "npm run gen && vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}

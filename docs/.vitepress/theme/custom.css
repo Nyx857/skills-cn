@@ -1,0 +1,479 @@
+/* Skills 中文技能库 自定义样式 */
+
+/* ===== 翻页/侧边栏:skill 名小字 + 中文简介大字(两行) ===== */
+.sk-name {
+  display: block;
+  font-size: .82em;
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--vp-c-text-3);
+  letter-spacing: .01em;
+}
+.sk-desc {
+  display: block;
+  font-size: .95em;
+  line-height: 1.5;
+  color: var(--vp-c-text-1);
+  font-weight: 500;
+}
+/* 底部翻页里的两行布局(悬停时整块变品牌色) */
+.pager-link .sk-name {
+  font-size: .8em;
+  color: var(--vp-c-text-3);
+}
+.pager-link .sk-desc {
+  font-size: 1em;
+  margin-top: 2px;
+}
+.pager-link:hover .sk-name {
+  color: var(--vp-c-text-2);
+}
+.pager-link:hover .sk-desc {
+  color: var(--vp-c-brand);
+}
+/* 侧边栏两行布局 */
+.VPSidebarItem .sk-name {
+  font-size: .82em;
+}
+.VPSidebarItem .sk-desc {
+  font-size: .92em;
+  margin-top: 1px;
+}
+
+/* ===== 柔和光斑背景(参考 macmousefix 的渐变光斑,轻量化) ===== */
+/* html 承载页面底色(body 透明后由 html 兜底,避免露出无背景) */
+html {
+  background-color: var(--vp-c-bg);
+}
+body {
+  background-color: transparent;
+}
+
+/* ===== 毛玻璃导航(参考 macmousefix) ===== */
+.VPNavBar > .wrapper > .container {
+  -webkit-backdrop-filter: blur(16px) saturate(1.6);
+  backdrop-filter: blur(16px) saturate(1.6);
+  /* fallback:旧 Safari(16.2 以下)不支持 color-mix() */
+  background: var(--vp-c-bg);
+  background: color-mix(in srgb, var(--vp-c-bg) 72%, transparent) !important;
+}
+
+/* 手机端导航栏常驻"首页"链接(桌面端有完整菜单,隐藏此链接) */
+.mobile-home-link {
+  display: none;
+  font-size: .95rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: color .2s, background-color .2s;
+}
+.mobile-home-link:hover {
+  color: var(--vp-c-brand);
+  background: var(--vp-c-bg-mute);
+  text-decoration: none;
+}
+.mobile-home-link.active {
+  color: var(--vp-c-brand);
+}
+@media (max-width: 960px) {
+  .mobile-home-link {
+    display: inline-block;
+    margin-left: 4px;
+  }
+  /* 手机端菜单里不再显示"首页"(已由导航栏常驻链接提供) */
+  .VPNavScreenMenu .VPNavScreenMenuLink[href="/"] {
+    display: none;
+  }
+}
+
+/* ===== 滚动淡入 ===== */
+/* 默认可见;JS 会先加 .js-fade 再切 opacity,避免 JS 失败时内容消失 */
+.fade-in {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity .55s ease, transform .55s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* JS 未加载或失败时,内容保持可见 */
+.no-js .fade-in,
+body:not(.js-fade-enabled) .fade-in {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ===== 首页 hero 优化 ===== */
+.vp-doc h1:first-child {
+  /* 纯色标题:渐变背景+background-clip:text 在部分浏览器渲染异常(文字透明/花屏),已弃用 */
+  color: var(--vp-c-brand);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+/* 首页卡片 */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.home-card {
+  display: block;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 14px;
+  padding: 1.1rem 1.2rem;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  transition: border-color .35s cubic-bezier(.22,1,.36,1), transform .35s cubic-bezier(.22,1,.36,1), box-shadow .35s cubic-bezier(.22,1,.36,1), background-color .35s cubic-bezier(.22,1,.36,1);
+  background: var(--vp-c-bg-soft);
+  position: relative;
+  overflow: hidden;
+}
+/* 卡片内所有文字(含 h3/p)都不显示链接下划线、不继承链接色 */
+.home-card,
+.home-card * {
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+}
+/* 卡片顶部渐变描光(悬浮时显现) */
+.home-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(66,184,131,.6), rgba(91,141,239,.6));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity .35s cubic-bezier(.22,1,.36,1);
+  pointer-events: none;
+}
+.home-card:hover {
+  /* 只用位移+阴影,不用 scale——scale 会触发 GPU 重采样导致过渡期模糊 */
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(0,0,0,.11);
+  text-decoration: none;
+}
+.home-card:hover::before {
+  opacity: 1;
+}
+.home-card h3 {
+  margin: 0 0 .4rem;
+  font-size: 1.05rem;
+  transition: color .3s cubic-bezier(.22,1,.36,1);
+}
+.home-card:hover h3 {
+  color: var(--vp-c-brand);
+}
+.home-card p {
+  margin: 0 0 .6rem;
+  font-size: .9rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.6;
+}
+.home-card .tag {
+  font-size: .78rem;
+  color: var(--vp-c-text-3);
+  background: var(--vp-c-bg-mute);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+/* ===== 手机端适配(≤640px):卡片两列紧凑布局 ===== */
+@media (max-width: 640px) {
+  .home-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: .7rem;
+    margin: 1.2rem 0;
+  }
+  .home-card {
+    padding: .75rem .8rem;
+    border-radius: 12px;
+  }
+  .home-card h3 {
+    font-size: .88rem;
+    margin-bottom: .3rem;
+    line-height: 1.3;
+  }
+  /* 手机端简介只显示两行,超出省略 */
+  .home-card p {
+    font-size: .78rem;
+    line-height: 1.45;
+    margin-bottom: .4rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .home-card .tag {
+    font-size: .68rem;
+    padding: 1px 6px;
+  }
+  /* 首页大标题在手机上小一点 */
+  .vp-doc h1:first-child {
+    font-size: 1.8rem;
+  }
+  /* 手机端汉堡菜单(VPNavScreen)是真正的展开层:纯淡入,去掉 translateY 位移,不卡顿 */
+  .VPNavScreen.fade-enter-active,
+  .VPNavScreen.fade-leave-active,
+  .VPNavScreen.fade-enter-active .container,
+  .VPNavScreen.fade-leave-active .container {
+    transition: opacity 0.15s ease !important;
+    transform: none !important;
+  }
+}
+
+/* 手机端侧边栏:字号加大 + 恢复中文简介(简介缩短为一行省略,控制体积防卡) */
+@media (max-width: 640px) {
+  /* 分类标题(level-1 的 h3)与内容区分开 */
+  .VPSidebarItem.level-1 > .item > h3.text {
+    font-size: .9rem;
+    font-weight: 700;
+    color: var(--vp-c-brand) !important;
+    margin: .9rem 0 .3rem;
+    padding-bottom: .2rem;
+    border-bottom: 1px solid var(--vp-c-divider);
+  }
+  .VPSidebarItem.level-1:first-of-type > .item > h3.text {
+    margin-top: .4rem;
+  }
+  .VPSidebarItem .sk-name {
+    font-size: .95rem;
+  }
+  .VPSidebarItem .sk-desc {
+    display: -webkit-box;
+    font-size: .82rem;
+    line-height: 1.35;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--vp-c-text-2);
+  }
+  .VPSidebarItem.level-0 > .item > .text {
+    font-size: .95rem;
+    font-weight: 600;
+    color: var(--vp-c-brand);
+  }
+}
+
+/* ===== 技能库列表页:卡片式布局 ===== */
+.skill-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: .9rem;
+  margin: 1rem 0 1.5rem;
+}
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  gap: .45rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  padding: .9rem 1rem;
+  text-decoration: none !important;
+  background: var(--vp-c-bg-soft);
+  transition: border-color .25s, transform .25s, box-shadow .25s;
+}
+.skill-card:hover {
+  border-color: var(--vp-c-brand);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.09);
+  text-decoration: none;
+}
+.skill-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+}
+.skill-card-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--vp-c-brand);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.skill-card-license {
+  font-size: .7rem;
+  color: var(--vp-c-text-3);
+  background: var(--vp-c-bg-mute);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+.skill-card-summary {
+  font-size: .85rem;
+  line-height: 1.55;
+  color: var(--vp-c-text-2);
+}
+/* 手机端:卡片单列,更易读 */
+@media (max-width: 640px) {
+  .skill-card-grid {
+    grid-template-columns: 1fr;
+    gap: .7rem;
+  }
+  .skill-card {
+    padding: .85rem .95rem;
+  }
+  .skill-card-summary {
+    font-size: .9rem;
+    line-height: 1.6;
+  }
+}
+
+/* 技能详情页徽章 */
+.skill-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: 1.2rem;
+}
+.badge {
+  font-size: .8rem;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.badge.license {
+  background: #42b883;
+  color: #fff;
+}
+.badge.category {
+  background: var(--vp-c-bg-mute);
+  color: var(--vp-c-text-2);
+}
+.source {
+  font-size: .85rem;
+  color: var(--vp-c-text-2);
+}
+
+/* 一句话安装区 */
+.ask-box {
+  border: 2px dashed var(--vp-c-brand);
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin: 1rem 0;
+  background: rgba(235, 244, 241, 0.5);
+  background: color-mix(in srgb, var(--vp-c-brand-soft) 30%, var(--vp-c-bg-soft));
+}
+.ask-phrase {
+  white-space: pre-wrap;
+  word-break: break-all;
+  font-size: 1rem;
+  line-height: 1.6;
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: .9rem 1rem;
+  margin: 0 0 .8rem;
+}
+.copy-btn.big {
+  padding: 8px 22px;
+  font-size: .95rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--vp-c-brand);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+.copy-btn.big:hover {
+  opacity: .9;
+}
+
+/* 技术安装(折叠区) */
+.installer {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  padding: 1.2rem;
+  background: var(--vp-c-bg-soft);
+  margin: 1rem 0;
+}
+.tool-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-bottom: 1rem;
+}
+.tool-pill {
+  padding: 5px 14px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: .85rem;
+  color: var(--vp-c-text-2);
+  background: var(--vp-c-bg);
+  transition: all .15s;
+}
+.tool-pill:hover {
+  border-color: var(--vp-c-brand);
+}
+.tool-pill.active {
+  background: var(--vp-c-brand);
+  border-color: var(--vp-c-brand);
+  color: #fff;
+}
+.install-block {
+  position: relative;
+}
+.install-cmd {
+  white-space: pre-wrap;
+  word-break: break-all;
+  padding: .9rem 1rem;
+  padding-right: 4.2rem;
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  font-size: .85rem;
+  margin: 0;
+}
+.install-block .copy-btn {
+  position: absolute;
+  top: .7rem;
+  right: .8rem;
+  padding: 3px 10px;
+  font-size: .78rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  background: var(--vp-c-bg-mute);
+  color: var(--vp-c-text-2);
+  cursor: pointer;
+}
+.install-block .copy-btn:hover {
+  border-color: var(--vp-c-brand);
+  color: var(--vp-c-brand);
+}
+
+/* 来源与版权 */
+.origin-box {
+  margin-top: 2rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  background: var(--vp-c-bg-soft);
+  font-size: .88rem;
+}
+.origin-box h4 {
+  margin: 0 0 .5rem;
+}
+.origin-box ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--vp-c-text-2);
+}
+.origin-box li {
+  margin: .2rem 0;
+}

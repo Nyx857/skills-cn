@@ -1,0 +1,229 @@
+[
+  {
+    "slug": "brainstorming",
+    "name": "brainstorming",
+    "category": "开发流程",
+    "summary": "写代码前先聊清楚:你的想法会变成设计方案,你点头了才动手。",
+    "detail": "这个技能是给 AI 装的一道\"安全门\"——防止它一上来就闷头写代码。\n\n**大白话**:你告诉 AI\"我想做个记账 App\",它不会直接开写,而是先问你几个问题(记什么账、要不要预算提醒、手机用还是电脑用),然后把方案列给你看,你说\"行\"了它才开始干活。\n\n**举个例**:你说\"帮我做个记体重的小工具\",它会先问:你想手动记还是连智能秤?要图表吗?要提醒吗?确认后给你设计方案,批准了才动手。\n\n适合:任何\"你想让 AI 帮你做个东西\"的场景,尤其是需求还模糊的时候。",
+    "author": "Jesse Vincent (obra)",
+    "source_url": "https://github.com/obra/superpowers",
+    "source_path": "skills/brainstorming",
+    "license": "MIT",
+    "license_url": "https://github.com/obra/superpowers/blob/main/LICENSE",
+    "source_stars": 264000,
+    "tags": [
+      "需求设计",
+      "规格文档",
+      "开发流程"
+    ],
+    "ask_phrase": "帮我安装 brainstorming 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "writing-plans",
+    "name": "writing-plans",
+    "category": "开发流程",
+    "summary": "把\"要做的事\"拆成一步步的计划,像菜谱一样照着做。",
+    "detail": "想清楚做什么之后,这个技能负责把大目标拆成小步骤。\n\n**大白话**:就像做菜先写菜谱——先备菜、再下锅、最后装盘。它把\"做个网站\"拆成\"先搭页面、再做登录、再连数据库\"这样的具体步骤,AI 照着一步步做,不会乱。\n\n**举个例**:你批准了\"记账 App\"的设计后,它会列出:第 1 步建项目 → 第 2 步做记账页面 → 第 3 步做数据存储……每步都能单独检查。\n\n适合:项目稍大、想让 AI 有条理地做完的时候。",
+    "author": "Jesse Vincent (obra)",
+    "source_url": "https://github.com/obra/superpowers",
+    "source_path": "skills/writing-plans",
+    "license": "MIT",
+    "license_url": "https://github.com/obra/superpowers/blob/main/LICENSE",
+    "source_stars": 264000,
+    "tags": [
+      "计划",
+      "TDD",
+      "开发流程"
+    ],
+    "ask_phrase": "帮我安装 writing-plans 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "test-driven-development",
+    "name": "test-driven-development",
+    "category": "开发流程",
+    "summary": "先定好\"怎么算对\",再写代码让它通过——程序不容易出错。",
+    "detail": "一种被验证的靠谱开发方法:先写测试,再写功能。\n\n**大白话**:就像考试先看到答案再答题。AI 先写\"这段代码应该输出什么\"的检查规则(测试),然后写代码让这些规则通过。这样改坏东西能立刻发现。\n\n**举个例**:做计算器,先规定\"1+1 必须等于 2\"\"5×3 必须等于 15\",然后才写计算逻辑,每改一次都自动验证一遍。\n\n适合:任何让 AI 写功能代码的场景,尤其是你怕它\"看着对其实错\"的时候。",
+    "author": "Jesse Vincent (obra)",
+    "source_url": "https://github.com/obra/superpowers",
+    "source_path": "skills/test-driven-development",
+    "license": "MIT",
+    "license_url": "https://github.com/obra/superpowers/blob/main/LICENSE",
+    "source_stars": 264000,
+    "tags": [
+      "TDD",
+      "测试",
+      "质量"
+    ],
+    "ask_phrase": "帮我安装 test-driven-development 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "systematic-debugging",
+    "name": "systematic-debugging",
+    "category": "调试",
+    "summary": "程序出 bug 时,让 AI 先找原因再修,而不是瞎猜乱改。",
+    "detail": "教 AI 用正确的方法修 bug。\n\n**大白话**:程序坏了,AI 很容易\"猜一个地方就改\"——往往越改越糟。这个技能逼它:先复现问题(怎么弄坏的)→ 找真正的原因 → 改最小的地方 → 确认修好了。\n\n**举个例**:网站打不开,AI 不会直接删代码,而是先看报错、定位是哪一行的问题、确认根因后再改,改完再验证能打开了。\n\n适合:任何\"东西坏了让 AI 修\"的场景。",
+    "author": "Jesse Vincent (obra)",
+    "source_url": "https://github.com/obra/superpowers",
+    "source_path": "skills/systematic-debugging",
+    "license": "MIT",
+    "license_url": "https://github.com/obra/superpowers/blob/main/LICENSE",
+    "source_stars": 264000,
+    "tags": [
+      "调试",
+      "排错"
+    ],
+    "ask_phrase": "帮我安装 systematic-debugging 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "subagent-driven-development",
+    "name": "subagent-driven-development",
+    "category": "协作",
+    "summary": "让 AI 自己派\"手下\"干活,做完再检查,能连续工作几小时。",
+    "detail": "把大工程交给 AI 自主完成的核心机制。\n\n**大白话**:像项目经理派活给组员。AI 把任务拆给多个\"子代理\"各干一块,干完它逐个检查,再派下一个。你批准方案后,它可以自己连续干几小时不跑偏。\n\n**举个例**:做一个小程序,你确认好方案后说\"开始\",AI 自己写代码、自己测试、自己修,完成一部分汇报一部分,你只需最后验收。\n\n适合:项目比较大、你信任 AI 能自主推进的时候。",
+    "author": "Jesse Vincent (obra)",
+    "source_url": "https://github.com/obra/superpowers",
+    "source_path": "skills/subagent-driven-development",
+    "license": "MIT",
+    "license_url": "https://github.com/obra/superpowers/blob/main/LICENSE",
+    "source_stars": 264000,
+    "tags": [
+      "子代理",
+      "自主执行",
+      "协作"
+    ],
+    "ask_phrase": "帮我安装 subagent-driven-development 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "verification-before-completion",
+    "name": "verification-before-completion",
+    "category": "质量",
+    "summary": "AI 说\"做完了\"之前,必须真实验证过,不是嘴上说说。",
+    "detail": "防止 AI 交\"没验过的货\"。\n\n**大白话**:AI 很容易\"觉得做完了\"就交差。这个技能要求它:说完成之前,必须真的跑一遍、确认能用,拿证据说话。\n\n**举个例**:AI 说\"登录功能做好了\",它得真的打开页面试一次登录成功,而不是说\"应该能用\"。\n\n适合:任何交付型任务,尤其是你没法自己验证的时候。",
+    "author": "Jesse Vincent (obra)",
+    "source_url": "https://github.com/obra/superpowers",
+    "source_path": "skills/verification-before-completion",
+    "license": "MIT",
+    "license_url": "https://github.com/obra/superpowers/blob/main/LICENSE",
+    "source_stars": 264000,
+    "tags": [
+      "验证",
+      "质量"
+    ],
+    "ask_phrase": "帮我安装 verification-before-completion 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "using-superpowers",
+    "name": "using-superpowers",
+    "category": "开发流程",
+    "summary": "一套完整的\"让 AI 正经干活\"的方法论:先想清楚、再计划、再动手、做完自检。",
+    "detail": "这是整套 superpowers 工作流的总开关。\n\n**大白话**:给 AI 立规矩:接活先问清楚需求 → 写计划 → 按计划做 → 做完自己检查。装上它,AI 干活就不再\"想到哪做到哪\"。\n\n**举个例**:你让 AI\"帮我做个宠物领养小程序\",装了它之后,AI 会先跟你确认需求(领养流程?要不要图片?),出方案你确认,再写计划,最后一步一步做完。\n\n**注意**:它是整套工作流,通常和 brainstorming、writing-plans 等一起生效。部分工具(如 Claude Code)会自动触发,其他工具可能需要你提一句\"用 superpowers 流程干活\"。",
+    "author": "Jesse Vincent (obra)",
+    "source_url": "https://github.com/obra/superpowers",
+    "source_path": "skills/using-superpowers",
+    "license": "MIT",
+    "license_url": "https://github.com/obra/superpowers/blob/main/LICENSE",
+    "source_stars": 264000,
+    "tags": [
+      "方法论",
+      "总入口"
+    ],
+    "ask_phrase": "帮我安装 using-superpowers 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "obsidian-markdown",
+    "name": "obsidian-markdown",
+    "category": "笔记知识库",
+    "summary": "让 AI 会写 Obsidian 笔记的专属语法,笔记不乱、链接好用。",
+    "detail": "Obsidian 用户的必备技能。\n\n**大白话**:Obsidian 记笔记有它自己的\"方言\"(双向链接、提示框、属性),AI 不懂就容易写错。这个技能教会它正确写法。\n\n**举个例**:你让 AI\"把这篇读书笔记整理进 Obsidian\",装了它,AI 会正确用 [[双链]] 把相关笔记连起来、用 > [!tip] 做提示框、在开头加属性,打开 Obsidian 全部正常显示。\n\n适合:用 Obsidian 记笔记,想靠 AI 整理/写作的人。",
+    "author": "Steph Ango (kepano)",
+    "source_url": "https://github.com/kepano/obsidian-skills",
+    "source_path": "skills/obsidian-markdown",
+    "license": "MIT",
+    "license_url": "https://github.com/kepano/obsidian-skills/blob/main/LICENSE",
+    "source_stars": 43800,
+    "tags": [
+      "Obsidian",
+      "Markdown",
+      "笔记"
+    ],
+    "ask_phrase": "帮我安装 obsidian-markdown 这个技能,它来自 https://github.com/kepano/obsidian-skills ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "obsidian-bases",
+    "name": "obsidian-bases",
+    "category": "笔记知识库",
+    "summary": "让 AI 会做 Obsidian 的\"数据库视图\",笔记像表格一样筛选排序。",
+    "detail": "Obsidian Bases 是笔记的表格化视图。\n\n**大白话**:普通笔记是一篇篇文字,Base 能把它们变成表格——比如把所有读书笔记变成\"书名 | 作者 | 评分 | 状态\"的表格,还能筛选排序。\n\n**举个例**:你有一堆购物清单笔记,想让它们汇总成一个\"买了没\"的表格,AI 用这个技能就能给你做好,还能按日期排序。\n\n适合:笔记很多、想结构化整理的人。",
+    "author": "Steph Ango (kepano)",
+    "source_url": "https://github.com/kepano/obsidian-skills",
+    "source_path": "skills/obsidian-bases",
+    "license": "MIT",
+    "license_url": "https://github.com/kepano/obsidian-skills/blob/main/LICENSE",
+    "source_stars": 43800,
+    "tags": [
+      "Obsidian",
+      "数据库",
+      "笔记"
+    ],
+    "ask_phrase": "帮我安装 obsidian-bases 这个技能,它来自 https://github.com/kepano/obsidian-skills ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "json-canvas",
+    "name": "json-canvas",
+    "category": "可视化",
+    "summary": "让 AI 帮你画思维导图、流程图、架构图,画完直接能在白板软件里编辑。",
+    "detail": "教 AI 生成白板画布文件。\n\n**大白话**:你口述\"帮我把这个项目的思路画成图\",AI 会生成一个 .canvas 文件,你用 Obsidian 或白板软件打开就能看到节点、连线组成的图,还能自己拖拽编辑。\n\n**举个例**:你说\"把我们家装修的思路画成思维导图:预算、风格、工期\"。AI 会画出三个分支的图,打开就能看、能改。\n\n适合:想让 AI 产出可视化图表,而不只是文字描述。",
+    "author": "Steph Ango (kepano)",
+    "source_url": "https://github.com/kepano/obsidian-skills",
+    "source_path": "skills/json-canvas",
+    "license": "MIT",
+    "license_url": "https://github.com/kepano/obsidian-skills/blob/main/LICENSE",
+    "source_stars": 43800,
+    "tags": [
+      "Canvas",
+      "白板",
+      "可视化",
+      "Obsidian"
+    ],
+    "ask_phrase": "帮我安装 json-canvas 这个技能,它来自 https://github.com/kepano/obsidian-skills ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "obsidian-cli",
+    "name": "obsidian-cli",
+    "category": "笔记知识库",
+    "summary": "让 AI 能直接操作你的 Obsidian 笔记库:搜笔记、建笔记、整理笔记。",
+    "detail": "Obsidian 官方命令行工具的 AI 使用指南。\n\n**大白话**:之前几个技能是\"会写对格式\",这个更进一步——让 AI 能直接对你的笔记库动手:搜、建、改。\n\n**举个例**:你说\"帮我在笔记库里找所有关于'减肥'的笔记并汇总\",AI 会搜索你的库、把相关笔记整理成一份清单。\n\n**适合**:笔记已经积累很多、想用 AI 管理整个知识库的人。\n\n**注意**:需要你本机装了 Obsidian 和它的命令行工具,AI 才能操作。",
+    "author": "Steph Ango (kepano)",
+    "source_url": "https://github.com/kepano/obsidian-skills",
+    "source_path": "skills/obsidian-cli",
+    "license": "MIT",
+    "license_url": "https://github.com/kepano/obsidian-skills/blob/main/LICENSE",
+    "source_stars": 43800,
+    "tags": [
+      "Obsidian",
+      "CLI",
+      "自动化",
+      "插件开发"
+    ],
+    "ask_phrase": "帮我安装 obsidian-cli 这个技能,它来自 https://github.com/kepano/obsidian-skills ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "defuddle",
+    "name": "defuddle",
+    "category": "工具",
+    "summary": "让 AI 把网页变成干净的纯文字,去掉广告和导航,更省流量。",
+    "detail": "一个实用小工具技能。\n\n**大白话**:你丢给 AI 一个网页链接让它读,网页上全是广告、菜单、推荐位,又乱又费 token(钱)。这个技能让 AI 先\"剥干净\"再读,只留正文。\n\n**举个例**:你说\"帮我总结这篇文章 https://…\",AI 会先提取文章正文(去掉广告),再给你讲重点,又快又省。\n\n适合:经常让 AI 读网页文章、新闻、文档的人。",
+    "author": "Steph Ango (kepano)",
+    "source_url": "https://github.com/kepano/obsidian-skills",
+    "source_path": "skills/defuddle",
+    "license": "MIT",
+    "license_url": "https://github.com/kepano/obsidian-skills/blob/main/LICENSE",
+    "source_stars": 43800,
+    "tags": [
+      "网页提取",
+      "Markdown",
+      "省token"
+    ],
+    "ask_phrase": "帮我安装 defuddle 这个技能,它来自 https://github.com/kepano/obsidian-skills ,装好告诉我是干什么的"
+  }
+]
