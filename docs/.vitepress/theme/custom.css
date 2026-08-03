@@ -334,6 +334,38 @@ body:not(.js-fade-enabled) .fade-in {
 .vp-doc .welcome-page {
   margin: 0;
 }
+/* 引导页全屏:隐藏导航栏/侧边栏,沉浸式 */
+.welcome-page {
+  min-height: 100vh;
+}
+body:has(.welcome-page) .VPNav,
+body:has(.welcome-page) .VPSidebar,
+body:has(.welcome-page) .VPLocalNav {
+  display: none !important;
+}
+body:has(.welcome-page) .VPDoc .content-container {
+  max-width: none !important;
+  padding: 0 !important;
+}
+/* 引导页引言块(故事段落)样式 */
+.welcome-story {
+  padding-top: 8vh;
+}
+.welcome-story h1 {
+  text-align: center;
+}
+.welcome-story blockquote {
+  border-left: 3px solid var(--vp-c-brand);
+  background: color-mix(in srgb, var(--vp-c-brand-soft) 18%, transparent);
+  border-radius: 8px;
+  padding: .4rem 1rem;
+  font-size: 1.02rem;
+  line-height: 2;
+}
+.welcome-cta {
+  text-align: center;
+  margin-top: 2.4rem;
+}
 
 /* ===== 手机端适配(≤640px):卡片两列紧凑布局 ===== */
 @media (max-width: 640px) {
