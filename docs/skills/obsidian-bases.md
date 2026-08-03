@@ -14,13 +14,9 @@ next:
   <span class="source">来源: <a href="https://github.com/kepano/obsidian-skills" target="_blank" rel="noopener">https://github.com/kepano/obsidian-skills</a></span>
 </div>
 
-Obsidian Bases 是笔记的表格化视图。
+指导创建与编辑 Obsidian Bases 数据库文件,通过视图、筛选、公式与汇总等能力,将分散的笔记组织为可结构化查询的表格形态。适合笔记量大、需要以数据化方式管理知识的场景。
 
-**大白话**:普通笔记是一篇篇文字,Base 能把它们变成表格——比如把所有读书笔记变成"书名 | 作者 | 评分 | 状态"的表格,还能筛选排序。
 
-**举个例**:你有一堆购物清单笔记,想让它们汇总成一个"买了没"的表格,AI 用这个技能就能给你做好,还能按日期排序。
-
-适合:笔记很多、想结构化整理的人。
 
 ## 安装(超简单,一句话搞定)
 

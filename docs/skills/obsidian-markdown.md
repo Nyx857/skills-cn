@@ -14,13 +14,9 @@ next:
   <span class="source">来源: <a href="https://github.com/kepano/obsidian-skills" target="_blank" rel="noopener">https://github.com/kepano/obsidian-skills</a></span>
 </div>
 
-Obsidian 用户的必备技能。
+指导生成符合 Obsidian 规范的 Markdown 内容。覆盖双向链接、嵌入、提示框、属性等 Obsidian 专属语法,确保 AI 产出的笔记在 Obsidian 中正确渲染与关联。适用于依赖 Obsidian 进行知识管理的用户。
 
-**大白话**:Obsidian 记笔记有它自己的"方言"(双向链接、提示框、属性),AI 不懂就容易写错。这个技能教会它正确写法。
 
-**举个例**:你让 AI"把这篇读书笔记整理进 Obsidian",装了它,AI 会正确用 [[双链]] 把相关笔记连起来、用 > [!tip] 做提示框、在开头加属性,打开 Obsidian 全部正常显示。
-
-适合:用 Obsidian 记笔记,想靠 AI 整理/写作的人。
 
 ## 安装(超简单,一句话搞定)
 

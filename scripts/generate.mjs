@@ -104,7 +104,52 @@ function renderPage(s, prev, next) {
 
 ${s.detail}
 
+${renderCompare(s)}
+
 ${renderInstall(s)}
+`
+}
+
+// 渲染"有这个技能,差别在哪"对比模块(双栏对照 + 装好后演示)
+function renderCompare(s) {
+  const c = s.compare
+  if (!c) return ''
+  const rows = c.rows.map(r => `  <tr>
+    <td class="cmp-scene">${esc(r.scene)}</td>
+    <td class="cmp-without">${esc(r.without)}</td>
+    <td class="cmp-with">${esc(r.with)}</td>
+  </tr>`).join('\n')
+
+  const demoSteps = c.demo ? c.demo.steps.map((st, i) => {
+    const isAI = st.startsWith('AI:')
+    const isUser = st.startsWith('你:')
+    const cls = isAI ? 'ai' : isUser ? 'user' : 'note'
+    return `    <div class="demo-step ${cls}">${esc(st)}</div>`
+  }).join('\n') : ''
+
+  return `<div class="compare-box">
+  <h3>${esc(c.title || '有这个技能,差别在哪')}</h3>
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>遇到的情况</th>
+        <th>没有这个技能</th>
+        <th>有这个技能</th>
+      </tr>
+    </thead>
+    <tbody>
+${rows}
+    </tbody>
+  </table>
+  ${c.demo ? `<div class="demo-box">
+    <h4>装好后,AI 会这样帮你干活</h4>
+    <div class="demo-chat">
+      <div class="demo-step note"><span class="demo-prompt">你:${esc(c.demo.prompt)}</span></div>
+${demoSteps}
+    </div>
+  </div>` : ''}
+</div>
+
 `
 }
 

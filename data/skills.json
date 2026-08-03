@@ -11,8 +11,41 @@
     "license": "MIT",
     "license_url": "https://github.com/obra/superpowers/blob/main/LICENSE",
     "source_stars": 264000,
-    "tags": ["需求设计", "规格文档", "开发流程"],
-    "ask_phrase": "帮我安装 brainstorming 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
+    "tags": [
+      "需求设计",
+      "规格文档",
+      "开发流程"
+    ],
+    "ask_phrase": "帮我安装 brainstorming 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的",
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "想做个新功能或工具",
+          "without": "AI 直接动手写代码,做完你才发现不是想要的,来回返工。",
+          "with": "AI 先把你的想法问清楚、整理成方案,你确认后它才开始写。"
+        },
+        {
+          "scene": "需求只说了个大概",
+          "without": "AI 按自己的理解猜,做出来的东西对不上你的预期。",
+          "with": "AI 逐个确认关键细节(做什么、给谁用、要哪些功能),方案落地更准。"
+        },
+        {
+          "scene": "改到一半想调整方向",
+          "without": "代码已经写乱了,改动成本高,容易越改越糟。",
+          "with": "设计阶段就确认了方向,调整只需改方案,不用推倒重来。"
+        }
+      ],
+      "demo": {
+        "prompt": "帮我做一个记体重的工具",
+        "steps": [
+          "AI:好,先确认几个问题——你想手动记录还是连智能秤?",
+          "AI:需要图表趋势和提醒功能吗?主要在手机用还是电脑用?",
+          "AI:这是整理好的方案(功能清单 + 页面设计),你看可以吗?",
+          "你:可以,就这么做 → AI 才开始动手开发"
+        ]
+      }
+    }
   },
   {
     "slug": "writing-plans",
@@ -26,7 +59,11 @@
     "license": "MIT",
     "license_url": "https://github.com/obra/superpowers/blob/main/LICENSE",
     "source_stars": 264000,
-    "tags": ["计划", "TDD", "开发流程"],
+    "tags": [
+      "计划",
+      "TDD",
+      "开发流程"
+    ],
     "ask_phrase": "帮我安装 writing-plans 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
   },
   {
@@ -41,7 +78,11 @@
     "license": "MIT",
     "license_url": "https://github.com/obra/superpowers/blob/main/LICENSE",
     "source_stars": 264000,
-    "tags": ["TDD", "测试", "质量"],
+    "tags": [
+      "TDD",
+      "测试",
+      "质量"
+    ],
     "ask_phrase": "帮我安装 test-driven-development 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
   },
   {
@@ -56,7 +97,10 @@
     "license": "MIT",
     "license_url": "https://github.com/obra/superpowers/blob/main/LICENSE",
     "source_stars": 264000,
-    "tags": ["调试", "排错"],
+    "tags": [
+      "调试",
+      "排错"
+    ],
     "ask_phrase": "帮我安装 systematic-debugging 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
   },
   {
@@ -71,7 +115,11 @@
     "license": "MIT",
     "license_url": "https://github.com/obra/superpowers/blob/main/LICENSE",
     "source_stars": 264000,
-    "tags": ["子代理", "自主执行", "协作"],
+    "tags": [
+      "子代理",
+      "自主执行",
+      "协作"
+    ],
     "ask_phrase": "帮我安装 subagent-driven-development 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
   },
   {
@@ -86,7 +134,10 @@
     "license": "MIT",
     "license_url": "https://github.com/obra/superpowers/blob/main/LICENSE",
     "source_stars": 264000,
-    "tags": ["验证", "质量"],
+    "tags": [
+      "验证",
+      "质量"
+    ],
     "ask_phrase": "帮我安装 verification-before-completion 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
   },
   {
@@ -101,7 +152,10 @@
     "license": "MIT",
     "license_url": "https://github.com/obra/superpowers/blob/main/LICENSE",
     "source_stars": 264000,
-    "tags": ["方法论", "总入口"],
+    "tags": [
+      "方法论",
+      "总入口"
+    ],
     "ask_phrase": "帮我安装 using-superpowers 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
   },
   {
@@ -116,7 +170,11 @@
     "license": "MIT",
     "license_url": "https://github.com/kepano/obsidian-skills/blob/main/LICENSE",
     "source_stars": 43800,
-    "tags": ["Obsidian", "Markdown", "笔记"],
+    "tags": [
+      "Obsidian",
+      "Markdown",
+      "笔记"
+    ],
     "ask_phrase": "帮我安装 obsidian-markdown 这个技能,它来自 https://github.com/kepano/obsidian-skills ,装好告诉我是干什么的"
   },
   {
@@ -131,7 +189,11 @@
     "license": "MIT",
     "license_url": "https://github.com/kepano/obsidian-skills/blob/main/LICENSE",
     "source_stars": 43800,
-    "tags": ["Obsidian", "数据库", "笔记"],
+    "tags": [
+      "Obsidian",
+      "数据库",
+      "笔记"
+    ],
     "ask_phrase": "帮我安装 obsidian-bases 这个技能,它来自 https://github.com/kepano/obsidian-skills ,装好告诉我是干什么的"
   },
   {
@@ -146,7 +208,12 @@
     "license": "MIT",
     "license_url": "https://github.com/kepano/obsidian-skills/blob/main/LICENSE",
     "source_stars": 43800,
-    "tags": ["Canvas", "白板", "可视化", "Obsidian"],
+    "tags": [
+      "Canvas",
+      "白板",
+      "可视化",
+      "Obsidian"
+    ],
     "ask_phrase": "帮我安装 json-canvas 这个技能,它来自 https://github.com/kepano/obsidian-skills ,装好告诉我是干什么的"
   },
   {
@@ -161,7 +228,12 @@
     "license": "MIT",
     "license_url": "https://github.com/kepano/obsidian-skills/blob/main/LICENSE",
     "source_stars": 43800,
-    "tags": ["Obsidian", "CLI", "自动化", "插件开发"],
+    "tags": [
+      "Obsidian",
+      "CLI",
+      "自动化",
+      "插件开发"
+    ],
     "ask_phrase": "帮我安装 obsidian-cli 这个技能,它来自 https://github.com/kepano/obsidian-skills ,装好告诉我是干什么的"
   },
   {
@@ -176,7 +248,11 @@
     "license": "MIT",
     "license_url": "https://github.com/kepano/obsidian-skills/blob/main/LICENSE",
     "source_stars": 43800,
-    "tags": ["网页提取", "Markdown", "省token"],
+    "tags": [
+      "网页提取",
+      "Markdown",
+      "省token"
+    ],
     "ask_phrase": "帮我安装 defuddle 这个技能,它来自 https://github.com/kepano/obsidian-skills ,装好告诉我是干什么的"
   }
 ]

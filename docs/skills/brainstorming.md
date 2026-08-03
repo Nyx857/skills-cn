@@ -12,13 +12,49 @@ next:
   <span class="source">来源: <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">https://github.com/obra/superpowers</a></span>
 </div>
 
-这个技能是给 AI 装的一道"安全门"——防止它一上来就闷头写代码。
+面向创作性工作的前置设计流程。在动手实现前,通过结构化对话梳理需求、探索项目上下文、提出候选方案,并产出可评审的设计文档。适用于任何需要构建新功能、修改现有行为的场景,确保实现方向在投入编码前得到确认。
 
-**大白话**:你告诉 AI"我想做个记账 App",它不会直接开写,而是先问你几个问题(记什么账、要不要预算提醒、手机用还是电脑用),然后把方案列给你看,你说"行"了它才开始干活。
+<div class="compare-box">
+  <h3>有这个技能,差别在哪</h3>
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>遇到的情况</th>
+        <th>没有这个技能</th>
+        <th>有这个技能</th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr>
+    <td class="cmp-scene">想做个新功能或工具</td>
+    <td class="cmp-without">AI 直接动手写代码,做完你才发现不是想要的,来回返工。</td>
+    <td class="cmp-with">AI 先把你的想法问清楚、整理成方案,你确认后它才开始写。</td>
+  </tr>
+  <tr>
+    <td class="cmp-scene">需求只说了个大概</td>
+    <td class="cmp-without">AI 按自己的理解猜,做出来的东西对不上你的预期。</td>
+    <td class="cmp-with">AI 逐个确认关键细节(做什么、给谁用、要哪些功能),方案落地更准。</td>
+  </tr>
+  <tr>
+    <td class="cmp-scene">改到一半想调整方向</td>
+    <td class="cmp-without">代码已经写乱了,改动成本高,容易越改越糟。</td>
+    <td class="cmp-with">设计阶段就确认了方向,调整只需改方案,不用推倒重来。</td>
+  </tr>
+    </tbody>
+  </table>
+  <div class="demo-box">
+    <h4>装好后,AI 会这样帮你干活</h4>
+    <div class="demo-chat">
+      <div class="demo-step note"><span class="demo-prompt">你:帮我做一个记体重的工具</span></div>
+    <div class="demo-step ai">AI:好,先确认几个问题——你想手动记录还是连智能秤?</div>
+    <div class="demo-step ai">AI:需要图表趋势和提醒功能吗?主要在手机用还是电脑用?</div>
+    <div class="demo-step ai">AI:这是整理好的方案(功能清单 + 页面设计),你看可以吗?</div>
+    <div class="demo-step user">你:可以,就这么做 → AI 才开始动手开发</div>
+    </div>
+  </div>
+</div>
 
-**举个例**:你说"帮我做个记体重的小工具",它会先问:你想手动记还是连智能秤?要图表吗?要提醒吗?确认后给你设计方案,批准了才动手。
 
-适合:任何"你想让 AI 帮你做个东西"的场景,尤其是需求还模糊的时候。
 
 ## 安装(超简单,一句话搞定)
 

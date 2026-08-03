@@ -333,6 +333,92 @@ body:not(.js-fade-enabled) .fade-in {
   }
 }
 
+/* ===== "有这个技能,差别在哪" 对比模块 ===== */
+.compare-box {
+  margin: 1.5rem 0;
+  padding: 1.2rem 1.3rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+}
+.compare-box h3 {
+  margin: 0 0 .9rem;
+  font-size: 1.05rem;
+  color: var(--vp-c-text-1);
+}
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .88rem;
+  margin: 0;
+}
+.compare-table th {
+  text-align: left;
+  padding: .5rem .6rem;
+  font-size: .82rem;
+  color: var(--vp-c-text-3);
+  border-bottom: 2px solid var(--vp-c-divider);
+}
+.compare-table td {
+  padding: .6rem;
+  border-bottom: 1px solid var(--vp-c-divider);
+  line-height: 1.55;
+  vertical-align: top;
+}
+.compare-table tr:last-child td { border-bottom: none; }
+.cmp-scene { white-space: nowrap; color: var(--vp-c-text-1); font-weight: 600; }
+.cmp-without { color: var(--vp-c-text-2); }
+.cmp-without::before { content: '✗ '; color: #e0574f; font-weight: 700; }
+.cmp-with { color: var(--vp-c-text-1); }
+.cmp-with::before { content: '✓ '; color: #3fb66f; font-weight: 700; }
+
+/* 装好后演示对话 */
+.demo-box {
+  margin-top: 1.1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--vp-c-divider);
+}
+.demo-box h4 {
+  margin: 0 0 .7rem;
+  font-size: .95rem;
+  color: var(--vp-c-text-1);
+}
+.demo-chat {
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+}
+.demo-step {
+  padding: .45rem .7rem;
+  border-radius: 8px;
+  font-size: .86rem;
+  line-height: 1.5;
+}
+.demo-step.ai {
+  background: color-mix(in srgb, var(--vp-c-brand-soft) 35%, var(--vp-c-bg));
+  color: var(--vp-c-text-1);
+  align-self: flex-start;
+  max-width: 92%;
+}
+.demo-step.user {
+  background: var(--vp-c-bg-mute);
+  color: var(--vp-c-text-1);
+  align-self: flex-end;
+  max-width: 92%;
+}
+.demo-step.note {
+  background: transparent;
+  padding-left: 0;
+  font-weight: 600;
+}
+.demo-prompt { color: var(--vp-c-brand); font-weight: 700; }
+
+/* 手机端:对比表紧凑 */
+@media (max-width: 640px) {
+  .compare-table th, .compare-table td { padding: .45rem .4rem; font-size: .8rem; }
+  .cmp-scene { white-space: normal; }
+}
+
 /* 技能详情页徽章 */
 .skill-meta {
   display: flex;

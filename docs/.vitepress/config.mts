@@ -11,12 +11,12 @@ const categoryOrder = [
   '开发流程', '调试', '协作', '质量', '笔记知识库', '可视化', '工具'
 ]
 
-// 侧边栏:按分类分组,每组一个中文标题;每项"英文名小字 + 中文简介大字"
+// 侧边栏:按分类分组,每组一个中文标题;每项只显示技能名(简洁,去掉长简介)
 const categoryGroups = categoryOrder.map(cat => {
   const items = skills
     .filter(s => s.category === cat)
     .map(s => ({
-      text: `<span class="sk-name">${s.name}</span><span class="sk-desc">${s.summary}</span>`,
+      text: s.name,
       link: `/skills/${s.slug}`
     }))
   return { text: cat, items }

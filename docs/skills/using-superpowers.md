@@ -14,13 +14,9 @@ next:
   <span class="source">来源: <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">https://github.com/obra/superpowers</a></span>
 </div>
 
-这是整套 superpowers 工作流的总开关。
+完整的软件开发工作流框架,统合需求梳理、方案设计、计划编排、测试驱动实现与完成验证等环节,为 AI 驱动的开发过程提供统一的执行规范。适合希望让 AI 以结构化方式承担完整开发任务的用户。
 
-**大白话**:给 AI 立规矩:接活先问清楚需求 → 写计划 → 按计划做 → 做完自己检查。装上它,AI 干活就不再"想到哪做到哪"。
 
-**举个例**:你让 AI"帮我做个宠物领养小程序",装了它之后,AI 会先跟你确认需求(领养流程?要不要图片?),出方案你确认,再写计划,最后一步一步做完。
-
-**注意**:它是整套工作流,通常和 brainstorming、writing-plans 等一起生效。部分工具(如 Claude Code)会自动触发,其他工具可能需要你提一句"用 superpowers 流程干活"。
 
 ## 安装(超简单,一句话搞定)
 

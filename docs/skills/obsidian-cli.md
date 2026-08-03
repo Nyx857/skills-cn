@@ -14,15 +14,9 @@ next:
   <span class="source">来源: <a href="https://github.com/kepano/obsidian-skills" target="_blank" rel="noopener">https://github.com/kepano/obsidian-skills</a></span>
 </div>
 
-Obsidian 官方命令行工具的 AI 使用指南。
+基于 Obsidian 官方命令行工具,指导 AI 直接操作笔记库:检索内容、创建笔记、更新属性,并支持插件与主题开发场景。需要本机安装 Obsidian 及对应命令行工具后使用。
 
-**大白话**:之前几个技能是"会写对格式",这个更进一步——让 AI 能直接对你的笔记库动手:搜、建、改。
 
-**举个例**:你说"帮我在笔记库里找所有关于'减肥'的笔记并汇总",AI 会搜索你的库、把相关笔记整理成一份清单。
-
-**适合**:笔记已经积累很多、想用 AI 管理整个知识库的人。
-
-**注意**:需要你本机装了 Obsidian 和它的命令行工具,AI 才能操作。
 
 ## 安装(超简单,一句话搞定)
 

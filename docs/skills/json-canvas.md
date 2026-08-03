@@ -14,13 +14,9 @@ next:
   <span class="source">来源: <a href="https://github.com/kepano/obsidian-skills" target="_blank" rel="noopener">https://github.com/kepano/obsidian-skills</a></span>
 </div>
 
-教 AI 生成白板画布文件。
+生成符合 JSON Canvas 开放规范的画布文件,涵盖节点、连线、分组等结构,可用于思维导图、流程图与架构图等可视化表达。产出文件可在 Obsidian 等支持该规范的软件中直接打开编辑。
 
-**大白话**:你口述"帮我把这个项目的思路画成图",AI 会生成一个 .canvas 文件,你用 Obsidian 或白板软件打开就能看到节点、连线组成的图,还能自己拖拽编辑。
 
-**举个例**:你说"把我们家装修的思路画成思维导图:预算、风格、工期"。AI 会画出三个分支的图,打开就能看、能改。
-
-适合:想让 AI 产出可视化图表,而不只是文字描述。
 
 ## 安装(超简单,一句话搞定)
 

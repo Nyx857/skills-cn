@@ -12,13 +12,9 @@ next: false
   <span class="source">来源: <a href="https://github.com/kepano/obsidian-skills" target="_blank" rel="noopener">https://github.com/kepano/obsidian-skills</a></span>
 </div>
 
-一个实用小工具技能。
+从网页中提取干净正文并转换为 Markdown 的工具技能,自动去除导航、广告等干扰内容。适用于分析在线文档、文章与博客,可有效节省处理网页时的 token 消耗。
 
-**大白话**:你丢给 AI 一个网页链接让它读,网页上全是广告、菜单、推荐位,又乱又费 token(钱)。这个技能让 AI 先"剥干净"再读,只留正文。
 
-**举个例**:你说"帮我总结这篇文章 https://…",AI 会先提取文章正文(去掉广告),再给你讲重点,又快又省。
-
-适合:经常让 AI 读网页文章、新闻、文档的人。
 
 ## 安装(超简单,一句话搞定)
 
