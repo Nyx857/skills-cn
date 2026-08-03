@@ -11,7 +11,7 @@ const categoryOrder = [
   '开发流程', '调试', '协作', '质量', '笔记知识库', '可视化', '工具'
 ]
 
-// 侧边栏:按分类分组,每组一个中文标题;每项只显示技能名(简洁,去掉长简介)
+// 侧边栏:按分类分组,每组标题可点击(跳到技能库页对应分类锚点);每项只显示技能名(简洁)
 const categoryGroups = categoryOrder.map(cat => {
   const items = skills
     .filter(s => s.category === cat)
@@ -19,7 +19,7 @@ const categoryGroups = categoryOrder.map(cat => {
       text: s.name,
       link: `/skills/${s.slug}`
     }))
-  return { text: cat, items }
+  return { text: cat, link: `/skills/#${encodeURIComponent(cat)}`, items }
 })
 
 const skillSidebar = [
