@@ -86,7 +86,7 @@ export default {
           if (path === '/' && welcomed !== '1' && !sessionStorage.getItem('skills-cn-redirected')) {
             // 避免死循环:记录本次已重定向过
             sessionStorage.setItem('skills-cn-redirected', '1')
-            location.replace('/welcome')
+            location.replace('/welcome.html')
             return
           }
         } catch (e) {
