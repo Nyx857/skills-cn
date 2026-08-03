@@ -37,6 +37,12 @@ export default {
     // 复制按钮:事件委托,支持 data-copy(一句话)和 .install-cmd(命令块)
     if (typeof document !== 'undefined') {
       document.addEventListener('click', (e) => {
+        // 引导页"下一步":标记已看过并跳转首页
+        if (e.target.closest('#welcome-next')) {
+          try { localStorage.setItem('skills-cn-welcomed', '1') } catch (err) {}
+          location.href = '/'
+          return
+        }
         const btn = e.target.closest('.copy-btn')
         if (!btn) return
         const text = btn.dataset.copy || btn.parentElement.querySelector('.install-cmd')?.innerText
@@ -73,6 +79,19 @@ export default {
 
     function onRoute() {
       if (typeof document !== 'undefined') {
+        // 首次访问引导:访问首页且未看过引导时,跳转到 /welcome
+        try {
+          const path = location.pathname
+          const welcomed = localStorage.getItem('skills-cn-welcomed')
+          if (path === '/' && welcomed !== '1' && !sessionStorage.getItem('skills-cn-redirected')) {
+            // 避免死循环:记录本次已重定向过
+            sessionStorage.setItem('skills-cn-redirected', '1')
+            location.replace('/welcome')
+            return
+          }
+        } catch (e) {
+          // localStorage 不可用(隐私模式等)则跳过引导
+        }
         setupInstaller()
         setupFadeIn()
       }

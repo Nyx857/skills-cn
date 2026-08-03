@@ -193,6 +193,148 @@ body:not(.js-fade-enabled) .fade-in {
   border-radius: 999px;
 }
 
+/* ===== 首页叙事引导页样式 ===== */
+/* 情感开场段:居中、宽松、大字号 */
+.story-lede {
+  max-width: 34em;
+  margin: 2rem auto 3rem;
+  font-size: 1.08rem;
+  line-height: 2;
+  color: var(--vp-c-text-1);
+}
+.story-lede p {
+  margin: 0 0 1.2em;
+}
+.story-lede strong {
+  color: var(--vp-c-brand);
+  font-size: 1.05em;
+}
+/* 叙事段落标题 */
+.vp-doc h2 {
+  margin-top: 3.2rem;
+  scroll-margin-top: 90px;
+}
+/* 承诺框:白话说"不会英文/不会敲命令" */
+.promise-box {
+  margin: 1.8rem auto;
+  padding: 1.3rem 1.6rem;
+  border: 1px solid var(--vp-c-brand);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--vp-c-brand-soft) 25%, var(--vp-c-bg-soft));
+  text-align: center;
+  line-height: 2;
+  max-width: 40em;
+}
+.promise-box strong {
+  color: var(--vp-c-brand);
+  font-size: 1.02em;
+}
+/* 信任框:我们不做什么/做什么 */
+.trust-box {
+  margin: 1.8rem auto;
+  padding: 1.3rem 1.6rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+  max-width: 40em;
+  line-height: 1.9;
+}
+.trust-box strong {
+  color: var(--vp-c-text-1);
+}
+/* 结尾 CTA */
+.final-cta {
+  text-align: center;
+  margin: 3rem auto 1rem;
+  padding: 2rem 1rem;
+  border-top: 1px solid var(--vp-c-divider);
+}
+.final-cta blockquote {
+  border-left: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--vp-c-brand);
+  margin: 0 0 1rem;
+}
+.final-cta .cta-btn {
+  display: inline-block;
+  padding: .8rem 2.4rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--vp-c-brand);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform .25s, box-shadow .25s, background-color .25s;
+}
+.final-cta .cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+  text-decoration: none;
+}
+
+/* ===== 引导页(/welcome)全屏样式 ===== */
+.welcome-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1.2rem;
+  box-sizing: border-box;
+}
+.welcome-story {
+  max-width: 36em;
+  width: 100%;
+}
+.welcome-story h1 {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: var(--vp-c-brand);
+  text-align: center;
+  margin: 0 0 1.6rem;
+  line-height: 1.35;
+}
+.welcome-story .story-lede p {
+  font-size: 1.05rem;
+  line-height: 2;
+  color: var(--vp-c-text-1);
+  margin: 0 0 1.1em;
+}
+.welcome-story .story-lede strong {
+  color: var(--vp-c-brand);
+}
+.welcome-story .story-mid,
+.welcome-story .story-end {
+  font-size: 1rem;
+  line-height: 2;
+  color: var(--vp-c-text-1);
+  margin: 1.2em 0 0;
+}
+.welcome-story .story-mid strong {
+  color: var(--vp-c-brand);
+}
+.welcome-next-btn {
+  margin-top: 2.4rem;
+  padding: .85rem 3.2rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--vp-c-brand);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform .25s, box-shadow .25s, background-color .25s;
+}
+.welcome-next-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+/* 引导页隐藏默认页面结构(纯全屏) */
+.vp-doc .welcome-page {
+  margin: 0;
+}
+
 /* ===== 手机端适配(≤640px):卡片两列紧凑布局 ===== */
 @media (max-width: 640px) {
   .home-grid {
