@@ -25,6 +25,44 @@ next:
 
 
 
+<div class="compare-box">
+  <h3>有这个技能,差别在哪</h3>
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>遇到的情况</th>
+        <th>没有这个技能</th>
+        <th>有这个技能</th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr>
+    <td class="cmp-scene">想直接操作笔记库</td>
+    <td class="cmp-without">AI 看不到你的库,只能凭空建议,帮不上忙。</td>
+    <td class="cmp-with">AI 能搜、能建、能改你的真实笔记。</td>
+  </tr>
+  <tr>
+    <td class="cmp-scene">笔记很多找东西</td>
+    <td class="cmp-without">自己在 Obsidian 里翻半天。</td>
+    <td class="cmp-with">AI 用命令行快速检索,几秒定位。</td>
+  </tr>
+  <tr>
+    <td class="cmp-scene">批量整理笔记</td>
+    <td class="cmp-without">一篇篇手动整理,费时。</td>
+    <td class="cmp-with">AI 批量搜索、归类、更新,一次搞定。</td>
+  </tr>
+    </tbody>
+  </table>
+  <div class="demo-box">
+    <h4>装好后,AI 会这样帮你干活</h4>
+    <div class="demo-chat">
+      <div class="demo-step note"><span class="demo-prompt">你:帮我找所有关于"减肥"的笔记</span></div>
+    <div class="demo-step ai">AI:用命令行搜索你的笔记库……找到 12 篇相关笔记。</div>
+    <div class="demo-step ai">AI:我把标题和日期列给你,要整理成一份清单吗?</div>
+    </div>
+  </div>
+</div>
+
 
 
 ## 安装(超简单,一句话搞定)

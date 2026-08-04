@@ -25,6 +25,45 @@ next:
 
 
 
+<div class="compare-box">
+  <h3>有这个技能,差别在哪</h3>
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>遇到的情况</th>
+        <th>没有这个技能</th>
+        <th>有这个技能</th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr>
+    <td class="cmp-scene">项目比较大</td>
+    <td class="cmp-without">AI 一次只能做一点,你要在旁边盯很久。</td>
+    <td class="cmp-with">AI 派多个子代理分头做,自己还能检查成果。</td>
+  </tr>
+  <tr>
+    <td class="cmp-scene">想放手让 AI 干活</td>
+    <td class="cmp-without">干一会儿就要你确认,进展慢。</td>
+    <td class="cmp-with">你确认方案后,它能自主推进好几个小时。</td>
+  </tr>
+  <tr>
+    <td class="cmp-scene">任务多而杂</td>
+    <td class="cmp-without">一件件来,前后衔接容易乱。</td>
+    <td class="cmp-with">并行处理 + 逐个验收,效率高还不乱。</td>
+  </tr>
+    </tbody>
+  </table>
+  <div class="demo-box">
+    <h4>装好后,AI 会这样帮你干活</h4>
+    <div class="demo-chat">
+      <div class="demo-step note"><span class="demo-prompt">你:按方案把这个小程序做完</span></div>
+    <div class="demo-step ai">AI:我拆成几个任务,派子代理分头做——一个写页面、一个写逻辑。</div>
+    <div class="demo-step ai">AI:每完成一块,我检查验收,不合格的退回重做。</div>
+    <div class="demo-step ai">AI:全部完成,整体跑一遍没问题。你只需最后验收。</div>
+    </div>
+  </div>
+</div>
+
 
 
 ## 安装(超简单,一句话搞定)

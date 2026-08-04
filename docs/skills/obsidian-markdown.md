@@ -25,6 +25,45 @@ next:
 
 
 
+<div class="compare-box">
+  <h3>有这个技能,差别在哪</h3>
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>遇到的情况</th>
+        <th>没有这个技能</th>
+        <th>有这个技能</th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr>
+    <td class="cmp-scene">让 AI 写 Obsidian 笔记</td>
+    <td class="cmp-without">AI 不懂 Obsidian 语法,写出来的笔记显示乱、链接失效。</td>
+    <td class="cmp-with">AI 会用双向链接、提示框、属性,笔记打开全正常。</td>
+  </tr>
+  <tr>
+    <td class="cmp-scene">整理笔记之间的关联</td>
+    <td class="cmp-without">笔记各写各的,连不起来,找信息靠翻。</td>
+    <td class="cmp-with">AI 用 [[双链]] 把相关笔记连成网,一点就跳。</td>
+  </tr>
+  <tr>
+    <td class="cmp-scene">笔记格式统一</td>
+    <td class="cmp-without">每篇格式都不一样,看着乱。</td>
+    <td class="cmp-with">AI 按统一规范写,标题、属性、提示框都规整。</td>
+  </tr>
+    </tbody>
+  </table>
+  <div class="demo-box">
+    <h4>装好后,AI 会这样帮你干活</h4>
+    <div class="demo-chat">
+      <div class="demo-step note"><span class="demo-prompt">你:把这篇读书笔记整理进 Obsidian</span></div>
+    <div class="demo-step ai">AI:好的,我会用 Obsidian 格式整理:标题、属性、正文。</div>
+    <div class="demo-step ai">AI:相关笔记用 [[双链]] 连起来,重点用提示框标注。</div>
+    <div class="demo-step ai">AI:整理好了,打开 Obsidian 全部正常显示 ✅</div>
+    </div>
+  </div>
+</div>
+
 
 
 ## 安装(超简单,一句话搞定)

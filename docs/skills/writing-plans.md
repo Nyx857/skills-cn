@@ -25,6 +25,45 @@ next:
 
 
 
+<div class="compare-box">
+  <h3>有这个技能,差别在哪</h3>
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>遇到的情况</th>
+        <th>没有这个技能</th>
+        <th>有这个技能</th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr>
+    <td class="cmp-scene">项目稍微大一点</td>
+    <td class="cmp-without">AI 想到哪做到哪,做着做着就乱套了。</td>
+    <td class="cmp-with">AI 先把要做的事拆成一步步计划,照着做不乱。</td>
+  </tr>
+  <tr>
+    <td class="cmp-scene">做一半想看看进度</td>
+    <td class="cmp-without">说不清做到哪了,也不知道下一步该干嘛。</td>
+    <td class="cmp-with">计划一目了然:完成几项、还剩几项,清清楚楚。</td>
+  </tr>
+  <tr>
+    <td class="cmp-scene">中途换人接手</td>
+    <td class="cmp-without">新接手的人看不懂做到哪,得从头捋。</td>
+    <td class="cmp-with">照着计划就能接手,不用重新理解。</td>
+  </tr>
+    </tbody>
+  </table>
+  <div class="demo-box">
+    <h4>装好后,AI 会这样帮你干活</h4>
+    <div class="demo-chat">
+      <div class="demo-step note"><span class="demo-prompt">你:帮我做一个记账 App</span></div>
+    <div class="demo-step ai">AI:好的,这是拆好的计划——第 1 步搭页面,第 2 步做记账功能,第 3 步做数据保存……</div>
+    <div class="demo-step ai">AI:每步都有明确的完成标准,做完一步检查一步。</div>
+    <div class="demo-step user">你:好,按计划做 → AI 一步步执行,不跑偏</div>
+    </div>
+  </div>
+</div>
+
 
 
 ## 安装(超简单,一句话搞定)

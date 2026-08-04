@@ -25,6 +25,45 @@ next:
 
 
 
+<div class="compare-box">
+  <h3>有这个技能,差别在哪</h3>
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>遇到的情况</th>
+        <th>没有这个技能</th>
+        <th>有这个技能</th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr>
+    <td class="cmp-scene">让 AI 做项目</td>
+    <td class="cmp-without">AI 想到哪做到哪,做出来常常不是你要的。</td>
+    <td class="cmp-with">先问清需求、写计划、按流程做,做完自检——一整套正经干活流程。</td>
+  </tr>
+  <tr>
+    <td class="cmp-scene">需求稍微复杂</td>
+    <td class="cmp-without">AI 容易理解偏,做一半才发现方向错了。</td>
+    <td class="cmp-with">每一步都有确认环节,方向偏了立刻拉回来。</td>
+  </tr>
+  <tr>
+    <td class="cmp-scene">想用 AI 认真做事</td>
+    <td class="cmp-without">只能让它干点零碎小活,大项目不敢交。</td>
+    <td class="cmp-with">有完整方法论兜底,大项目也能放心交给它。</td>
+  </tr>
+    </tbody>
+  </table>
+  <div class="demo-box">
+    <h4>装好后,AI 会这样帮你干活</h4>
+    <div class="demo-chat">
+      <div class="demo-step note"><span class="demo-prompt">你:帮我做个宠物领养小程序</span></div>
+    <div class="demo-step ai">AI:先跟你确认需求——领养流程?要不要图片?</div>
+    <div class="demo-step ai">AI:方案你确认后,我写实施计划。</div>
+    <div class="demo-step ai">AI:按计划一步一步做,完成一项自检一项。</div>
+    </div>
+  </div>
+</div>
+
 
 
 ## 安装(超简单,一句话搞定)

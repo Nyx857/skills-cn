@@ -25,6 +25,45 @@ next:
 
 
 
+<div class="compare-box">
+  <h3>有这个技能,差别在哪</h3>
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>遇到的情况</th>
+        <th>没有这个技能</th>
+        <th>有这个技能</th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr>
+    <td class="cmp-scene">笔记多了想汇总</td>
+    <td class="cmp-without">只能一篇篇翻,想看"哪些读完、哪些没读"很难。</td>
+    <td class="cmp-with">AI 把笔记做成表格视图,筛选排序一目了然。</td>
+  </tr>
+  <tr>
+    <td class="cmp-scene">想按条件找笔记</td>
+    <td class="cmp-without">手动翻半天,或者想不起关键词。</td>
+    <td class="cmp-with">表格里按状态/日期/评分筛选,几秒找到。</td>
+  </tr>
+  <tr>
+    <td class="cmp-scene">数据化整理笔记</td>
+    <td class="cmp-without">笔记就是纯文字,没法统计。</td>
+    <td class="cmp-with">AI 建好 Base,笔记变成可统计的数据库。</td>
+  </tr>
+    </tbody>
+  </table>
+  <div class="demo-box">
+    <h4>装好后,AI 会这样帮你干活</h4>
+    <div class="demo-chat">
+      <div class="demo-step note"><span class="demo-prompt">你:把我的读书笔记变成表格</span></div>
+    <div class="demo-step ai">AI:建一个"读书笔记"Base:书名 | 作者 | 评分 | 状态。</div>
+    <div class="demo-step ai">AI:把现有笔记填进去,没读的标记为"待读"。</div>
+    <div class="demo-step ai">AI:好了,现在能按状态筛选、按评分排序了 ✅</div>
+    </div>
+  </div>
+</div>
+
 
 
 ## 安装(超简单,一句话搞定)

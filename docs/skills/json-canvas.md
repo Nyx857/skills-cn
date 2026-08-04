@@ -25,6 +25,45 @@ next:
 
 
 
+<div class="compare-box">
+  <h3>有这个技能,差别在哪</h3>
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>遇到的情况</th>
+        <th>没有这个技能</th>
+        <th>有这个技能</th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr>
+    <td class="cmp-scene">想让 AI 画图</td>
+    <td class="cmp-without">AI 只能给文字描述,想要图还得自己画。</td>
+    <td class="cmp-with">AI 直接生成白板文件,打开就是能编辑的图。</td>
+  </tr>
+  <tr>
+    <td class="cmp-scene">画思维导图/流程图</td>
+    <td class="cmp-without">自己用工具慢慢拖,费时间。</td>
+    <td class="cmp-with">AI 生成节点连线,打开就能看、能改。</td>
+  </tr>
+  <tr>
+    <td class="cmp-scene">把思路可视化</td>
+    <td class="cmp-without">想法堆在脑子里,理不清。</td>
+    <td class="cmp-with">AI 画成图,结构一目了然,还能持续修改。</td>
+  </tr>
+    </tbody>
+  </table>
+  <div class="demo-box">
+    <h4>装好后,AI 会这样帮你干活</h4>
+    <div class="demo-chat">
+      <div class="demo-step note"><span class="demo-prompt">你:把装修思路画成思维导图</span></div>
+    <div class="demo-step ai">AI:生成一个白板文件:预算、风格、工期三个分支。</div>
+    <div class="demo-step ai">AI:每个分支下挂具体事项,连线清晰。</div>
+    <div class="demo-step ai">AI:生成好了,用白板软件打开就能编辑 ✅</div>
+    </div>
+  </div>
+</div>
+
 
 
 ## 安装(超简单,一句话搞定)

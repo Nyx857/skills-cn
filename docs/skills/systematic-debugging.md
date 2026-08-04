@@ -25,6 +25,46 @@ next:
 
 
 
+<div class="compare-box">
+  <h3>有这个技能,差别在哪</h3>
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>遇到的情况</th>
+        <th>没有这个技能</th>
+        <th>有这个技能</th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr>
+    <td class="cmp-scene">程序出 bug</td>
+    <td class="cmp-without">AI 瞎猜一个地方就改,往往越改越糟。</td>
+    <td class="cmp-with">先复现问题、找真正原因,再改最小的地方。</td>
+  </tr>
+  <tr>
+    <td class="cmp-scene">改完没修好</td>
+    <td class="cmp-without">继续瞎猜乱试,浪费一堆时间。</td>
+    <td class="cmp-with">换个假设再验证,一步步逼近根因。</td>
+  </tr>
+  <tr>
+    <td class="cmp-scene">问题反复出现</td>
+    <td class="cmp-without">每次修一个症状,下次换个地方又犯。</td>
+    <td class="cmp-with">找到根因一次修好,不再反复。</td>
+  </tr>
+    </tbody>
+  </table>
+  <div class="demo-box">
+    <h4>装好后,AI 会这样帮你干活</h4>
+    <div class="demo-chat">
+      <div class="demo-step note"><span class="demo-prompt">你:网站打不开了,帮我看看</span></div>
+    <div class="demo-step ai">AI:先看报错日志,定位是哪一步出的问题。</div>
+    <div class="demo-step ai">AI:复现一下:刷新页面,确认每次都报同样的错。</div>
+    <div class="demo-step ai">AI:找到了——是数据库连接配置错了,改这一处。</div>
+    <div class="demo-step ai">AI:修完再刷新验证:网站正常打开了 ✅</div>
+    </div>
+  </div>
+</div>
+
 
 
 ## 安装(超简单,一句话搞定)

@@ -23,6 +23,44 @@ next: false
 
 
 
+<div class="compare-box">
+  <h3>有这个技能,差别在哪</h3>
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>遇到的情况</th>
+        <th>没有这个技能</th>
+        <th>有这个技能</th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr>
+    <td class="cmp-scene">让 AI 读网页</td>
+    <td class="cmp-without">AI 把广告、导航、推荐位全读进去,又乱又费流量。</td>
+    <td class="cmp-with">AI 先提取干净正文,只读有用的部分。</td>
+  </tr>
+  <tr>
+    <td class="cmp-scene">分析长文章</td>
+    <td class="cmp-without">整页内容都读,占用大量额度,还容易抓错重点。</td>
+    <td class="cmp-with">只保留正文,省额度,重点清晰。</td>
+  </tr>
+  <tr>
+    <td class="cmp-scene">收集网页资料</td>
+    <td class="cmp-without">存下来的内容带着一堆杂乱元素。</td>
+    <td class="cmp-with">存下的是干净的纯文字,方便后续用。</td>
+  </tr>
+    </tbody>
+  </table>
+  <div class="demo-box">
+    <h4>装好后,AI 会这样帮你干活</h4>
+    <div class="demo-chat">
+      <div class="demo-step note"><span class="demo-prompt">你:总结这篇文章 https://xxx.com/...</span></div>
+    <div class="demo-step ai">AI:先提取网页正文(自动去掉广告和导航)。</div>
+    <div class="demo-step ai">AI:正文拿到了,帮你总结重点如下……</div>
+    </div>
+  </div>
+</div>
+
 
 
 ## 安装(超简单,一句话搞定)
