@@ -16,6 +16,15 @@ next:
 
 指导创建与编辑 Obsidian Bases 数据库文件,通过视图、筛选、公式与汇总等能力,将分散的笔记组织为可结构化查询的表格形态。适合笔记量大、需要以数据化方式管理知识的场景。
 
+<div class="review-box">
+  <h3>🔍 实测报告</h3>
+  <div class="review-stars">★★★★★ <span class="review-stars-num">5/5</span> <span class="rv-level adv">进阶向</span></div>
+  <p class="review-summary">内容最厚的 obsidian 技能,三个可直接复制的示例;需新版 Obsidian 与核心插件,较新功能。</p>
+  <p class="review-note">本报告由自动化实测生成:读取技能完整内容,按描述验证可执行性与依赖。</p>
+</div>
+
+
+
 
 
 ## 安装(超简单,一句话搞定)

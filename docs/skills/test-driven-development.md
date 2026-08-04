@@ -16,6 +16,15 @@ next:
 
 严格的测试驱动开发流程。先编写定义预期行为的失败测试,再实现代码直至测试通过,最后进行必要的重构。通过持续的红-绿-重构循环,确保代码行为始终有测试兜底,降低回归风险。
 
+<div class="review-box">
+  <h3>🔍 实测报告</h3>
+  <div class="review-stars">★★★★★ <span class="review-stars-num">5/5</span> <span class="rv-level adv">进阶向</span></div>
+  <p class="review-summary">方法论严谨,红-绿-重构流程和代码对比示例完整,可执行性强;示例绑定 TypeScript,其他语言需自行套用。</p>
+  <p class="review-note">本报告由自动化实测生成:读取技能完整内容,按描述验证可执行性与依赖。</p>
+</div>
+
+
+
 
 
 ## 安装(超简单,一句话搞定)

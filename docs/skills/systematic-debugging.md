@@ -16,6 +16,15 @@ next:
 
 系统化的缺陷排查方法论。面对任何 bug、测试失败或异常行为,先完成根因调查(复现问题、检查近期变更、收集证据),再形成假设并最小化验证,最后针对根因实施修复。避免凭直觉乱改,提高排障效率与修复质量。
 
+<div class="review-box">
+  <h3>🔍 实测报告</h3>
+  <div class="review-stars">★★★★★ <span class="review-stars-num">5/5</span> <span class="rv-level">入门可用</span></div>
+  <p class="review-summary">四阶段调试流程严谨,含多组件系统取证示例;零外部依赖,装完即用,排障场景价值高。</p>
+  <p class="review-note">本报告由自动化实测生成:读取技能完整内容,按描述验证可执行性与依赖。</p>
+</div>
+
+
+
 
 
 ## 安装(超简单,一句话搞定)

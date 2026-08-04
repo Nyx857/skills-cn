@@ -16,6 +16,15 @@ next:
 
 生成符合 JSON Canvas 开放规范的画布文件,涵盖节点、连线、分组等结构,可用于思维导图、流程图与架构图等可视化表达。产出文件可在 Obsidian 等支持该规范的软件中直接打开编辑。
 
+<div class="review-box">
+  <h3>🔍 实测报告</h3>
+  <div class="review-stars">★★★★★ <span class="review-stars-num">5/5</span> <span class="rv-level">入门可用</span></div>
+  <p class="review-summary">严格对照官方规范,字段表与验证清单实用;零依赖纯知识型,适合画白板/流程图场景。</p>
+  <p class="review-note">本报告由自动化实测生成:读取技能完整内容,按描述验证可执行性与依赖。</p>
+</div>
+
+
+
 
 
 ## 安装(超简单,一句话搞定)

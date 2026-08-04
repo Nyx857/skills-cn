@@ -16,6 +16,15 @@ next:
 
 完整的软件开发工作流框架,统合需求梳理、方案设计、计划编排、测试驱动实现与完成验证等环节,为 AI 驱动的开发过程提供统一的执行规范。适合希望让 AI 以结构化方式承担完整开发任务的用户。
 
+<div class="review-box">
+  <h3>🔍 实测报告</h3>
+  <div class="review-stars">★★★★☆ <span class="review-stars-num">4/5</span> <span class="rv-level adv">进阶向</span></div>
+  <p class="review-summary">整套方法论的总开关,强制按流程干活;依赖配套技能齐全才完整,单独用价值有限。</p>
+  <p class="review-note">本报告由自动化实测生成:读取技能完整内容,按描述验证可执行性与依赖。</p>
+</div>
+
+
+
 
 
 ## 安装(超简单,一句话搞定)

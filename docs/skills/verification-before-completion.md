@@ -16,6 +16,15 @@ next:
 
 完成前的强制验证机制。要求交付前以可复现的证据确认工作真正达标:运行测试、验证功能行为、核对需求覆盖,而不是仅凭主观判断宣称完成。适用于各类交付型任务,确保产出可被验证、可被信赖。
 
+<div class="review-box">
+  <h3>🔍 实测报告</h3>
+  <div class="review-stars">★★★★☆ <span class="review-stars-num">4/5</span> <span class="rv-level">入门可用</span></div>
+  <p class="review-summary">短小精悍的行为约束:完成前必须给证据。零依赖随时可执行,效果取决于 agent 自觉性。</p>
+  <p class="review-note">本报告由自动化实测生成:读取技能完整内容,按描述验证可执行性与依赖。</p>
+</div>
+
+
+
 
 
 ## 安装(超简单,一句话搞定)

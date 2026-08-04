@@ -16,6 +16,15 @@ next:
 
 将已确认的设计拆解为可执行的实现计划。以任务为单位组织步骤,明确每步的目标与验收方式,让计划具备可跟踪、可逐项执行的特点。通常承接 brainstorming 的设计产出,是进入实现阶段前的规划环节。
 
+<div class="review-box">
+  <h3>🔍 实测报告</h3>
+  <div class="review-stars">★★★★★ <span class="review-stars-num">5/5</span> <span class="rv-level">入门可用</span></div>
+  <p class="review-summary">模板化程度最高的技能,照模板就能产出可执行计划;产出较长,适合认真做项目的用户。</p>
+  <p class="review-note">本报告由自动化实测生成:读取技能完整内容,按描述验证可执行性与依赖。</p>
+</div>
+
+
+
 
 
 ## 安装(超简单,一句话搞定)

@@ -45,6 +45,11 @@
           "你:可以,就这么做 → AI 才开始动手开发"
         ]
       }
+    },
+    "review": {
+      "stars": 4,
+      "summary": "结构完整、流程清晰,9 步清单可直接执行;核心流程依赖 git 与配套技能,适合想规范开发流程的用户。",
+      "level": "入门可用"
     }
   },
   {
@@ -64,7 +69,12 @@
       "TDD",
       "开发流程"
     ],
-    "ask_phrase": "帮我安装 writing-plans 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
+    "ask_phrase": "帮我安装 writing-plans 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的",
+    "review": {
+      "stars": 5,
+      "summary": "模板化程度最高的技能,照模板就能产出可执行计划;产出较长,适合认真做项目的用户。",
+      "level": "入门可用"
+    }
   },
   {
     "slug": "test-driven-development",
@@ -83,7 +93,12 @@
       "测试",
       "质量"
     ],
-    "ask_phrase": "帮我安装 test-driven-development 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
+    "ask_phrase": "帮我安装 test-driven-development 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的",
+    "review": {
+      "stars": 5,
+      "summary": "方法论严谨,红-绿-重构流程和代码对比示例完整,可执行性强;示例绑定 TypeScript,其他语言需自行套用。",
+      "level": "进阶向"
+    }
   },
   {
     "slug": "systematic-debugging",
@@ -101,7 +116,12 @@
       "调试",
       "排错"
     ],
-    "ask_phrase": "帮我安装 systematic-debugging 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
+    "ask_phrase": "帮我安装 systematic-debugging 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的",
+    "review": {
+      "stars": 5,
+      "summary": "四阶段调试流程严谨,含多组件系统取证示例;零外部依赖,装完即用,排障场景价值高。",
+      "level": "入门可用"
+    }
   },
   {
     "slug": "subagent-driven-development",
@@ -120,7 +140,12 @@
       "自主执行",
       "协作"
     ],
-    "ask_phrase": "帮我安装 subagent-driven-development 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
+    "ask_phrase": "帮我安装 subagent-driven-development 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的",
+    "review": {
+      "stars": 5,
+      "summary": "工程化最强,配套脚本与模板齐全;强依赖宿主支持子代理派发,普通工具无法落地。",
+      "level": "进阶向"
+    }
   },
   {
     "slug": "verification-before-completion",
@@ -138,7 +163,12 @@
       "验证",
       "质量"
     ],
-    "ask_phrase": "帮我安装 verification-before-completion 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
+    "ask_phrase": "帮我安装 verification-before-completion 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的",
+    "review": {
+      "stars": 4,
+      "summary": "短小精悍的行为约束:完成前必须给证据。零依赖随时可执行,效果取决于 agent 自觉性。",
+      "level": "入门可用"
+    }
   },
   {
     "slug": "using-superpowers",
@@ -156,7 +186,12 @@
       "方法论",
       "总入口"
     ],
-    "ask_phrase": "帮我安装 using-superpowers 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
+    "ask_phrase": "帮我安装 using-superpowers 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的",
+    "review": {
+      "stars": 4,
+      "summary": "整套方法论的总开关,强制按流程干活;依赖配套技能齐全才完整,单独用价值有限。",
+      "level": "进阶向"
+    }
   },
   {
     "slug": "obsidian-markdown",
@@ -175,7 +210,12 @@
       "Markdown",
       "笔记"
     ],
-    "ask_phrase": "帮我安装 obsidian-markdown 这个技能,它来自 https://github.com/kepano/obsidian-skills ,装好告诉我是干什么的"
+    "ask_phrase": "帮我安装 obsidian-markdown 这个技能,它来自 https://github.com/kepano/obsidian-skills ,装好告诉我是干什么的",
+    "review": {
+      "stars": 5,
+      "summary": "干净的 Obsidian 语法速查,每种语法配示例;纯知识型零依赖,装完即用无坑。",
+      "level": "入门可用"
+    }
   },
   {
     "slug": "obsidian-bases",
@@ -194,7 +234,12 @@
       "数据库",
       "笔记"
     ],
-    "ask_phrase": "帮我安装 obsidian-bases 这个技能,它来自 https://github.com/kepano/obsidian-skills ,装好告诉我是干什么的"
+    "ask_phrase": "帮我安装 obsidian-bases 这个技能,它来自 https://github.com/kepano/obsidian-skills ,装好告诉我是干什么的",
+    "review": {
+      "stars": 5,
+      "summary": "内容最厚的 obsidian 技能,三个可直接复制的示例;需新版 Obsidian 与核心插件,较新功能。",
+      "level": "进阶向"
+    }
   },
   {
     "slug": "json-canvas",
@@ -214,7 +259,12 @@
       "可视化",
       "Obsidian"
     ],
-    "ask_phrase": "帮我安装 json-canvas 这个技能,它来自 https://github.com/kepano/obsidian-skills ,装好告诉我是干什么的"
+    "ask_phrase": "帮我安装 json-canvas 这个技能,它来自 https://github.com/kepano/obsidian-skills ,装好告诉我是干什么的",
+    "review": {
+      "stars": 5,
+      "summary": "严格对照官方规范,字段表与验证清单实用;零依赖纯知识型,适合画白板/流程图场景。",
+      "level": "入门可用"
+    }
   },
   {
     "slug": "obsidian-cli",
@@ -234,7 +284,12 @@
       "自动化",
       "插件开发"
     ],
-    "ask_phrase": "帮我安装 obsidian-cli 这个技能,它来自 https://github.com/kepano/obsidian-skills ,装好告诉我是干什么的"
+    "ask_phrase": "帮我安装 obsidian-cli 这个技能,它来自 https://github.com/kepano/obsidian-skills ,装好告诉我是干什么的",
+    "review": {
+      "stars": 3,
+      "summary": "依赖最重:需本机装 obsidian CLI 且应用运行中,无环境完全不可用;适合开发者深度使用。",
+      "level": "进阶向"
+    }
   },
   {
     "slug": "defuddle",
@@ -253,6 +308,11 @@
       "Markdown",
       "省token"
     ],
-    "ask_phrase": "帮我安装 defuddle 这个技能,它来自 https://github.com/kepano/obsidian-skills ,装好告诉我是干什么的"
+    "ask_phrase": "帮我安装 defuddle 这个技能,它来自 https://github.com/kepano/obsidian-skills ,装好告诉我是干什么的",
+    "review": {
+      "stars": 3,
+      "summary": "极简封装(单条命令),依赖预先 npm 全局安装 defuddle;作为网页提取小工具有用,内容偏薄。",
+      "level": "入门可用"
+    }
   }
 ]

@@ -14,6 +14,15 @@ next:
 
 面向创作性工作的前置设计流程。在动手实现前,通过结构化对话梳理需求、探索项目上下文、提出候选方案,并产出可评审的设计文档。适用于任何需要构建新功能、修改现有行为的场景,确保实现方向在投入编码前得到确认。
 
+<div class="review-box">
+  <h3>🔍 实测报告</h3>
+  <div class="review-stars">★★★★☆ <span class="review-stars-num">4/5</span> <span class="rv-level">入门可用</span></div>
+  <p class="review-summary">结构完整、流程清晰,9 步清单可直接执行;核心流程依赖 git 与配套技能,适合想规范开发流程的用户。</p>
+  <p class="review-note">本报告由自动化实测生成:读取技能完整内容,按描述验证可执行性与依赖。</p>
+</div>
+
+
+
 <div class="compare-box">
   <h3>有这个技能,差别在哪</h3>
   <table class="compare-table">

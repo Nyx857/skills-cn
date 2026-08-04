@@ -16,6 +16,15 @@ next:
 
 面向复杂工程任务的自主执行机制。将计划中的任务派发给子代理并行处理,完成后由主代理逐项审查并持续推进。适用于方案已确认、需要 AI 长时间自主推进的实现阶段,可在不偏离既定计划的前提下显著提升执行效率。
 
+<div class="review-box">
+  <h3>🔍 实测报告</h3>
+  <div class="review-stars">★★★★★ <span class="review-stars-num">5/5</span> <span class="rv-level adv">进阶向</span></div>
+  <p class="review-summary">工程化最强,配套脚本与模板齐全;强依赖宿主支持子代理派发,普通工具无法落地。</p>
+  <p class="review-note">本报告由自动化实测生成:读取技能完整内容,按描述验证可执行性与依赖。</p>
+</div>
+
+
+
 
 
 ## 安装(超简单,一句话搞定)

@@ -14,6 +14,15 @@ next: false
 
 从网页中提取干净正文并转换为 Markdown 的工具技能,自动去除导航、广告等干扰内容。适用于分析在线文档、文章与博客,可有效节省处理网页时的 token 消耗。
 
+<div class="review-box">
+  <h3>🔍 实测报告</h3>
+  <div class="review-stars">★★★☆☆ <span class="review-stars-num">3/5</span> <span class="rv-level">入门可用</span></div>
+  <p class="review-summary">极简封装(单条命令),依赖预先 npm 全局安装 defuddle;作为网页提取小工具有用,内容偏薄。</p>
+  <p class="review-note">本报告由自动化实测生成:读取技能完整内容,按描述验证可执行性与依赖。</p>
+</div>
+
+
+
 
 
 ## 安装(超简单,一句话搞定)

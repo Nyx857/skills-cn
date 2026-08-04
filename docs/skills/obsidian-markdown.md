@@ -16,6 +16,15 @@ next:
 
 指导生成符合 Obsidian 规范的 Markdown 内容。覆盖双向链接、嵌入、提示框、属性等 Obsidian 专属语法,确保 AI 产出的笔记在 Obsidian 中正确渲染与关联。适用于依赖 Obsidian 进行知识管理的用户。
 
+<div class="review-box">
+  <h3>🔍 实测报告</h3>
+  <div class="review-stars">★★★★★ <span class="review-stars-num">5/5</span> <span class="rv-level">入门可用</span></div>
+  <p class="review-summary">干净的 Obsidian 语法速查,每种语法配示例;纯知识型零依赖,装完即用无坑。</p>
+  <p class="review-note">本报告由自动化实测生成:读取技能完整内容,按描述验证可执行性与依赖。</p>
+</div>
+
+
+
 
 
 ## 安装(超简单,一句话搞定)

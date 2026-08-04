@@ -104,9 +104,36 @@ function renderPage(s, prev, next) {
 
 ${s.detail}
 
+${renderReview(s)}
+
 ${renderCompare(s)}
 
 ${renderInstall(s)}
+`
+}
+
+// 星级图标:★ 实心 / ☆ 空心
+function stars(s) {
+  const n = (s.review && s.review.stars) || 0
+  let out = ''
+  for (let i = 1; i <= 5; i++) out += i <= n ? '★' : '☆'
+  return out
+}
+
+// 渲染"实测报告"区块
+function renderReview(s) {
+  const r = s.review
+  if (!r) return ''
+  const levelBadge = r.level === '进阶向'
+    ? '<span class="rv-level adv">进阶向</span>'
+    : '<span class="rv-level">入门可用</span>'
+  return `<div class="review-box">
+  <h3>🔍 实测报告</h3>
+  <div class="review-stars">${stars(s)} <span class="review-stars-num">${r.stars}/5</span> ${levelBadge}</div>
+  <p class="review-summary">${esc(r.summary)}</p>
+  <p class="review-note">本报告由自动化实测生成:读取技能完整内容,按描述验证可执行性与依赖。</p>
+</div>
+
 `
 }
 
@@ -183,7 +210,7 @@ const sections = categoryOrder
   .filter(cat => byCat[cat])
   .map(cat => {
     const cards = byCat[cat].map(s => `<a href="./${s.slug}" class="skill-card">
-  <span class="skill-card-head"><span class="skill-card-name">${s.name}</span><span class="skill-card-license">${s.license}</span></span>
+  <span class="skill-card-head"><span class="skill-card-name">${s.name}</span><span class="skill-card-stars" title="实测星级">${stars(s)}</span></span>
   <span class="skill-card-summary">${s.summary}</span>
 </a>`).join('\n')
     return `## ${cat}\n\n<div class="skill-card-grid">\n${cards}\n</div>`

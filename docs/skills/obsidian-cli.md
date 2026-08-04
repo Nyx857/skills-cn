@@ -16,6 +16,15 @@ next:
 
 基于 Obsidian 官方命令行工具,指导 AI 直接操作笔记库:检索内容、创建笔记、更新属性,并支持插件与主题开发场景。需要本机安装 Obsidian 及对应命令行工具后使用。
 
+<div class="review-box">
+  <h3>🔍 实测报告</h3>
+  <div class="review-stars">★★★☆☆ <span class="review-stars-num">3/5</span> <span class="rv-level adv">进阶向</span></div>
+  <p class="review-summary">依赖最重:需本机装 obsidian CLI 且应用运行中,无环境完全不可用;适合开发者深度使用。</p>
+  <p class="review-note">本报告由自动化实测生成:读取技能完整内容,按描述验证可执行性与依赖。</p>
+</div>
+
+
+
 
 
 ## 安装(超简单,一句话搞定)
