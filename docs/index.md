@@ -36,7 +36,7 @@ layout: home
   </a>
   <a href="/skills/" class="home-card">
     <h3>更多技能…</h3>
-    <p>技能库持续扩充中,点击进入完整分类。</p>
+    <p>技能库还在持续扩充中,分类越来越全。想找更多靠谱技能,点这里看完整分类。</p>
     <span class="tag">查看全部</span>
   </a>
 </div>

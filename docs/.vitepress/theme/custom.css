@@ -120,6 +120,7 @@ body:not(.js-fade-enabled) .fade-in {
   font-weight: 800;
   letter-spacing: -0.01em;
   line-height: 1.3;
+  font-size: 2.6rem;
 }
 
 /* 首页卡片 */
@@ -128,9 +129,13 @@ body:not(.js-fade-enabled) .fade-in {
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1rem;
   margin: 1.5rem 0;
+  align-items: stretch; /* 同一行卡片等高 */
 }
 .home-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* 撑满网格单元,确保同一行卡片等高 */
+  min-height: 176px; /* 桌面端所有卡片统一最小高度 */
   border: 1px solid var(--vp-c-divider);
   border-radius: 14px;
   padding: 1.1rem 1.2rem;
@@ -184,6 +189,8 @@ body:not(.js-fade-enabled) .fade-in {
   font-size: .9rem;
   color: var(--vp-c-text-2);
   line-height: 1.6;
+  flex-grow: 1; /* 撑满剩余空间,让卡片内容等高、tag 底部对齐 */
+}
 }
 .home-card .tag {
   font-size: .78rem;
@@ -283,6 +290,7 @@ body:not(.js-fade-enabled) .fade-in {
   .home-card {
     padding: .75rem .8rem;
     border-radius: 12px;
+    min-height: 138px; /* 保证两列卡片高度一致 */
   }
   .home-card h3 {
     font-size: .88rem;

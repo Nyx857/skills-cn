@@ -56,7 +56,15 @@ export default {
       if (typeof document === 'undefined' || typeof IntersectionObserver === 'undefined') return
       document.body.classList.add('js-fade-enabled')
       const cards = document.querySelectorAll('.home-grid .home-card')
-      if (!cards.length) return
+      if (!cards.length) {
+        // 内容可能还没渲染完:等待后再试(最多 3 次)
+        if (!window.__fadeRetry) window.__fadeRetry = 0
+        if (window.__fadeRetry < 3) {
+          window.__fadeRetry++
+          setTimeout(setupFadeIn, 300)
+        }
+        return
+      }
       cards.forEach(c => c.classList.add('fade-in'))
       if (!observer) {
         observer = new IntersectionObserver((entries) => {
