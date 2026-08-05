@@ -779,5 +779,109 @@
         ]
       }
     }
+  },
+  {
+    "slug": "brandkit",
+    "name": "brandkit",
+    "category": "设计/前端",
+    "summary": "让 AI 帮你生成品牌视觉:Logo 概念、色彩系统、字体样本,一套品牌板搞定。",
+    "detail": "品牌视觉套件的图像生成技能。按品牌策略(品类、受众、核心隐喻)推导 Logo 概念,输出品牌板——Logo 封面、构造图、数字应用、色彩系统、字体样本、实物 mockup 等九宫格面板。适合想给产品或项目建立视觉形象,但不会设计的用户。需配合图像生成工具使用。",
+    "author": "Leon (Leonxlnx)",
+    "source_url": "https://github.com/Leonxlnx/taste-skill",
+    "source_path": "skills/brandkit",
+    "license": "MIT",
+    "license_url": "https://github.com/Leonxlnx/taste-skill/blob/main/LICENSE",
+    "source_stars": 72466,
+    "tags": [
+      "品牌",
+      "Logo",
+      "设计"
+    ],
+    "ask_phrase": "帮我安装 brandkit 这个技能,它来自 https://github.com/Leonxlnx/taste-skill ,装好告诉我是干什么的",
+    "review": {
+      "stars": 4,
+      "summary": "品牌视觉生成规范完整(Logo 5 种推导法+九宫格品牌板);需配合图像生成工具,适合想做品牌但不会设计的用户。",
+      "level": "入门可用"
+    },
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "想给项目做 Logo",
+          "without": "自己不会设计,AI 直接生成又很随意,不像正经品牌。",
+          "with": "AI 按品牌策略推导 Logo 概念,给出完整的品牌视觉。"
+        },
+        {
+          "scene": "需要一整套品牌形象",
+          "without": "只有个 Logo,色彩/字体/应用全没有,不成体系。",
+          "with": "AI 输出品牌板:Logo、色彩系统、字体、应用场景全都有。"
+        },
+        {
+          "scene": "不知道品牌该怎么定调",
+          "without": "无从下手,方向模糊。",
+          "with": "AI 先分析品类和受众,再定视觉方向,有依据不瞎来。"
+        }
+      ],
+      "demo": {
+        "prompt": "给我的咖啡店做一套品牌视觉",
+        "steps": [
+          "AI:先确认品牌策略——目标客户、想传达的感觉(温暖?专业?)。",
+          "AI:推导 Logo 概念(字母+隐喻),生成品牌板九宫格。",
+          "AI:包含色彩系统、字体样本、杯子 mockup 等应用场景 ✅"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "imagegen-frontend-web",
+    "name": "imagegen-frontend-web",
+    "category": "设计/前端",
+    "summary": "让 AI 生成高级网站设计参考图,每个板块一张图,照着做就是高级感。",
+    "detail": "网站设计参考图的生成规范。以\"高端前端艺术总监\"视角生成设计图:每个页面板块独立一张横图,强制构图多样化(不全是左文右图)、背景自由、CTA 多样、统一调色板。产出可直接交给编码工具照着实现。适合想先\"看到\"网站长什么样、再动手做的用户。需配合图像生成工具使用。",
+    "author": "Leon (Leonxlnx)",
+    "source_url": "https://github.com/Leonxlnx/taste-skill",
+    "source_path": "skills/imagegen-frontend-web",
+    "license": "MIT",
+    "license_url": "https://github.com/Leonxlnx/taste-skill/blob/main/LICENSE",
+    "source_stars": 72466,
+    "tags": [
+      "设计",
+      "参考图",
+      "前端"
+    ],
+    "ask_phrase": "帮我安装 imagegen-frontend-web 这个技能,它来自 https://github.com/Leonxlnx/taste-skill ,装好告诉我是干什么的",
+    "review": {
+      "stars": 5,
+      "summary": "设计参考图生成规范详尽(每板块一图+构图多样化+统一调色),产出高级感强;需配合图像生成工具。",
+      "level": "入门可用"
+    },
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "想做网站但不知道长啥样",
+          "without": "只能让 AI 直接写代码,做出来才知道好不好看。",
+          "with": "AI 先生成设计参考图,你先\"看到\"效果,满意再实现。"
+        },
+        {
+          "scene": "AI 生成的页面很平庸",
+          "without": "千篇一律的左文右图、默认配色。",
+          "with": "强制构图多样化、背景自由、CTA 多样,摆脱模板感。"
+        },
+        {
+          "scene": "多个板块风格不统一",
+          "without": "每块各搞各的,整体很乱。",
+          "with": "全站锁定统一调色板,整体协调。"
+        }
+      ],
+      "demo": {
+        "prompt": "帮我设计一个咖啡品牌网站",
+        "steps": [
+          "AI:作为艺术总监,规划页面结构——首页、产品、关于、门店。",
+          "AI:每个板块生成一张独立设计图,构图各不相同。",
+          "AI:全站统一暖色调色板,整体协调高级 ✅"
+        ]
+      }
+    }
   }
 ]

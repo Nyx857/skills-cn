@@ -1,6 +1,6 @@
 # 技能库
 
-共收录 **15** 个精选技能(持续扩充中)。全部为 MIT 等宽松许可证,可放心安装。点进任意技能,复制一句话就能装。
+共收录 **17** 个精选技能(持续扩充中)。全部为 MIT 等宽松许可证,可放心安装。点进任意技能,复制一句话就能装。
 
 ## 开发流程
 
@@ -99,6 +99,14 @@
 <a href="./minimalist-skill" class="skill-card">
   <span class="skill-card-head"><span class="skill-card-name">minimalist-skill</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
   <span class="skill-card-summary">强制"高级极简编辑风" UI:具体色值、字体、间距,照着做就高级。</span>
+</a>
+<a href="./brandkit" class="skill-card">
+  <span class="skill-card-head"><span class="skill-card-name">brandkit</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
+  <span class="skill-card-summary">让 AI 帮你生成品牌视觉:Logo 概念、色彩系统、字体样本,一套品牌板搞定。</span>
+</a>
+<a href="./imagegen-frontend-web" class="skill-card">
+  <span class="skill-card-head"><span class="skill-card-name">imagegen-frontend-web</span><span class="skill-card-stars" title="实测星级">★★★★★</span></span>
+  <span class="skill-card-summary">让 AI 生成高级网站设计参考图,每个板块一张图,照着做就是高级感。</span>
 </a>
 </div>
 
