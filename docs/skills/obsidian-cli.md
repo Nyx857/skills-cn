@@ -56,7 +56,7 @@ next:
   <div class="demo-box">
     <h4>装好后,AI 会这样帮你干活</h4>
     <div class="demo-chat">
-      <div class="demo-step note"><span class="demo-prompt">你:帮我找所有关于"减肥"的笔记</span></div>
+      <div class="demo-step note"><span class="demo-prompt">你:帮我找所有关于&quot;减肥&quot;的笔记</span></div>
     <div class="demo-step ai">AI:用命令行搜索你的笔记库……找到 12 篇相关笔记。</div>
     <div class="demo-step ai">AI:我把标题和日期列给你,要整理成一份清单吗?</div>
     </div>

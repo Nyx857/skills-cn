@@ -38,7 +38,7 @@ next:
     <tbody>
   <tr>
     <td class="cmp-scene">AI 写完功能</td>
-    <td class="cmp-without">说"能用了"就交差,改坏了你自己都不知道。</td>
+    <td class="cmp-without">说&quot;能用了&quot;就交差,改坏了你自己都不知道。</td>
     <td class="cmp-with">先有测试把关:改坏了立刻报错,不会悄悄出错。</td>
   </tr>
   <tr>
@@ -57,7 +57,7 @@ next:
     <h4>装好后,AI 会这样帮你干活</h4>
     <div class="demo-chat">
       <div class="demo-step note"><span class="demo-prompt">你:帮我写一个计算器功能</span></div>
-    <div class="demo-step ai">AI:先写测试——"1+1 必须等于 2""5×3 必须等于 15"。</div>
+    <div class="demo-step ai">AI:先写测试——&quot;1+1 必须等于 2&quot;&quot;5×3 必须等于 15&quot;。</div>
     <div class="demo-step ai">AI:再写计算逻辑,直到所有测试通过。</div>
     <div class="demo-step ai">AI:全部通过 ✅ 以后改任何地方,测试都会帮你兜底。</div>
     </div>

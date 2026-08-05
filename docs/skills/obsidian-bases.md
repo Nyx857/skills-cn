@@ -38,7 +38,7 @@ next:
     <tbody>
   <tr>
     <td class="cmp-scene">笔记多了想汇总</td>
-    <td class="cmp-without">只能一篇篇翻,想看"哪些读完、哪些没读"很难。</td>
+    <td class="cmp-without">只能一篇篇翻,想看&quot;哪些读完、哪些没读&quot;很难。</td>
     <td class="cmp-with">AI 把笔记做成表格视图,筛选排序一目了然。</td>
   </tr>
   <tr>
@@ -57,8 +57,8 @@ next:
     <h4>装好后,AI 会这样帮你干活</h4>
     <div class="demo-chat">
       <div class="demo-step note"><span class="demo-prompt">你:把我的读书笔记变成表格</span></div>
-    <div class="demo-step ai">AI:建一个"读书笔记"Base:书名 | 作者 | 评分 | 状态。</div>
-    <div class="demo-step ai">AI:把现有笔记填进去,没读的标记为"待读"。</div>
+    <div class="demo-step ai">AI:建一个&quot;读书笔记&quot;Base:书名 | 作者 | 评分 | 状态。</div>
+    <div class="demo-step ai">AI:把现有笔记填进去,没读的标记为&quot;待读&quot;。</div>
     <div class="demo-step ai">AI:好了,现在能按状态筛选、按评分排序了 ✅</div>
     </div>
   </div>

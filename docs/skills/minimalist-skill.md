@@ -38,7 +38,7 @@ next:
     <tbody>
   <tr>
     <td class="cmp-scene">想要简洁高级的页面</td>
-    <td class="cmp-without">AI 默认给花哨的渐变、重阴影,不够"高级"。</td>
+    <td class="cmp-without">AI 默认给花哨的渐变、重阴影,不够&quot;高级&quot;。</td>
     <td class="cmp-with">AI 按极简规范:暖白底、细边框、克制动效,干净利落。</td>
   </tr>
   <tr>

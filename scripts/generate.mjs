@@ -13,7 +13,7 @@ const outDir = join(root, 'docs', 'skills')
 mkdirSync(outDir, { recursive: true })
 
 function esc(s) {
-  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;')
 }
 
 // 详情页的"给 AI 的一句话"安装区
@@ -237,6 +237,21 @@ mkdirSync(agentOutDir, { recursive: true })
 
 // 单个 agent 详情页(复用 renderPage 思路,但用 agents 数据)
 function renderAgentPage(a) {
+  // 复制角色全文按钮 + 折叠全文(粘贴给任意 AI 用)
+  // 注意:全文含换行/引号,不能放 data-copy 属性,放 <pre> 里由 JS 读取
+  const fullTextBlock = a.full_text
+    ? `<div class="ask-box">
+  <h4>📋 角色全文(复制粘贴给任意 AI)</h4>
+  <p>把下面的内容完整复制,粘贴到任何 AI 对话框(ChatGPT、DeepSeek、豆包等),AI 就会变成"${a.name}"。</p>
+  <button class="copy-btn big agent-copy-btn">复制角色全文</button>
+  <details>
+    <summary>查看全文(点击展开)</summary>
+    <pre class="agent-fulltext">${esc(a.full_text)}</pre>
+  </details>
+</div>
+
+`
+    : ''
   return `---
 prev: false
 next: false
@@ -249,6 +264,8 @@ next: false
 </div>
 
 ${a.detail}
+
+${fullTextBlock}
 
 ${renderReview(a)}
 

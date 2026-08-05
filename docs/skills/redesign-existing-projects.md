@@ -38,7 +38,7 @@ next:
     <tbody>
   <tr>
     <td class="cmp-scene">AI 做出的页面</td>
-    <td class="cmp-without">千篇一律:Inter 字体、三卡布局、紫蓝渐变,一股"AI 味"。</td>
+    <td class="cmp-without">千篇一律:Inter 字体、三卡布局、紫蓝渐变,一股&quot;AI 味&quot;。</td>
     <td class="cmp-with">高级质感:有性格的字体、打破对称的布局、克制的配色。</td>
   </tr>
   <tr>
@@ -49,7 +49,7 @@ next:
   <tr>
     <td class="cmp-scene">追求设计品质</td>
     <td class="cmp-without">只能靠你自己懂设计,不然说不出哪里不好。</td>
-    <td class="cmp-with">AI 按专业清单逐项检查,把"说不出的丑"变成可修复的问题。</td>
+    <td class="cmp-with">AI 按专业清单逐项检查,把&quot;说不出的丑&quot;变成可修复的问题。</td>
   </tr>
     </tbody>
   </table>

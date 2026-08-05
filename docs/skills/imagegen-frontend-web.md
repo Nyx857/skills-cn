@@ -37,7 +37,7 @@ next: false
   <tr>
     <td class="cmp-scene">想做网站但不知道长啥样</td>
     <td class="cmp-without">只能让 AI 直接写代码,做出来才知道好不好看。</td>
-    <td class="cmp-with">AI 先生成设计参考图,你先"看到"效果,满意再实现。</td>
+    <td class="cmp-with">AI 先生成设计参考图,你先&quot;看到&quot;效果,满意再实现。</td>
   </tr>
   <tr>
     <td class="cmp-scene">AI 生成的页面很平庸</td>

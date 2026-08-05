@@ -39,6 +39,18 @@ export default {
       document.addEventListener('click', (e) => {
         const btn = e.target.closest('.copy-btn')
         if (!btn) return
+        // 专家角色全文:从同区块的 .agent-fulltext 读取
+        if (btn.classList.contains('agent-copy-btn')) {
+          const pre = btn.closest('.ask-box')?.querySelector('.agent-fulltext')
+          if (pre) {
+            navigator.clipboard.writeText(pre.textContent.trim()).then(() => {
+              const old = btn.textContent
+              btn.textContent = '已复制 ✓'
+              setTimeout(() => (btn.textContent = old), 1500)
+            })
+          }
+          return
+        }
         const text = btn.dataset.copy || btn.parentElement.querySelector('.install-cmd')?.innerText
         if (!text) return
         navigator.clipboard.writeText(text).then(() => {

@@ -19,7 +19,7 @@ next:
 <div class="review-box">
   <h3>🔍 实测报告</h3>
   <div class="review-stars">★★★★☆ <span class="review-stars-num">4/5</span> <span class="rv-level">入门可用</span></div>
-  <p class="review-summary">纯提示词行为约束,无外部依赖;治"AI 写一半省略"有效,适合生成完整代码/文档。</p>
+  <p class="review-summary">纯提示词行为约束,无外部依赖;治&quot;AI 写一半省略&quot;有效,适合生成完整代码/文档。</p>
   <p class="review-note">本报告由自动化实测生成:读取技能完整内容,按描述验证可执行性与依赖。</p>
 </div>
 
@@ -38,13 +38,13 @@ next:
     <tbody>
   <tr>
     <td class="cmp-scene">让 AI 写长代码</td>
-    <td class="cmp-without">AI 写一半就"// 其余同理",你还要追着让它补全。</td>
+    <td class="cmp-without">AI 写一半就&quot;// 其余同理&quot;,你还要追着让它补全。</td>
     <td class="cmp-with">AI 强制完整输出,不省略不占位,一次给全。</td>
   </tr>
   <tr>
     <td class="cmp-scene">接近长度上限</td>
     <td class="cmp-without">AI 直接截断,后半部分丢失。</td>
-    <td class="cmp-with">AI 用断点标记"已完成 X/Y",你说继续就接着写。</td>
+    <td class="cmp-with">AI 用断点标记&quot;已完成 X/Y&quot;,你说继续就接着写。</td>
   </tr>
   <tr>
     <td class="cmp-scene">检查交付完整性</td>

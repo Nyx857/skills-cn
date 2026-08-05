@@ -580,6 +580,30 @@ body:not(.js-fade-enabled) .fade-in {
   .cmp-scene { white-space: normal; }
 }
 
+/* 专家角色全文展示 */
+.agent-fulltext {
+  white-space: pre-wrap;
+  word-break: break-all;
+  max-height: 400px;
+  overflow-y: auto;
+  font-size: .82rem;
+  line-height: 1.7;
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: .9rem 1rem;
+  margin: .6rem 0 0;
+}
+.ask-box h4 {
+  margin: 0 0 .5rem;
+  font-size: .95rem;
+}
+.ask-box p {
+  margin: 0 0 .8rem;
+  font-size: .88rem;
+  color: var(--vp-c-text-2);
+}
+
 /* 技能详情页徽章 */
 .skill-meta {
   display: flex;

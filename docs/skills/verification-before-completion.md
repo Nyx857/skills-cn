@@ -37,13 +37,13 @@ next:
     </thead>
     <tbody>
   <tr>
-    <td class="cmp-scene">AI 说"做完了"</td>
+    <td class="cmp-scene">AI 说&quot;做完了&quot;</td>
     <td class="cmp-without">它凭感觉觉得做好了,实际可能没验证过。</td>
     <td class="cmp-with">完成前必须真的跑一遍、确认能用,拿证据说话。</td>
   </tr>
   <tr>
     <td class="cmp-scene">交付前检查</td>
-    <td class="cmp-without">靠 AI 自己说"应该没问题",心里没底。</td>
+    <td class="cmp-without">靠 AI 自己说&quot;应该没问题&quot;,心里没底。</td>
     <td class="cmp-with">每个环节都有验证记录,你可以直接相信。</td>
   </tr>
   <tr>
