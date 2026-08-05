@@ -2,9 +2,7 @@
 prev:
   text: "<span class=\"sk-name\">brandkit</span><span class=\"sk-desc\">让 AI 帮你生成品牌视觉:Logo 概念、色彩系统、字体样本,一套品牌板搞定。</span>"
   link: "/skills/brandkit"
-next:
-  text: "<span class=\"sk-name\">小红书运营专家</span><span class=\"sk-desc\">让 AI 扮演小红书运营高手:写笔记、追趋势、做封面、涨收藏。</span>"
-  link: "/skills/xiaohongshu-operator"
+next: false
 ---
 # imagegen-frontend-web
 

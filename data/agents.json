@@ -1,0 +1,314 @@
+[
+  {
+    "slug": "xiaohongshu-operator",
+    "name": "小红书运营专家",
+    "category": "自媒体运营",
+    "summary": "让 AI 扮演小红书运营高手:写笔记、追趋势、做封面、涨收藏。",
+    "detail": "一个精通小红书平台调性的专家角色。AI 扮演小红书运营操盘手,擅长生活方式内容创作、趋势捕捉、审美叙事,能帮你从选题、文案到封面、发布策略全流程产出笔记内容。适合想在小红书做账号、发笔记但不懂运营的用户。",
+    "author": "jnMetaCode",
+    "source_url": "https://github.com/jnMetaCode/agency-agents-zh",
+    "source_path": "marketing/marketing-xiaohongshu-specialist.md",
+    "license": "MIT",
+    "license_url": "https://github.com/jnMetaCode/agency-agents-zh/blob/main/LICENSE",
+    "source_stars": 18844,
+    "tags": [
+      "小红书",
+      "自媒体",
+      "运营"
+    ],
+    "ask_phrase": "帮我安装 小红书运营专家 这个技能,它来自 https://github.com/jnMetaCode/agency-agents-zh ,装好告诉我是干什么的",
+    "review": {
+      "stars": 4,
+      "summary": "完整的小红书运营人设:选题、文案、封面、发布策略都覆盖,直接让 AI 扮演即可用;内容偏营销向。",
+      "level": "入门可用"
+    },
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "想在小红书发笔记",
+          "without": "AI 写出来的笔记没调性,像广告,没人看。",
+          "with": "AI 按小红书平台调性写,懂趋势、懂审美,像真运营。"
+        },
+        {
+          "scene": "不知道发什么内容",
+          "without": "想半天没选题,断更。",
+          "with": "AI 帮你追趋势、找选题,内容源源不断。"
+        },
+        {
+          "scene": "发了没人收藏",
+          "without": "笔记沉底,不知道为什么。",
+          "with": "AI 懂收藏率逻辑,优化标题、封面、正文。"
+        }
+      ],
+      "demo": {
+        "prompt": "帮我想想今晚发什么小红书笔记",
+        "steps": [
+          "AI:先看近期平台趋势,结合你的账号定位给 3 个选题。",
+          "AI:推荐选题+写好笔记初稿,配封面文字建议。",
+          "AI:给出发布时间和标题优化建议 ✅"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "douyin-strategist",
+    "name": "抖音运营专家",
+    "category": "自媒体运营",
+    "summary": "让 AI 扮演抖音运营高手:懂算法、懂爆款、懂完播率。",
+    "detail": "精通抖音平台算法的运营专家角色。AI 扮演抖音运营操盘手,懂短视频爆款逻辑、完播率优化、流量池机制,能帮你做账号定位、选题策划、脚本创作和数据分析。适合想运营抖音账号的用户。",
+    "author": "jnMetaCode",
+    "source_url": "https://github.com/jnMetaCode/agency-agents-zh",
+    "source_path": "marketing/marketing-douyin-strategist.md",
+    "license": "MIT",
+    "license_url": "https://github.com/jnMetaCode/agency-agents-zh/blob/main/LICENSE",
+    "source_stars": 18844,
+    "tags": [
+      "抖音",
+      "短视频",
+      "运营"
+    ],
+    "ask_phrase": "帮我安装 抖音运营专家 这个技能,它来自 https://github.com/jnMetaCode/agency-agents-zh ,装好告诉我是干什么的",
+    "review": {
+      "stars": 4,
+      "summary": "抖音算法向运营人设:爆款逻辑、完播率、流量池全覆盖,直接扮演即用;适合短视频创作者。",
+      "level": "入门可用"
+    },
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "想做抖音账号",
+          "without": "不知道拍什么,乱发,没流量。",
+          "with": "AI 帮你定账号定位、选题方向,按爆款逻辑规划。"
+        },
+        {
+          "scene": "视频完播率低",
+          "without": "不知道为什么没人看完。",
+          "with": "AI 懂完播率优化:开头钩子、节奏、时长建议。"
+        },
+        {
+          "scene": "想复盘数据",
+          "without": "数据看不懂,不知道怎么改进。",
+          "with": "AI 分析数据给改进建议,持续优化。"
+        }
+      ],
+      "demo": {
+        "prompt": "帮我策划第一条抖音视频",
+        "steps": [
+          "AI:先定账号定位,分析目标人群想看什么。",
+          "AI:给 3 个选题,推荐 1 个,写脚本(含开头钩子)。",
+          "AI:给出拍摄和发布建议 ✅"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "bilibili-strategist",
+    "name": "B站运营专家",
+    "category": "自媒体运营",
+    "summary": "让 AI 扮演 B站 UP 主顾问:懂社区氛围、懂长视频、懂弹幕文化。",
+    "detail": "精通 B站社区文化的运营专家角色。AI 扮演 B站运营顾问,懂 UP 主成长路径、长视频内容结构、弹幕互动文化和粉丝运营,能帮你做选题、写稿、优化标题和封面。适合想在 B站做内容的用户。",
+    "author": "jnMetaCode",
+    "source_url": "https://github.com/jnMetaCode/agency-agents-zh",
+    "source_path": "marketing/marketing-bilibili-strategist.md",
+    "license": "MIT",
+    "license_url": "https://github.com/jnMetaCode/agency-agents-zh/blob/main/LICENSE",
+    "source_stars": 18844,
+    "tags": [
+      "B站",
+      "UP主",
+      "运营"
+    ],
+    "ask_phrase": "帮我安装 B站运营专家 这个技能,它来自 https://github.com/jnMetaCode/agency-agents-zh ,装好告诉我是干什么的",
+    "review": {
+      "stars": 4,
+      "summary": "B站社区向运营人设:UP 主成长、长视频结构、弹幕文化都有,直接扮演即用;适合 B站长视频创作者。",
+      "level": "入门可用"
+    },
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "想做 B站视频",
+          "without": "不懂社区调性,内容没人看。",
+          "with": "AI 懂 B站氛围,选题和表达贴合 UP 主风格。"
+        },
+        {
+          "scene": "视频标题没吸引力",
+          "without": "标题平平,点击率低。",
+          "with": "AI 优化标题和封面,提高点击。"
+        },
+        {
+          "scene": "想和粉丝互动",
+          "without": "不知道评论区怎么经营。",
+          "with": "AI 懂弹幕和粉丝文化,给互动建议。"
+        }
+      ],
+      "demo": {
+        "prompt": "帮我想个 B站视频选题",
+        "steps": [
+          "AI:结合你擅长的领域和 B站热门趋势,给 3 个选题。",
+          "AI:推荐 1 个,写视频大纲(开头、展开、结尾)。",
+          "AI:给标题和封面建议 ✅"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "wechat-operator",
+    "name": "微信公众号运营专家",
+    "category": "自媒体运营",
+    "summary": "让 AI 扮演公众号运营:懂选题、懂排版、懂涨粉。",
+    "detail": "精通微信公众号运营的专家角色。AI 扮演公众号运营操盘手,懂内容选题、排版规范、涨粉策略和私域引流,能帮你从选题、写作到排版、发布全流程产出。适合运营公众号的用户。",
+    "author": "jnMetaCode",
+    "source_url": "https://github.com/jnMetaCode/agency-agents-zh",
+    "source_path": "marketing/marketing-wechat-official-account.md",
+    "license": "MIT",
+    "license_url": "https://github.com/jnMetaCode/agency-agents-zh/blob/main/LICENSE",
+    "source_stars": 18844,
+    "tags": [
+      "微信公众号",
+      "内容",
+      "运营"
+    ],
+    "ask_phrase": "帮我安装 微信公众号运营专家 这个技能,它来自 https://github.com/jnMetaCode/agency-agents-zh ,装好告诉我是干什么的",
+    "review": {
+      "stars": 4,
+      "summary": "公众号运营全流程人设:选题、写作、排版、涨粉都有;适合公众号创作者。",
+      "level": "入门可用"
+    },
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "运营公众号",
+          "without": "不知道写什么、怎么写,更新频率低。",
+          "with": "AI 帮选题、写稿,保持稳定更新。"
+        },
+        {
+          "scene": "文章阅读量低",
+          "without": "写了没人看,找不到原因。",
+          "with": "AI 懂公众号调性,优化标题和内容。"
+        },
+        {
+          "scene": "想涨粉",
+          "without": "只会发内容,不懂运营策略。",
+          "with": "AI 给涨粉和引流建议,做私域。"
+        }
+      ],
+      "demo": {
+        "prompt": "帮我写一篇公众号推文",
+        "steps": [
+          "AI:先定选题——结合你账号定位和热点,给 2 个选项。",
+          "AI:写正文,开头抓人、结构清晰、结尾引导关注。",
+          "AI:给标题 3 个方案和排版建议 ✅"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "zhihu-strategist",
+    "name": "知乎运营专家",
+    "category": "自媒体运营",
+    "summary": "让 AI 扮演知乎答主:懂专业调性、懂高赞回答、懂盐值。",
+    "detail": "精通知乎平台的运营专家角色。AI 扮演知乎运营顾问,懂高质量回答的结构、专业人设经营、盐值提升和选题捕捉,能帮你写出专业、有深度的知乎回答和文章。适合在知乎做内容、想提升影响力的用户。",
+    "author": "jnMetaCode",
+    "source_url": "https://github.com/jnMetaCode/agency-agents-zh",
+    "source_path": "marketing/marketing-zhihu-strategist.md",
+    "license": "MIT",
+    "license_url": "https://github.com/jnMetaCode/agency-agents-zh/blob/main/LICENSE",
+    "source_stars": 18844,
+    "tags": [
+      "知乎",
+      "问答",
+      "运营"
+    ],
+    "ask_phrase": "帮我安装 知乎运营专家 这个技能,它来自 https://github.com/jnMetaCode/agency-agents-zh ,装好告诉我是干什么的",
+    "review": {
+      "stars": 4,
+      "summary": "知乎向运营人设:高赞回答结构、专业调性、盐值经营都有;适合知乎内容创作者。",
+      "level": "入门可用"
+    },
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "想在知乎回答涨粉",
+          "without": "回答没人赞,没存在感。",
+          "with": "AI 懂高赞回答结构,写得更专业、更抓人。"
+        },
+        {
+          "scene": "不知道怎么选题",
+          "without": "不知道回答什么问题。",
+          "with": "AI 帮找高价值问题,结合你专业给建议。"
+        },
+        {
+          "scene": "想经营专业人设",
+          "without": "回答东一榔头西一棒子。",
+          "with": "AI 帮你保持专业调性,积累信任。"
+        }
+      ],
+      "demo": {
+        "prompt": "帮我回答知乎问题:小白怎么学编程",
+        "steps": [
+          "AI:先分析问题,定回答结构——先给结论,再讲方法,最后给资源。",
+          "AI:写专业、有干货的回答,避免空洞。",
+          "AI:给排版建议(加粗、列表),提升可读性 ✅"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "cross-border-ecommerce",
+    "name": "跨境电商运营专家",
+    "category": "自媒体运营",
+    "summary": "让 AI 扮演跨境电商运营:懂选品、懂平台、懂海外用户。",
+    "detail": "精通跨境电商的运营专家角色。AI 扮演跨境电商操盘手,懂亚马逊/TikTok Shop 等平台玩法、选品逻辑、海外用户习惯和物流售后,能帮你做选品分析、listing 文案、运营策略。适合做跨境电商的用户。",
+    "author": "jnMetaCode",
+    "source_url": "https://github.com/jnMetaCode/agency-agents-zh",
+    "source_path": "marketing/marketing-cross-border-ecommerce.md",
+    "license": "MIT",
+    "license_url": "https://github.com/jnMetaCode/agency-agents-zh/blob/main/LICENSE",
+    "source_stars": 18844,
+    "tags": [
+      "跨境电商",
+      "选品",
+      "运营"
+    ],
+    "ask_phrase": "帮我安装 跨境电商运营专家 这个技能,它来自 https://github.com/jnMetaCode/agency-agents-zh ,装好告诉我是干什么的",
+    "review": {
+      "stars": 4,
+      "summary": "跨境电商运营人设:选品、listing、平台玩法都有;适合做跨境生意的用户。",
+      "level": "入门可用"
+    },
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "想做跨境电商",
+          "without": "不知道卖什么、怎么开始。",
+          "with": "AI 帮分析选品方向、市场机会。"
+        },
+        {
+          "scene": "写产品 listing",
+          "without": "文案不吸引海外买家,转化低。",
+          "with": "AI 懂海外用户习惯,写地道 listing。"
+        },
+        {
+          "scene": "运营店铺",
+          "without": "平台规则不懂,瞎操作。",
+          "with": "AI 给运营策略、避坑建议。"
+        }
+      ],
+      "demo": {
+        "prompt": "帮我分析跨境电商选品",
+        "steps": [
+          "AI:先了解你的资源和目标市场,筛品类方向。",
+          "AI:分析 3 个候选品类的竞争度和需求。",
+          "AI:给出推荐和理由,以及入场建议 ✅"
+        ]
+      }
+    }
+  }
+]

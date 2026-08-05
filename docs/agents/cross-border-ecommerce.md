@@ -1,25 +1,20 @@
 ---
-prev:
-  text: "<span class=\"sk-name\">B站运营专家</span><span class=\"sk-desc\">让 AI 扮演 B站 UP 主顾问:懂社区氛围、懂长视频、懂弹幕文化。</span>"
-  link: "/skills/bilibili-strategist"
-next:
-  text: "<span class=\"sk-name\">知乎运营专家</span><span class=\"sk-desc\">让 AI 扮演知乎答主:懂专业调性、懂高赞回答、懂盐值。</span>"
-  link: "/skills/zhihu-strategist"
+prev: false
+next: false
 ---
-# 微信公众号运营专家
+# 跨境电商运营专家
 
 <div class="skill-meta">
-  <span class="badge license">MIT</span>
   <span class="badge category">自媒体运营</span>
   <span class="source">来源: <a href="https://github.com/jnMetaCode/agency-agents-zh" target="_blank" rel="noopener">https://github.com/jnMetaCode/agency-agents-zh</a></span>
 </div>
 
-精通微信公众号运营的专家角色。AI 扮演公众号运营操盘手,懂内容选题、排版规范、涨粉策略和私域引流,能帮你从选题、写作到排版、发布全流程产出。适合运营公众号的用户。
+精通跨境电商的运营专家角色。AI 扮演跨境电商操盘手,懂亚马逊/TikTok Shop 等平台玩法、选品逻辑、海外用户习惯和物流售后,能帮你做选品分析、listing 文案、运营策略。适合做跨境电商的用户。
 
 <div class="review-box">
   <h3>🔍 实测报告</h3>
   <div class="review-stars">★★★★☆ <span class="review-stars-num">4/5</span> <span class="rv-level">入门可用</span></div>
-  <p class="review-summary">公众号运营全流程人设:选题、写作、排版、涨粉都有;适合公众号创作者。</p>
+  <p class="review-summary">跨境电商运营人设:选品、listing、平台玩法都有;适合做跨境生意的用户。</p>
   <p class="review-note">本报告由自动化实测生成:读取技能完整内容,按描述验证可执行性与依赖。</p>
 </div>
 
@@ -37,29 +32,29 @@ next:
     </thead>
     <tbody>
   <tr>
-    <td class="cmp-scene">运营公众号</td>
-    <td class="cmp-without">不知道写什么、怎么写,更新频率低。</td>
-    <td class="cmp-with">AI 帮选题、写稿,保持稳定更新。</td>
+    <td class="cmp-scene">想做跨境电商</td>
+    <td class="cmp-without">不知道卖什么、怎么开始。</td>
+    <td class="cmp-with">AI 帮分析选品方向、市场机会。</td>
   </tr>
   <tr>
-    <td class="cmp-scene">文章阅读量低</td>
-    <td class="cmp-without">写了没人看,找不到原因。</td>
-    <td class="cmp-with">AI 懂公众号调性,优化标题和内容。</td>
+    <td class="cmp-scene">写产品 listing</td>
+    <td class="cmp-without">文案不吸引海外买家,转化低。</td>
+    <td class="cmp-with">AI 懂海外用户习惯,写地道 listing。</td>
   </tr>
   <tr>
-    <td class="cmp-scene">想涨粉</td>
-    <td class="cmp-without">只会发内容,不懂运营策略。</td>
-    <td class="cmp-with">AI 给涨粉和引流建议,做私域。</td>
+    <td class="cmp-scene">运营店铺</td>
+    <td class="cmp-without">平台规则不懂,瞎操作。</td>
+    <td class="cmp-with">AI 给运营策略、避坑建议。</td>
   </tr>
     </tbody>
   </table>
   <div class="demo-box">
     <h4>装好后,AI 会这样帮你干活</h4>
     <div class="demo-chat">
-      <div class="demo-step note"><span class="demo-prompt">你:帮我写一篇公众号推文</span></div>
-    <div class="demo-step ai">AI:先定选题——结合你账号定位和热点,给 2 个选项。</div>
-    <div class="demo-step ai">AI:写正文,开头抓人、结构清晰、结尾引导关注。</div>
-    <div class="demo-step ai">AI:给标题 3 个方案和排版建议 ✅</div>
+      <div class="demo-step note"><span class="demo-prompt">你:帮我分析跨境电商选品</span></div>
+    <div class="demo-step ai">AI:先了解你的资源和目标市场,筛品类方向。</div>
+    <div class="demo-step ai">AI:分析 3 个候选品类的竞争度和需求。</div>
+    <div class="demo-step ai">AI:给出推荐和理由,以及入场建议 ✅</div>
     </div>
   </div>
 </div>
@@ -71,8 +66,8 @@ next:
 **不用敲任何命令。** 复制下面这句话,发给你的 AI 助手(Claude Code、Reasonix、Cursor、Codex 等都行),它会自己帮你装好:
 
 <div class="ask-box">
-  <pre class="ask-phrase">帮我安装 微信公众号运营专家 这个技能,它来自 https://github.com/jnMetaCode/agency-agents-zh ,装好告诉我是干什么的</pre>
-  <button class="copy-btn big" data-copy="帮我安装 微信公众号运营专家 这个技能,它来自 https://github.com/jnMetaCode/agency-agents-zh ,装好告诉我是干什么的">复制这句话</button>
+  <pre class="ask-phrase">帮我安装 跨境电商运营专家 这个技能,它来自 https://github.com/jnMetaCode/agency-agents-zh ,装好告诉我是干什么的</pre>
+  <button class="copy-btn big" data-copy="帮我安装 跨境电商运营专家 这个技能,它来自 https://github.com/jnMetaCode/agency-agents-zh ,装好告诉我是干什么的">复制这句话</button>
 </div>
 
 > 你的 AI 助手可能还会问你放在哪、怎么用,照常回答它就行——就像平时让它干活一样,不用懂技术细节。
@@ -118,7 +113,7 @@ next:
     <li>原作者:jnMetaCode</li>
     <li>原仓库:<a href="https://github.com/jnMetaCode/agency-agents-zh" target="_blank" rel="noopener">https://github.com/jnMetaCode/agency-agents-zh</a></li>
     <li>许可证:<a href="https://github.com/jnMetaCode/agency-agents-zh/blob/main/LICENSE" target="_blank" rel="noopener">MIT</a>(允许复制、修改、翻译、再分发,需保留版权声明)</li>
-    <li>仓库路径:marketing/marketing-wechat-official-account.md</li>
+    <li>仓库路径:marketing/marketing-cross-border-ecommerce.md</li>
   </ul>
 </div>
 

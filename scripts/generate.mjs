@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = join(__dirname, '..')
 const skills = JSON.parse(readFileSync(join(root, 'data/skills.json'), 'utf8'))
+const agents = JSON.parse(readFileSync(join(root, 'data/agents.json'), 'utf8'))
 
 const outDir = join(root, 'docs', 'skills')
 mkdirSync(outDir, { recursive: true })
@@ -184,7 +185,7 @@ for (let i = 0; i < skills.length; i++) {
   const s = skills[i]
   // Prev/Next 按"分类分组后的顺序"(与侧边栏一致),避免跨分类时 VitePress 取错
   // 分组顺序:categoryOrder 数组定义,组内按 data 顺序
-  const categoryOrder = ['开发流程', '调试', '协作', '质量', '笔记知识库', '可视化', '工具', '设计/前端', '自媒体运营']
+  const categoryOrder = ['开发流程', '调试', '协作', '质量', '笔记知识库', '可视化', '工具', '设计/前端']
   const grouped = []
   for (const cat of categoryOrder) {
     grouped.push(...skills.filter(x => x.category === cat))
@@ -201,7 +202,7 @@ for (let i = 0; i < skills.length; i++) {
 }
 
 // 生成 skills 列表页(供 /skills/ 导航)——卡片式布局,按分类分组
-const categoryOrder = ['开发流程', '调试', '协作', '质量', '笔记知识库', '可视化', '工具', '设计/前端', '自媒体运营']
+const categoryOrder = ['开发流程', '调试', '协作', '质量', '笔记知识库', '可视化', '工具', '设计/前端']
 const byCat = {}
 for (const s of skills) {
   ;(byCat[s.category] ||= []).push(s)
@@ -229,3 +230,57 @@ ${sections}
 writeFileSync(join(outDir, 'index.md'), listPage, 'utf8')
 console.log('generated: skills/index.md')
 console.log(`total: ${skills.length} skills`)
+
+// ===== 专家角色(agents)生成 =====
+const agentOutDir = join(root, 'docs', 'agents')
+mkdirSync(agentOutDir, { recursive: true })
+
+// 单个 agent 详情页(复用 renderPage 思路,但用 agents 数据)
+function renderAgentPage(a) {
+  return `---
+prev: false
+next: false
+---
+# ${a.name}
+
+<div class="skill-meta">
+  <span class="badge category">${a.category}</span>
+  <span class="source">来源: <a href="${a.source_url}" target="_blank" rel="noopener">${a.source_url}</a></span>
+</div>
+
+${a.detail}
+
+${renderReview(a)}
+
+${renderCompare(a)}
+
+${renderInstall(a)}
+`
+}
+
+for (const a of agents) {
+  writeFileSync(join(agentOutDir, `${a.slug}.md`), renderAgentPage(a), 'utf8')
+  console.log(`generated: agents/${a.slug}.md`)
+}
+
+// 专家角色列表页
+const agentCards = agents.map(a => `<a href="./${a.slug}" class="skill-card">
+  <span class="skill-card-head"><span class="skill-card-name">${a.name}</span><span class="skill-card-stars" title="实测星级">${stars(a)}</span></span>
+  <span class="skill-card-summary">${a.summary}</span>
+</a>`).join('\n')
+
+const agentListPage = `# 专家角色
+
+让 AI **扮演**一个专业角色来帮你干活——不是"技能"(教 AI 会做某件事),而是**人设**(让 AI 自称并像一位专家那样思考和行动)。装上后,你的 AI 助手就能变身小红书运营、抖音操盘手等。
+
+<div class="skill-card-grid">
+${agentCards}
+</div>
+
+---
+> 想收录你的角色?见 [关于本站](/about)。
+`
+writeFileSync(join(agentOutDir, 'index.md'), agentListPage, 'utf8')
+console.log('generated: agents/index.md')
+console.log(`total: ${agents.length} agents`)
+

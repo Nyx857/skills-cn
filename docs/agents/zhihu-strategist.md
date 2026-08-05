@@ -1,15 +1,10 @@
 ---
-prev:
-  text: "<span class=\"sk-name\">微信公众号运营专家</span><span class=\"sk-desc\">让 AI 扮演公众号运营:懂选题、懂排版、懂涨粉。</span>"
-  link: "/skills/wechat-operator"
-next:
-  text: "<span class=\"sk-name\">跨境电商运营专家</span><span class=\"sk-desc\">让 AI 扮演跨境电商运营:懂选品、懂平台、懂海外用户。</span>"
-  link: "/skills/cross-border-ecommerce"
+prev: false
+next: false
 ---
 # 知乎运营专家
 
 <div class="skill-meta">
-  <span class="badge license">MIT</span>
   <span class="badge category">自媒体运营</span>
   <span class="source">来源: <a href="https://github.com/jnMetaCode/agency-agents-zh" target="_blank" rel="noopener">https://github.com/jnMetaCode/agency-agents-zh</a></span>
 </div>

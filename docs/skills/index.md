@@ -1,6 +1,6 @@
 # 技能库
 
-共收录 **23** 个精选技能(持续扩充中)。全部为 MIT 等宽松许可证,可放心安装。点进任意技能,复制一句话就能装。
+共收录 **17** 个精选技能(持续扩充中)。全部为 MIT 等宽松许可证,可放心安装。点进任意技能,复制一句话就能装。
 
 ## 开发流程
 
@@ -107,35 +107,6 @@
 <a href="./imagegen-frontend-web" class="skill-card">
   <span class="skill-card-head"><span class="skill-card-name">imagegen-frontend-web</span><span class="skill-card-stars" title="实测星级">★★★★★</span></span>
   <span class="skill-card-summary">让 AI 生成高级网站设计参考图,每个板块一张图,照着做就是高级感。</span>
-</a>
-</div>
-
-## 自媒体运营
-
-<div class="skill-card-grid">
-<a href="./xiaohongshu-operator" class="skill-card">
-  <span class="skill-card-head"><span class="skill-card-name">小红书运营专家</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
-  <span class="skill-card-summary">让 AI 扮演小红书运营高手:写笔记、追趋势、做封面、涨收藏。</span>
-</a>
-<a href="./douyin-strategist" class="skill-card">
-  <span class="skill-card-head"><span class="skill-card-name">抖音运营专家</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
-  <span class="skill-card-summary">让 AI 扮演抖音运营高手:懂算法、懂爆款、懂完播率。</span>
-</a>
-<a href="./bilibili-strategist" class="skill-card">
-  <span class="skill-card-head"><span class="skill-card-name">B站运营专家</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
-  <span class="skill-card-summary">让 AI 扮演 B站 UP 主顾问:懂社区氛围、懂长视频、懂弹幕文化。</span>
-</a>
-<a href="./wechat-operator" class="skill-card">
-  <span class="skill-card-head"><span class="skill-card-name">微信公众号运营专家</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
-  <span class="skill-card-summary">让 AI 扮演公众号运营:懂选题、懂排版、懂涨粉。</span>
-</a>
-<a href="./zhihu-strategist" class="skill-card">
-  <span class="skill-card-head"><span class="skill-card-name">知乎运营专家</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
-  <span class="skill-card-summary">让 AI 扮演知乎答主:懂专业调性、懂高赞回答、懂盐值。</span>
-</a>
-<a href="./cross-border-ecommerce" class="skill-card">
-  <span class="skill-card-head"><span class="skill-card-name">跨境电商运营专家</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
-  <span class="skill-card-summary">让 AI 扮演跨境电商运营:懂选品、懂平台、懂海外用户。</span>
 </a>
 </div>
 

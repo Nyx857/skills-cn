@@ -5,10 +5,11 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const skills = JSON.parse(readFileSync(join(__dirname, '../../data/skills.json'), 'utf8'))
+const agents = JSON.parse(readFileSync(join(__dirname, '../../data/agents.json'), 'utf8'))
 
 // 分类的中文名称与顺序
 const categoryOrder = [
-  '开发流程', '调试', '协作', '质量', '笔记知识库', '可视化', '工具', '设计/前端', '自媒体运营'
+  '开发流程', '调试', '协作', '质量', '笔记知识库', '可视化', '工具', '设计/前端'
 ]
 
 // 侧边栏:按分类分组,每组标题可点击(跳到技能库页对应分类锚点);每项只显示技能名(简洁)
@@ -39,12 +40,20 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '技能库', link: '/skills/' },
+      { text: '专家角色', link: '/agents/' },
       { text: '关于本站', link: '/about' }
     ],
     sidebar: [
       {
         text: '技能库',
         items: skillSidebar
+      },
+      {
+        text: '专家角色',
+        items: [
+          { text: '全部专家角色', link: '/agents/' },
+          ...agents.map(a => ({ text: a.name, link: `/agents/${a.slug}` }))
+        ]
       }
     ],
     footer: {

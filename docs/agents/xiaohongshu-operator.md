@@ -1,15 +1,10 @@
 ---
-prev:
-  text: "<span class=\"sk-name\">imagegen-frontend-web</span><span class=\"sk-desc\">让 AI 生成高级网站设计参考图,每个板块一张图,照着做就是高级感。</span>"
-  link: "/skills/imagegen-frontend-web"
-next:
-  text: "<span class=\"sk-name\">抖音运营专家</span><span class=\"sk-desc\">让 AI 扮演抖音运营高手:懂算法、懂爆款、懂完播率。</span>"
-  link: "/skills/douyin-strategist"
+prev: false
+next: false
 ---
 # 小红书运营专家
 
 <div class="skill-meta">
-  <span class="badge license">MIT</span>
   <span class="badge category">自媒体运营</span>
   <span class="source">来源: <a href="https://github.com/jnMetaCode/agency-agents-zh" target="_blank" rel="noopener">https://github.com/jnMetaCode/agency-agents-zh</a></span>
 </div>
