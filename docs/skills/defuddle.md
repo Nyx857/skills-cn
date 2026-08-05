@@ -2,7 +2,9 @@
 prev:
   text: "<span class=\"sk-name\">json-canvas</span><span class=\"sk-desc\">让 AI 帮你画思维导图、流程图、架构图,画完直接能在白板软件里编辑。</span>"
   link: "/skills/json-canvas"
-next: false
+next:
+  text: "<span class=\"sk-name\">redesign-existing-projects</span><span class=\"sk-desc\">把现有网站从\"AI 味\"升级到高级质感:审计设计问题、逐个修复,不重写。</span>"
+  link: "/skills/redesign-existing-projects"
 ---
 # defuddle
 

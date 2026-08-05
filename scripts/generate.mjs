@@ -184,7 +184,7 @@ for (let i = 0; i < skills.length; i++) {
   const s = skills[i]
   // Prev/Next 按"分类分组后的顺序"(与侧边栏一致),避免跨分类时 VitePress 取错
   // 分组顺序:categoryOrder 数组定义,组内按 data 顺序
-  const categoryOrder = ['开发流程', '调试', '协作', '质量', '笔记知识库', '可视化', '工具']
+  const categoryOrder = ['开发流程', '调试', '协作', '质量', '笔记知识库', '可视化', '工具', '设计/前端']
   const grouped = []
   for (const cat of categoryOrder) {
     grouped.push(...skills.filter(x => x.category === cat))
@@ -201,7 +201,7 @@ for (let i = 0; i < skills.length; i++) {
 }
 
 // 生成 skills 列表页(供 /skills/ 导航)——卡片式布局,按分类分组
-const categoryOrder = ['开发流程', '调试', '协作', '质量', '笔记知识库', '可视化', '工具']
+const categoryOrder = ['开发流程', '调试', '协作', '质量', '笔记知识库', '可视化', '工具', '设计/前端']
 const byCat = {}
 for (const s of skills) {
   ;(byCat[s.category] ||= []).push(s)

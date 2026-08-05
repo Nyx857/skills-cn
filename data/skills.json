@@ -621,5 +621,163 @@
         ]
       }
     }
+  },
+  {
+    "slug": "redesign-existing-projects",
+    "name": "redesign-existing-projects",
+    "category": "设计/前端",
+    "summary": "把现有网站从\"AI 味\"升级到高级质感:审计设计问题、逐个修复,不重写。",
+    "detail": "针对已有网站或应用的设计升级流程。先扫描代码审计设计问题(字体、配色、布局、交互状态),再按优先级逐项修复,保留现有技术栈不重写。适用于任何想让 AI 产出页面摆脱\"千篇一律模板感\"的场景。",
+    "author": "Leon (Leonxlnx)",
+    "source_url": "https://github.com/Leonxlnx/taste-skill",
+    "source_path": "skills/redesign-skill",
+    "license": "MIT",
+    "license_url": "https://github.com/Leonxlnx/taste-skill/blob/main/LICENSE",
+    "source_stars": 72466,
+    "tags": [
+      "设计",
+      "前端",
+      "改版"
+    ],
+    "ask_phrase": "帮我安装 redesign-existing-projects 这个技能,它来自 https://github.com/Leonxlnx/taste-skill ,装好告诉我是干什么的",
+    "review": {
+      "stars": 5,
+      "summary": "审计+修复式设计升级,清单详尽(字体/配色/布局/交互/可访问性),纯提示词无外部依赖,对已有项目直接生效。",
+      "level": "进阶向"
+    },
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "AI 做出的页面",
+          "without": "千篇一律:Inter 字体、三卡布局、紫蓝渐变,一股\"AI 味\"。",
+          "with": "高级质感:有性格的字体、打破对称的布局、克制的配色。"
+        },
+        {
+          "scene": "想改现有网站",
+          "without": "AI 要么重写要么乱改,把好的也改坏了。",
+          "with": "先审计再按优先级小步修复,不破坏现有功能。"
+        },
+        {
+          "scene": "追求设计品质",
+          "without": "只能靠你自己懂设计,不然说不出哪里不好。",
+          "with": "AI 按专业清单逐项检查,把\"说不出的丑\"变成可修复的问题。"
+        }
+      ],
+      "demo": {
+        "prompt": "帮我把这个页面改得高级一点",
+        "steps": [
+          "AI:先扫描你的代码,诊断设计问题:字体、配色、布局、交互。",
+          "AI:发现 6 个问题——Inter 字体、卡片边框太 generic、缺 hover 状态。",
+          "AI:按优先级逐个修复:先换字体,再调配色,加交互反馈。",
+          "AI:改完逐项验证,功能没破坏,观感提升明显 ✅"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "output-skill",
+    "name": "output-skill",
+    "category": "设计/前端",
+    "summary": "强制 AI 完整输出代码,禁止\"写一半省略\"和占位符。",
+    "detail": "解决 AI 生成代码时偷懒截断的行为问题:禁止 \"// ...\"、\"其余同理\" 等省略套路,要求按请求逐项核对交付,接近长度上限时用断点标记等待续写。适用于任何需要 AI 完整产出代码、文档或长内容的场景。",
+    "author": "Leon (Leonxlnx)",
+    "source_url": "https://github.com/Leonxlnx/taste-skill",
+    "source_path": "skills/output-skill",
+    "license": "MIT",
+    "license_url": "https://github.com/Leonxlnx/taste-skill/blob/main/LICENSE",
+    "source_stars": 72466,
+    "tags": [
+      "输出",
+      "代码",
+      "效率"
+    ],
+    "ask_phrase": "帮我安装 output-skill 这个技能,它来自 https://github.com/Leonxlnx/taste-skill ,装好告诉我是干什么的",
+    "review": {
+      "stars": 4,
+      "summary": "纯提示词行为约束,无外部依赖;治\"AI 写一半省略\"有效,适合生成完整代码/文档。",
+      "level": "入门可用"
+    },
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "让 AI 写长代码",
+          "without": "AI 写一半就\"// 其余同理\",你还要追着让它补全。",
+          "with": "AI 强制完整输出,不省略不占位,一次给全。"
+        },
+        {
+          "scene": "接近长度上限",
+          "without": "AI 直接截断,后半部分丢失。",
+          "with": "AI 用断点标记\"已完成 X/Y\",你说继续就接着写。"
+        },
+        {
+          "scene": "检查交付完整性",
+          "without": "说不清给没给全,漏了也没发现。",
+          "with": "AI 按请求逐项核对,缺什么明说。"
+        }
+      ],
+      "demo": {
+        "prompt": "帮我写一个完整的登录功能代码",
+        "steps": [
+          "AI:好的,完整输出——HTML、CSS、JS 全部给全,不用省略号。",
+          "AI:代码较长,先给前半部分,标记 [PAUSED — 1 of 2]。",
+          "你:继续 → AI 接着输出后半部分,直到全部完成 ✅"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "minimalist-skill",
+    "name": "minimalist-skill",
+    "category": "设计/前端",
+    "summary": "强制\"高级极简编辑风\" UI:具体色值、字体、间距,照着做就高级。",
+    "detail": "极简风格 UI 的落地规范:给出具体的色值(暖骨白背景、深色主按钮)、字体家族、禁渐变禁重阴影、1px 细边框、8-12px 圆角、bento 网格等可直接照抄的参数。适用于想要干净高级、不花哨的页面设计。",
+    "author": "Leon (Leonxlnx)",
+    "source_url": "https://github.com/Leonxlnx/taste-skill",
+    "source_path": "skills/minimalist-skill",
+    "license": "MIT",
+    "license_url": "https://github.com/Leonxlnx/taste-skill/blob/main/LICENSE",
+    "source_stars": 72466,
+    "tags": [
+      "设计",
+      "极简",
+      "风格"
+    ],
+    "ask_phrase": "帮我安装 minimalist-skill 这个技能,它来自 https://github.com/Leonxlnx/taste-skill ,装好告诉我是干什么的",
+    "review": {
+      "stars": 4,
+      "summary": "参数化的极简风规范,色值/字体/间距都给了具体值,照抄即可;纯提示词无依赖。",
+      "level": "入门可用"
+    },
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "想要简洁高级的页面",
+          "without": "AI 默认给花哨的渐变、重阴影,不够\"高级\"。",
+          "with": "AI 按极简规范:暖白底、细边框、克制动效,干净利落。"
+        },
+        {
+          "scene": "不知道怎么描述风格",
+          "without": "你说不清要什么风格,AI 自由发挥容易跑偏。",
+          "with": "技能自带完整极简规范,AI 照着参数做就行。"
+        },
+        {
+          "scene": "配色和字体选择",
+          "without": "AI 用默认的,显得普通。",
+          "with": "给定色值和字体,一眼高级。"
+        }
+      ],
+      "demo": {
+        "prompt": "做一个极简风格的落地页",
+        "steps": [
+          "AI:按极简规范来——暖骨白背景 #F7F6F3,主按钮深色 #111。",
+          "AI:字体用 Outfit,1px 细边框,8-12px 圆角,bento 网格。",
+          "AI:禁渐变、禁重阴影,动效克制。",
+          "AI:完成,干净高级 ✅"
+        ]
+      }
+    }
   }
 ]

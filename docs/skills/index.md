@@ -1,6 +1,6 @@
 # 技能库
 
-共收录 **12** 个精选技能(持续扩充中)。全部为 MIT 等宽松许可证,可放心安装。点进任意技能,复制一句话就能装。
+共收录 **15** 个精选技能(持续扩充中)。全部为 MIT 等宽松许可证,可放心安装。点进任意技能,复制一句话就能装。
 
 ## 开发流程
 
@@ -82,6 +82,23 @@
 <a href="./defuddle" class="skill-card">
   <span class="skill-card-head"><span class="skill-card-name">defuddle</span><span class="skill-card-stars" title="实测星级">★★★☆☆</span></span>
   <span class="skill-card-summary">让 AI 把网页变成干净的纯文字,去掉广告和导航,更省流量。</span>
+</a>
+</div>
+
+## 设计/前端
+
+<div class="skill-card-grid">
+<a href="./redesign-existing-projects" class="skill-card">
+  <span class="skill-card-head"><span class="skill-card-name">redesign-existing-projects</span><span class="skill-card-stars" title="实测星级">★★★★★</span></span>
+  <span class="skill-card-summary">把现有网站从"AI 味"升级到高级质感:审计设计问题、逐个修复,不重写。</span>
+</a>
+<a href="./output-skill" class="skill-card">
+  <span class="skill-card-head"><span class="skill-card-name">output-skill</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
+  <span class="skill-card-summary">强制 AI 完整输出代码,禁止"写一半省略"和占位符。</span>
+</a>
+<a href="./minimalist-skill" class="skill-card">
+  <span class="skill-card-head"><span class="skill-card-name">minimalist-skill</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
+  <span class="skill-card-summary">强制"高级极简编辑风" UI:具体色值、字体、间距,照着做就高级。</span>
 </a>
 </div>
 

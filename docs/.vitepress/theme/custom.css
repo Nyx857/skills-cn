@@ -1,5 +1,12 @@
 /* Skills 中文技能库 自定义样式 */
 
+/* ===== 字体:替换 AI 默认 Inter,英文/数字用 Outfit(有性格),中文用系统苹方 ===== */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+
 /* ===== 翻页/侧边栏:skill 名小字 + 中文简介大字(两行) ===== */
 .sk-name {
   display: block;
@@ -131,18 +138,20 @@ body:not(.js-fade-enabled) .fade-in {
   margin: 1.5rem 0;
   align-items: stretch; /* 同一行卡片等高 */
 }
-.home-card {
+.home-card,
+.vp-doc a.home-card {
   display: flex;
   flex-direction: column;
   height: 100%; /* 撑满网格单元,确保同一行卡片等高 */
   min-height: 176px; /* 桌面端所有卡片统一最小高度 */
-  border: 1px solid var(--vp-c-divider);
+  border: none; /* 去边框:用背景+阴影表达层次(替代 generic 卡片边框) */
   border-radius: 14px;
   padding: 1.1rem 1.2rem;
   text-decoration: none !important;
   text-decoration-line: none !important;
-  transition: border-color .35s cubic-bezier(.22,1,.36,1), transform .35s cubic-bezier(.22,1,.36,1), box-shadow .35s cubic-bezier(.22,1,.36,1), background-color .35s cubic-bezier(.22,1,.36,1);
+  transition: transform .35s cubic-bezier(.22,1,.36,1), box-shadow .35s cubic-bezier(.22,1,.36,1), background-color .35s cubic-bezier(.22,1,.36,1);
   background: var(--vp-c-bg-soft);
+  box-shadow: 0 1px 3px rgba(0,0,0,.04);
   position: relative;
   overflow: hidden;
 }
@@ -167,10 +176,11 @@ body:not(.js-fade-enabled) .fade-in {
   transition: opacity .35s cubic-bezier(.22,1,.36,1);
   pointer-events: none;
 }
-.home-card:hover {
+.home-card:hover,
+.vp-doc a.home-card:hover {
   /* 只用位移+阴影,不用 scale——scale 会触发 GPU 重采样导致过渡期模糊 */
   transform: translateY(-4px);
-  box-shadow: 0 12px 26px rgba(0,0,0,.11);
+  box-shadow: 0 14px 30px rgba(0,0,0,.12);
   text-decoration: none;
 }
 .home-card:hover::before {
@@ -190,7 +200,6 @@ body:not(.js-fade-enabled) .fade-in {
   color: var(--vp-c-text-2);
   line-height: 1.6;
   flex-grow: 1; /* 撑满剩余空间,让卡片内容等高、tag 底部对齐 */
-}
 }
 .home-card .tag {
   font-size: .78rem;
