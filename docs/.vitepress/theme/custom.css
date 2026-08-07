@@ -183,7 +183,7 @@ body:not(.js-fade-enabled) .fade-in {
   text-decoration-line: none !important;
   transition: transform .35s cubic-bezier(.22,1,.36,1), box-shadow .35s cubic-bezier(.22,1,.36,1), background-color .35s cubic-bezier(.22,1,.36,1);
   background: var(--vp-c-bg-soft);
-  box-shadow: 0 0 15px rgba(59, 130, 246, 0.12), 0 8px 24px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.04);
   position: relative;
   overflow: hidden;
 }
@@ -193,17 +193,15 @@ body:not(.js-fade-enabled) .fade-in {
   text-decoration: none !important;
   text-decoration-line: none !important;
 }
-/* 卡片顶部渐变描光(悬浮时显现) */
+/* 卡片顶部 1px 微光(悬浮时显现,极简) */
 .home-card::before {
   content: '';
   position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  padding: 1px;
-  background: linear-gradient(135deg, rgba(66,184,131,.6), rgba(91,141,239,.6));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
+  top: 0;
+  left: 12%;
+  right: 12%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
   opacity: 0;
   transition: opacity .35s cubic-bezier(.22,1,.36,1);
   pointer-events: none;
@@ -212,7 +210,7 @@ body:not(.js-fade-enabled) .fade-in {
 .vp-doc a.home-card:hover {
   /* 只用位移+阴影,不用 scale——scale 会触发 GPU 重采样导致过渡期模糊 */
   transform: translateY(-4px);
-  box-shadow: 0 14px 30px rgba(0,0,0,.12);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.06);
   text-decoration: none;
 }
 .home-card:hover::before {
@@ -415,13 +413,13 @@ body:not(.js-fade-enabled) .fade-in {
   padding: .9rem 1rem;
   text-decoration: none !important;
   background: var(--vp-c-bg-soft);
-  box-shadow: 0 0 15px rgba(59, 130, 246, 0.10), 0 6px 20px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.04);
   transition: border-color .25s, transform .25s, box-shadow .25s;
 }
 .skill-card:hover {
   border-color: var(--vp-c-brand);
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,0,0,.09);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
   text-decoration: none;
 }
 .skill-card-head {
