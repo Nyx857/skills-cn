@@ -1,33 +1,33 @@
 /* Skills 中文技能库 自定义样式 */
 
-/* ===== toolknit 深色主题(从 Open Design 设计稿移植,强制深色) ===== */
-:root {
+/* ===== toolknit 深色主题(从 Open Design 设计稿移植,深色模式下生效) ===== */
+.dark {
   color-scheme: dark;
-  /* 背景与表面 */
-  --vp-c-bg: #0b1120;
-  --vp-c-bg-soft: rgba(30, 41, 59, 0.72);
-  --vp-c-bg-mute: rgba(30, 41, 59, 0.9);
-  --vp-c-bg-alt: #0b1120;
-  /* 文字 */
-  --vp-c-text-1: #edf2f7;
-  --vp-c-text-2: #b6c2d4;
-  --vp-c-text-3: #7d8aa0;
-  /* 主色(蓝) */
-  --vp-c-brand: #3b82f6;
-  --vp-c-brand-light: #60a5fa;
-  --vp-c-brand-dark: #2563eb;
-  --vp-c-brand-soft: rgba(59, 130, 246, 0.18);
+  /* 背景与表面:深蓝灰,避免纯黑,带一点蓝调 */
+  --vp-c-bg: #101726;
+  --vp-c-bg-soft: #1a2438;
+  --vp-c-bg-mute: #1f2a41;
+  --vp-c-bg-alt: #0d1320;
+  /* 文字:提高对比度,正文接近白,次级文字清晰 */
+  --vp-c-text-1: #f4f7fb;
+  --vp-c-text-2: #c3cddb;
+  --vp-c-text-3: #8b98ad;
+  /* 主色(蓝,浅色下更亮保证对比) */
+  --vp-c-brand: #4d94ff;
+  --vp-c-brand-light: #7ab4ff;
+  --vp-c-brand-dark: #3b82f6;
+  --vp-c-brand-soft: rgba(77, 148, 255, 0.16);
   /* 分隔线 */
-  --vp-c-divider: rgba(148, 163, 184, 0.14);
-  --vp-c-border: rgba(148, 163, 184, 0.14);
+  --vp-c-divider: rgba(148, 163, 184, 0.16);
+  --vp-c-border: rgba(148, 163, 184, 0.16);
   /* 导航 */
-  --vp-nav-bg-color: rgba(11, 17, 32, 0.85);
-  --vp-c-gutter: #0b1120;
+  --vp-nav-bg-color: rgba(16, 23, 38, 0.9);
+  --vp-c-gutter: #101726;
   /* 其他 */
-  --vp-c-mute: rgba(148, 163, 184, 0.1);
-  --vp-c-brand-1: #60a5fa;
-  --vp-c-brand-2: #3b82f6;
-  --vp-c-brand-3: #2563eb;
+  --vp-c-mute: rgba(148, 163, 184, 0.12);
+  --vp-c-brand-1: #7ab4ff;
+  --vp-c-brand-2: #4d94ff;
+  --vp-c-brand-3: #3b82f6;
   --vp-font-family-base: 'Geist', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', 'Microsoft YaHei', system-ui, sans-serif;
   --vp-font-family-mono: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 }
@@ -780,15 +780,17 @@ body:not(.js-fade-enabled) .fade-in {
   margin: .2rem 0;
 }
 
-/* ===== 强制深色兜底:无论系统明暗,都用深色 ===== */
-/* 隐藏 VitePress 的明暗切换按钮(强制深色后无意义) */
-.VPNavBarAppearance,
-.VPAppearance,
-.appearance {
-  display: none !important;
+/* ===== 深色/浅色切换由 VitePress 内置按钮控制(appearance: true) ===== */
+
+/* ===== 深色模式下卡片阴影加深(保证层次感) ===== */
+.dark .home-card,
+.dark .skill-card,
+.dark .review-box,
+.dark .compare-box,
+.dark .ask-box {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
-/* 亮色类下也强制深色(防止 html 无 dark 类时变亮) */
-html:not(.dark) {
-  background-color: #0b1120;
-  color: #edf2f7;
+.dark .home-card:hover,
+.dark .skill-card:hover {
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.07);
 }
