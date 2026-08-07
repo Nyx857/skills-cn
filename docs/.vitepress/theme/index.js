@@ -91,10 +91,45 @@ export default {
       cards.forEach(c => observer.observe(c))
     }
 
+    // 鼠标跟随卡片微光(桌面端):mousemove 时设置 CSS 变量,微光跟随鼠标
+    function setupCardGlow() {
+      if (typeof document === 'undefined' || typeof window === 'undefined') return
+      // 移动端(触屏)无鼠标,跳过
+      if (window.matchMedia('(hover: none)').matches) return
+      const cards = document.querySelectorAll('.home-card, .skill-card')
+      if (!cards.length) {
+        // 内容可能还没渲染完:等待后再试(最多 3 次)
+        if (!window.__glowRetry) window.__glowRetry = 0
+        if (window.__glowRetry < 3) {
+          window.__glowRetry++
+          setTimeout(setupCardGlow, 300)
+        }
+        return
+      }
+      cards.forEach(card => {
+        if (card.dataset.glowBound) return
+        card.dataset.glowBound = '1'
+        card.addEventListener('mousemove', (e) => {
+          const r = card.getBoundingClientRect()
+          const x = e.clientX - r.left
+          const y = e.clientY - r.top
+          card.style.setProperty('--glow-x', x + 'px')
+          card.style.setProperty('--glow-y', y + 'px')
+        })
+        card.addEventListener('mouseleave', () => {
+          card.style.setProperty('--glow-opacity', '0')
+        })
+        card.addEventListener('mouseenter', () => {
+          card.style.setProperty('--glow-opacity', '1')
+        })
+      })
+    }
+
     function onRoute() {
       if (typeof document !== 'undefined') {
         setupInstaller()
         setupFadeIn()
+        setupCardGlow()
       }
     }
 
