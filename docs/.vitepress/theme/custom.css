@@ -1,10 +1,42 @@
 /* Skills 中文技能库 自定义样式 */
 
-/* ===== 字体:替换 AI 默认 Inter,英文/数字用 Outfit(有性格),中文用系统苹方 ===== */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+/* ===== toolknit 深色主题(从 Open Design 设计稿移植,强制深色) ===== */
+:root {
+  color-scheme: dark;
+  /* 背景与表面 */
+  --vp-c-bg: #0b1120;
+  --vp-c-bg-soft: rgba(30, 41, 59, 0.72);
+  --vp-c-bg-mute: rgba(30, 41, 59, 0.9);
+  --vp-c-bg-alt: #0b1120;
+  /* 文字 */
+  --vp-c-text-1: #edf2f7;
+  --vp-c-text-2: #b6c2d4;
+  --vp-c-text-3: #7d8aa0;
+  /* 主色(蓝) */
+  --vp-c-brand: #3b82f6;
+  --vp-c-brand-light: #60a5fa;
+  --vp-c-brand-dark: #2563eb;
+  --vp-c-brand-soft: rgba(59, 130, 246, 0.18);
+  /* 分隔线 */
+  --vp-c-divider: rgba(148, 163, 184, 0.14);
+  --vp-c-border: rgba(148, 163, 184, 0.14);
+  /* 导航 */
+  --vp-nav-bg-color: rgba(11, 17, 32, 0.85);
+  --vp-c-gutter: #0b1120;
+  /* 其他 */
+  --vp-c-mute: rgba(148, 163, 184, 0.1);
+  --vp-c-brand-1: #60a5fa;
+  --vp-c-brand-2: #3b82f6;
+  --vp-c-brand-3: #2563eb;
+  --vp-font-family-base: 'Geist', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', 'Microsoft YaHei', system-ui, sans-serif;
+  --vp-font-family-mono: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* ===== 字体:Geist(设计稿) + 系统苹方中文 ===== */
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap');
 
 body {
-  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
 }
 
 /* ===== 翻页/侧边栏:skill 名小字 + 中文简介大字(两行) ===== */
@@ -151,7 +183,7 @@ body:not(.js-fade-enabled) .fade-in {
   text-decoration-line: none !important;
   transition: transform .35s cubic-bezier(.22,1,.36,1), box-shadow .35s cubic-bezier(.22,1,.36,1), background-color .35s cubic-bezier(.22,1,.36,1);
   background: var(--vp-c-bg-soft);
-  box-shadow: 0 1px 3px rgba(0,0,0,.04);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.12), 0 8px 24px rgba(0, 0, 0, 0.25);
   position: relative;
   overflow: hidden;
 }
@@ -379,10 +411,11 @@ body:not(.js-fade-enabled) .fade-in {
   flex-direction: column;
   gap: .45rem;
   border: 1px solid var(--vp-c-divider);
-  border-radius: 12px;
+  border-radius: 13px;
   padding: .9rem 1rem;
   text-decoration: none !important;
   background: var(--vp-c-bg-soft);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.10), 0 6px 20px rgba(0, 0, 0, 0.22);
   transition: border-color .25s, transform .25s, box-shadow .25s;
 }
 .skill-card:hover {
@@ -747,4 +780,17 @@ body:not(.js-fade-enabled) .fade-in {
 }
 .origin-box li {
   margin: .2rem 0;
+}
+
+/* ===== 强制深色兜底:无论系统明暗,都用深色 ===== */
+/* 隐藏 VitePress 的明暗切换按钮(强制深色后无意义) */
+.VPNavBarAppearance,
+.VPAppearance,
+.appearance {
+  display: none !important;
+}
+/* 亮色类下也强制深色(防止 html 无 dark 类时变亮) */
+html:not(.dark) {
+  background-color: #0b1120;
+  color: #edf2f7;
 }

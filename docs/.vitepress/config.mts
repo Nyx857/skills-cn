@@ -37,6 +37,7 @@ export default defineConfig({
     ['meta', { name: 'theme-color', content: '#42b883' }]
   ],
   themeConfig: {
+    appearance: 'dark', /* 强制深色主题(toolknit 风格) */
     nav: [
       { text: '首页', link: '/' },
       { text: '技能库', link: '/skills/' },
