@@ -193,7 +193,7 @@ body:not(.js-fade-enabled) .fade-in {
   text-decoration: none !important;
   text-decoration-line: none !important;
 }
-/* 卡片鼠标跟随微光(悬浮时显现,径向光斑跟随鼠标) */
+/* 卡片鼠标跟随微光(悬浮时显现,品牌蓝调,柔和) */
 .home-card::before,
 .skill-card::before {
   content: '';
@@ -201,9 +201,9 @@ body:not(.js-fade-enabled) .fade-in {
   inset: 0;
   border-radius: inherit;
   background: radial-gradient(
-    220px circle at var(--glow-x, 50%) var(--glow-y, 0%),
-    rgba(255, 255, 255, 0.08),
-    transparent 65%
+    160px circle at var(--glow-x, 50%) var(--glow-y, 0%),
+    rgba(96, 165, 250, 0.07),
+    transparent 70%
   );
   opacity: var(--glow-opacity, 0);
   transition: opacity .3s ease;
