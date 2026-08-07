@@ -109,15 +109,30 @@ export default {
       cards.forEach(card => {
         if (card.dataset.glowBound) return
         card.dataset.glowBound = '1'
+        // 缓动追赶:鼠标位置 → 光斑位置(产生拖影)
+        let targetX = 0, targetY = 0, curX = 0, curY = 0, rafId = null
+        const ease = 0.18 // 越小拖影越长
+        function animate() {
+          curX += (targetX - curX) * ease
+          curY += (targetY - curY) * ease
+          card.style.setProperty('--glow-x', curX + 'px')
+          card.style.setProperty('--glow-y', curY + 'px')
+          // 接近目标时停止动画,省资源
+          if (Math.abs(targetX - curX) > 0.5 || Math.abs(targetY - curY) > 0.5) {
+            rafId = requestAnimationFrame(animate)
+          } else {
+            rafId = null
+          }
+        }
         card.addEventListener('mousemove', (e) => {
           const r = card.getBoundingClientRect()
-          const x = e.clientX - r.left
-          const y = e.clientY - r.top
-          card.style.setProperty('--glow-x', x + 'px')
-          card.style.setProperty('--glow-y', y + 'px')
+          targetX = e.clientX - r.left
+          targetY = e.clientY - r.top
+          if (!rafId) rafId = requestAnimationFrame(animate)
         })
         card.addEventListener('mouseleave', () => {
           card.style.setProperty('--glow-opacity', '0')
+          if (rafId) { cancelAnimationFrame(rafId); rafId = null }
         })
         card.addEventListener('mouseenter', () => {
           card.style.setProperty('--glow-opacity', '1')
