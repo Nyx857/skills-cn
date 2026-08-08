@@ -1,7 +1,7 @@
 ---
 prev:
-  text: "<span class=\"sk-name\">verification-before-completion</span><span class=\"sk-desc\">AI 说\"做完了\"之前,必须真实验证过,不是嘴上说说。</span>"
-  link: "/skills/verification-before-completion"
+  text: "<span class=\"sk-name\">requesting-code-review</span><span class=\"sk-desc\">写完代码先派个\"评审官\"检查再合并,问题早发现、少返工。</span>"
+  link: "/skills/requesting-code-review"
 next:
   text: "<span class=\"sk-name\">obsidian-bases</span><span class=\"sk-desc\">让 AI 会做 Obsidian 的\"数据库视图\",笔记像表格一样筛选排序。</span>"
   link: "/skills/obsidian-bases"

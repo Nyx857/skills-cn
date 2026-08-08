@@ -27,6 +27,22 @@
   <span class="skill-card-head"><span class="skill-card-name">跨境电商运营专家</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
   <span class="skill-card-summary">让 AI 扮演跨境电商运营:懂选品、懂平台、懂海外用户。</span>
 </a>
+<a href="./kuaishou-strategist" class="skill-card">
+  <span class="skill-card-head"><span class="skill-card-name">快手策略师</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
+  <span class="skill-card-summary">让 AI 扮演快手运营高手:懂下沉市场、老铁文化、直播带货。</span>
+</a>
+<a href="./weibo-strategist" class="skill-card">
+  <span class="skill-card-head"><span class="skill-card-name">微博运营策略师</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
+  <span class="skill-card-summary">让 AI 扮演微博运营高手:懂热搜机制、超话运营、粉丝经济。</span>
+</a>
+<a href="./weixin-channels-strategist" class="skill-card">
+  <span class="skill-card-head"><span class="skill-card-name">微信视频号运营策略师</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
+  <span class="skill-card-summary">让 AI 扮演视频号运营高手:懂社交推荐、生态联动、直播带货。</span>
+</a>
+<a href="./private-domain-operator" class="skill-card">
+  <span class="skill-card-head"><span class="skill-card-name">私域流量运营师</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
+  <span class="skill-card-summary">让 AI 扮演私域运营高手:懂企微 SCRM、社群运营、转化漏斗。</span>
+</a>
 </div>
 
 ---

@@ -202,6 +202,126 @@ export const SKILLS = [
       "前端"
     ],
     "ask_phrase": "帮我安装 imagegen-frontend-web 这个技能,它来自 https://github.com/Leonxlnx/taste-skill ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "requesting-code-review",
+    "name": "requesting-code-review",
+    "category": "质量",
+    "summary": "写完代码先派个\"评审官\"检查再合并,问题早发现、少返工。",
+    "tags": [
+      "代码评审",
+      "质量",
+      "协作"
+    ],
+    "ask_phrase": "帮我安装 requesting-code-review 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "receiving-code-review",
+    "name": "receiving-code-review",
+    "category": "协作",
+    "summary": "收到评审意见别急着改:先核实技术依据,该采纳的采纳,该反驳的反驳。",
+    "tags": [
+      "代码评审",
+      "反馈",
+      "协作"
+    ],
+    "ask_phrase": "帮我安装 receiving-code-review 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "executing-plans",
+    "name": "executing-plans",
+    "category": "协作",
+    "summary": "拿到写好的实现计划,按批次执行、每批设人工检查点,防止跑偏。",
+    "tags": [
+      "计划执行",
+      "检查点",
+      "开发流程"
+    ],
+    "ask_phrase": "帮我安装 executing-plans 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "dispatching-parallel-agents",
+    "name": "dispatching-parallel-agents",
+    "category": "协作",
+    "summary": "多个互相独立的任务,派多个子代理并行处理,互不干扰、大幅提速。",
+    "tags": [
+      "并行",
+      "子代理",
+      "协作"
+    ],
+    "ask_phrase": "帮我安装 dispatching-parallel-agents 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "baoyu-xhs-images",
+    "name": "baoyu-xhs-images",
+    "category": "可视化",
+    "summary": "把内容拆成 1-10 张小红书风格图文卡片,12 种视觉风格 × 8 种布局任选。",
+    "tags": [
+      "小红书",
+      "图文卡片",
+      "图像生成"
+    ],
+    "ask_phrase": "帮我安装 baoyu-xhs-images 这个技能,它来自 https://github.com/JimLiu/baoyu-skills ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "baoyu-post-to-wechat",
+    "name": "baoyu-post-to-wechat",
+    "category": "工具",
+    "summary": "一键把文章/图文发布到微信公众号,自动排版、外部链接转文末引用。",
+    "tags": [
+      "公众号",
+      "发布",
+      "排版"
+    ],
+    "ask_phrase": "帮我安装 baoyu-post-to-wechat 这个技能,它来自 https://github.com/JimLiu/baoyu-skills ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "baoyu-translate",
+    "name": "baoyu-translate",
+    "category": "工具",
+    "summary": "中英互译的\"精翻\"神器:快翻/标准/精翻三档,支持术语表与长文分块。",
+    "tags": [
+      "翻译",
+      "中英",
+      "术语表"
+    ],
+    "ask_phrase": "帮我安装 baoyu-translate 这个技能,它来自 https://github.com/JimLiu/baoyu-skills ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "baoyu-format-markdown",
+    "name": "baoyu-format-markdown",
+    "category": "工具",
+    "summary": "把杂乱文本/Markdown 排版成规整文章:标题、摘要、粗体、列表一次到位。",
+    "tags": [
+      "Markdown",
+      "排版",
+      "中文"
+    ],
+    "ask_phrase": "帮我安装 baoyu-format-markdown 这个技能,它来自 https://github.com/JimLiu/baoyu-skills ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "baoyu-cover-image",
+    "name": "baoyu-cover-image",
+    "category": "可视化",
+    "summary": "给文章生成高质量封面图:5 个设计维度 × 11 套配色 × 7 种渲染风格。",
+    "tags": [
+      "封面图",
+      "图像生成",
+      "文章配图"
+    ],
+    "ask_phrase": "帮我安装 baoyu-cover-image 这个技能,它来自 https://github.com/JimLiu/baoyu-skills ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "baoyu-infographic",
+    "name": "baoyu-infographic",
+    "category": "可视化",
+    "summary": "把内容做成专业信息图:21 种布局 × 22 种视觉风格,自动推荐最佳组合。",
+    "tags": [
+      "信息图",
+      "可视化",
+      "数据展示"
+    ],
+    "ask_phrase": "帮我安装 baoyu-infographic 这个技能,它来自 https://github.com/JimLiu/baoyu-skills ,装好告诉我是干什么的"
   }
 ]
 export const AGENTS = [
@@ -276,5 +396,49 @@ export const AGENTS = [
       "运营"
     ],
     "ask_phrase": "帮我安装 跨境电商运营专家 这个技能,它来自 https://github.com/jnMetaCode/agency-agents-zh ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "kuaishou-strategist",
+    "name": "快手策略师",
+    "category": "自媒体运营",
+    "summary": "让 AI 扮演快手运营高手:懂下沉市场、老铁文化、直播带货。",
+    "tags": [
+      "自媒体运营",
+      "快手"
+    ],
+    "ask_phrase": "帮我安装 快手策略师 这个技能,它来自 https://github.com/jnMetaCode/agency-agents-zh ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "weibo-strategist",
+    "name": "微博运营策略师",
+    "category": "自媒体运营",
+    "summary": "让 AI 扮演微博运营高手:懂热搜机制、超话运营、粉丝经济。",
+    "tags": [
+      "自媒体运营",
+      "微博"
+    ],
+    "ask_phrase": "帮我安装 微博运营策略师 这个技能,它来自 https://github.com/jnMetaCode/agency-agents-zh ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "weixin-channels-strategist",
+    "name": "微信视频号运营策略师",
+    "category": "自媒体运营",
+    "summary": "让 AI 扮演视频号运营高手:懂社交推荐、生态联动、直播带货。",
+    "tags": [
+      "自媒体运营",
+      "微信视频号"
+    ],
+    "ask_phrase": "帮我安装 微信视频号运营策略师 这个技能,它来自 https://github.com/jnMetaCode/agency-agents-zh ,装好告诉我是干什么的"
+  },
+  {
+    "slug": "private-domain-operator",
+    "name": "私域流量运营师",
+    "category": "自媒体运营",
+    "summary": "让 AI 扮演私域运营高手:懂企微 SCRM、社群运营、转化漏斗。",
+    "tags": [
+      "自媒体运营",
+      "私域流量"
+    ],
+    "ask_phrase": "帮我安装 私域流量运营师 这个技能,它来自 https://github.com/jnMetaCode/agency-agents-zh ,装好告诉我是干什么的"
   }
 ]

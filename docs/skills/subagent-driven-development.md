@@ -3,8 +3,8 @@ prev:
   text: "<span class=\"sk-name\">systematic-debugging</span><span class=\"sk-desc\">程序出 bug 时,让 AI 先找原因再修,而不是瞎猜乱改。</span>"
   link: "/skills/systematic-debugging"
 next:
-  text: "<span class=\"sk-name\">verification-before-completion</span><span class=\"sk-desc\">AI 说\"做完了\"之前,必须真实验证过,不是嘴上说说。</span>"
-  link: "/skills/verification-before-completion"
+  text: "<span class=\"sk-name\">receiving-code-review</span><span class=\"sk-desc\">收到评审意见别急着改:先核实技术依据,该采纳的采纳,该反驳的反驳。</span>"
+  link: "/skills/receiving-code-review"
 ---
 # subagent-driven-development
 

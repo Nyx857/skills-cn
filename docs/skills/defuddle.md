@@ -1,10 +1,10 @@
 ---
 prev:
-  text: "<span class=\"sk-name\">json-canvas</span><span class=\"sk-desc\">让 AI 帮你画思维导图、流程图、架构图,画完直接能在白板软件里编辑。</span>"
-  link: "/skills/json-canvas"
+  text: "<span class=\"sk-name\">baoyu-infographic</span><span class=\"sk-desc\">把内容做成专业信息图:21 种布局 × 22 种视觉风格,自动推荐最佳组合。</span>"
+  link: "/skills/baoyu-infographic"
 next:
-  text: "<span class=\"sk-name\">redesign-existing-projects</span><span class=\"sk-desc\">把现有网站从\"AI 味\"升级到高级质感:审计设计问题、逐个修复,不重写。</span>"
-  link: "/skills/redesign-existing-projects"
+  text: "<span class=\"sk-name\">baoyu-post-to-wechat</span><span class=\"sk-desc\">一键把文章/图文发布到微信公众号,自动排版、外部链接转文末引用。</span>"
+  link: "/skills/baoyu-post-to-wechat"
 ---
 # defuddle
 

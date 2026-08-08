@@ -1,6 +1,6 @@
 # 技能库
 
-共收录 **17** 个精选技能(持续扩充中)。全部为 MIT 等宽松许可证,可放心安装。点进任意技能,复制一句话就能装。
+共收录 **27** 个精选技能(持续扩充中)。全部为 MIT 等宽松许可证,可放心安装。点进任意技能,复制一句话就能装。
 
 ## 开发流程
 
@@ -39,6 +39,18 @@
   <span class="skill-card-head"><span class="skill-card-name">subagent-driven-development</span><span class="skill-card-stars" title="实测星级">★★★★★</span></span>
   <span class="skill-card-summary">让 AI 自己派"手下"干活,做完再检查,能连续工作几小时。</span>
 </a>
+<a href="./receiving-code-review" class="skill-card">
+  <span class="skill-card-head"><span class="skill-card-name">receiving-code-review</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
+  <span class="skill-card-summary">收到评审意见别急着改:先核实技术依据,该采纳的采纳,该反驳的反驳。</span>
+</a>
+<a href="./executing-plans" class="skill-card">
+  <span class="skill-card-head"><span class="skill-card-name">executing-plans</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
+  <span class="skill-card-summary">拿到写好的实现计划,按批次执行、每批设人工检查点,防止跑偏。</span>
+</a>
+<a href="./dispatching-parallel-agents" class="skill-card">
+  <span class="skill-card-head"><span class="skill-card-name">dispatching-parallel-agents</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
+  <span class="skill-card-summary">多个互相独立的任务,派多个子代理并行处理,互不干扰、大幅提速。</span>
+</a>
 </div>
 
 ## 质量
@@ -47,6 +59,10 @@
 <a href="./verification-before-completion" class="skill-card">
   <span class="skill-card-head"><span class="skill-card-name">verification-before-completion</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
   <span class="skill-card-summary">AI 说"做完了"之前,必须真实验证过,不是嘴上说说。</span>
+</a>
+<a href="./requesting-code-review" class="skill-card">
+  <span class="skill-card-head"><span class="skill-card-name">requesting-code-review</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
+  <span class="skill-card-summary">写完代码先派个"评审官"检查再合并,问题早发现、少返工。</span>
 </a>
 </div>
 
@@ -74,6 +90,18 @@
   <span class="skill-card-head"><span class="skill-card-name">json-canvas</span><span class="skill-card-stars" title="实测星级">★★★★★</span></span>
   <span class="skill-card-summary">让 AI 帮你画思维导图、流程图、架构图,画完直接能在白板软件里编辑。</span>
 </a>
+<a href="./baoyu-xhs-images" class="skill-card">
+  <span class="skill-card-head"><span class="skill-card-name">baoyu-xhs-images</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
+  <span class="skill-card-summary">把内容拆成 1-10 张小红书风格图文卡片,12 种视觉风格 × 8 种布局任选。</span>
+</a>
+<a href="./baoyu-cover-image" class="skill-card">
+  <span class="skill-card-head"><span class="skill-card-name">baoyu-cover-image</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
+  <span class="skill-card-summary">给文章生成高质量封面图:5 个设计维度 × 11 套配色 × 7 种渲染风格。</span>
+</a>
+<a href="./baoyu-infographic" class="skill-card">
+  <span class="skill-card-head"><span class="skill-card-name">baoyu-infographic</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
+  <span class="skill-card-summary">把内容做成专业信息图:21 种布局 × 22 种视觉风格,自动推荐最佳组合。</span>
+</a>
 </div>
 
 ## 工具
@@ -82,6 +110,18 @@
 <a href="./defuddle" class="skill-card">
   <span class="skill-card-head"><span class="skill-card-name">defuddle</span><span class="skill-card-stars" title="实测星级">★★★☆☆</span></span>
   <span class="skill-card-summary">让 AI 把网页变成干净的纯文字,去掉广告和导航,更省流量。</span>
+</a>
+<a href="./baoyu-post-to-wechat" class="skill-card">
+  <span class="skill-card-head"><span class="skill-card-name">baoyu-post-to-wechat</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
+  <span class="skill-card-summary">一键把文章/图文发布到微信公众号,自动排版、外部链接转文末引用。</span>
+</a>
+<a href="./baoyu-translate" class="skill-card">
+  <span class="skill-card-head"><span class="skill-card-name">baoyu-translate</span><span class="skill-card-stars" title="实测星级">★★★★★</span></span>
+  <span class="skill-card-summary">中英互译的"精翻"神器:快翻/标准/精翻三档,支持术语表与长文分块。</span>
+</a>
+<a href="./baoyu-format-markdown" class="skill-card">
+  <span class="skill-card-head"><span class="skill-card-name">baoyu-format-markdown</span><span class="skill-card-stars" title="实测星级">★★★★☆</span></span>
+  <span class="skill-card-summary">把杂乱文本/Markdown 排版成规整文章:标题、摘要、粗体、列表一次到位。</span>
 </a>
 </div>
 

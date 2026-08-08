@@ -883,5 +883,525 @@
         ]
       }
     }
+  },
+  {
+    "slug": "requesting-code-review",
+    "name": "requesting-code-review",
+    "category": "质量",
+    "summary": "写完代码先派个\"评审官\"检查再合并,问题早发现、少返工。",
+    "detail": "完成任务或合并分支前,把代码交给独立评审子代理检查。评审者只拿到精心准备的上下文、不继承你的会话历史,能客观发现规格偏差、隐藏 bug 与可维护性问题。\"早评审、勤评审\"——问题发现得越晚,修复成本越高。",
+    "author": "Jesse Vincent (obra)",
+    "source_url": "https://github.com/obra/superpowers",
+    "source_path": "skills/requesting-code-review",
+    "license": "MIT",
+    "license_url": "https://github.com/obra/superpowers/blob/main/LICENSE",
+    "source_stars": 264000,
+    "tags": [
+      "代码评审",
+      "质量",
+      "协作"
+    ],
+    "ask_phrase": "帮我安装 requesting-code-review 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的",
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "写完功能想直接提交",
+          "without": "合并后才发现逻辑 bug、规格偏差,返工又影响别人。",
+          "with": "AI 先当评审官审一遍,问题在合并前就修掉。"
+        },
+        {
+          "scene": "代码只有自己看过",
+          "without": "没人把关,隐藏问题进主线。",
+          "with": "独立评审子代理客观检查,不带你的视角盲区。"
+        },
+        {
+          "scene": "评审意见一大堆",
+          "without": "不知道哪些必须改、哪些可以忽略。",
+          "with": "按严重度分级,关键问题优先修,不阻塞的记下来。"
+        }
+      ],
+      "demo": {
+        "prompt": "帮我评审一下这次改动",
+        "steps": [
+          "AI:派独立评审子代理,给足代码与需求上下文。",
+          "AI:按严重度输出问题清单:必须修/建议改/可忽略。",
+          "AI:你确认后逐个修复,再复评通过。"
+        ]
+      }
+    },
+    "review": {
+      "stars": 4,
+      "summary": "结构完整、评审流程可直接执行;与 receiving-code-review 成对使用效果最佳。",
+      "level": "入门可用"
+    }
+  },
+  {
+    "slug": "receiving-code-review",
+    "name": "receiving-code-review",
+    "category": "协作",
+    "summary": "收到评审意见别急着改:先核实技术依据,该采纳的采纳,该反驳的反驳。",
+    "detail": "处理代码评审反馈需要技术核实而非情感表演。面对看似不合理或含糊的意见,先验证其技术依据再决定是否采纳:对正确的意见虚心接受,对错误或过时的意见有理有据地说明。避免\"表演式同意\"和\"盲目照做\"。",
+    "author": "Jesse Vincent (obra)",
+    "source_url": "https://github.com/obra/superpowers",
+    "source_path": "skills/receiving-code-review",
+    "license": "MIT",
+    "license_url": "https://github.com/obra/superpowers/blob/main/LICENSE",
+    "source_stars": 264000,
+    "tags": [
+      "代码评审",
+      "反馈",
+      "协作"
+    ],
+    "ask_phrase": "帮我安装 receiving-code-review 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的",
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "收到一条看不懂的评审意见",
+          "without": "不好意思问,先改了再说,结果改错方向。",
+          "with": "AI 先帮你核实意见的技术依据,再决定怎么处理。"
+        },
+        {
+          "scene": "评审说你的方案不对",
+          "without": "要么全盘照改,要么硬顶,都伤协作。",
+          "with": "AI 帮你有理有据地分析:对就采纳,不对就说明理由。"
+        },
+        {
+          "scene": "评审意见前后矛盾",
+          "without": "不知道怎么取舍。",
+          "with": "AI 按技术优先级排序,给出取舍建议。"
+        }
+      ],
+      "demo": {
+        "prompt": "这条评审意见合理吗?",
+        "steps": [
+          "AI:分析意见背后的技术假设与影响。",
+          "AI:给出结论:采纳/部分采纳/反驳,附依据。",
+          "AI:按结论执行修改或回复评审者。"
+        ]
+      }
+    },
+    "review": {
+      "stars": 4,
+      "summary": "解决\"如何对待评审反馈\"的软技能,与 requesting-code-review 配套。",
+      "level": "入门可用"
+    }
+  },
+  {
+    "slug": "executing-plans",
+    "name": "executing-plans",
+    "category": "协作",
+    "summary": "拿到写好的实现计划,按批次执行、每批设人工检查点,防止跑偏。",
+    "detail": "在独立会话中加载已批准的实现计划,先批判性审阅再逐任务执行。计划按批次推进,每批完成后设人工检查点确认方向无误再继续,最后统一汇报结果。适合与 writing-plans 配合的正式执行流程,避免闷头做完才发现方向错了。",
+    "author": "Jesse Vincent (obra)",
+    "source_url": "https://github.com/obra/superpowers",
+    "source_path": "skills/executing-plans",
+    "license": "MIT",
+    "license_url": "https://github.com/obra/superpowers/blob/main/LICENSE",
+    "source_stars": 264000,
+    "tags": [
+      "计划执行",
+      "检查点",
+      "开发流程"
+    ],
+    "ask_phrase": "帮我安装 executing-plans 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的",
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "计划很长,一次做完",
+          "without": "做到一半方向偏了,整批返工。",
+          "with": "分批执行,每批过一个人工检查点,及时纠偏。"
+        },
+        {
+          "scene": "任务多不知道从哪下手",
+          "without": "凭感觉挑着做,漏步骤。",
+          "with": "按计划顺序逐任务执行,全部完成才收工。"
+        },
+        {
+          "scene": "做完了没人验收",
+          "without": "结果对不对没人确认。",
+          "with": "每批检查点确认,最后统一汇报结果。"
+        }
+      ],
+      "demo": {
+        "prompt": "按计划开始执行",
+        "steps": [
+          "AI:审阅计划,确认理解无误。",
+          "AI:执行第一批任务,停下等你确认。",
+          "AI:逐批推进,全部完成汇报。"
+        ]
+      }
+    },
+    "review": {
+      "stars": 4,
+      "summary": "与 writing-plans 配套的正式执行流程,分批检查点设计实用。",
+      "level": "入门可用"
+    }
+  },
+  {
+    "slug": "dispatching-parallel-agents",
+    "name": "dispatching-parallel-agents",
+    "category": "协作",
+    "summary": "多个互相独立的任务,派多个子代理并行处理,互不干扰、大幅提速。",
+    "detail": "当有 2 个以上无共享状态、无先后依赖的独立任务时,为每个任务构造精确的指令和上下文,派发专门子代理并行执行。子代理拥有隔离上下文、不继承你的会话历史——既保证专注,又节省你用于协调的上下文空间。",
+    "author": "Jesse Vincent (obra)",
+    "source_url": "https://github.com/obra/superpowers",
+    "source_path": "skills/dispatching-parallel-agents",
+    "license": "MIT",
+    "license_url": "https://github.com/obra/superpowers/blob/main/LICENSE",
+    "source_stars": 264000,
+    "tags": [
+      "并行",
+      "子代理",
+      "协作"
+    ],
+    "ask_phrase": "帮我安装 dispatching-parallel-agents 这个技能,它来自 https://github.com/obra/superpowers ,装好告诉我是干什么的",
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "三件事互不相关要一起做",
+          "without": "串行一件件来,等得着急。",
+          "with": "同时派三个子代理,各干各的,一次收齐。"
+        },
+        {
+          "scene": "任务多上下文塞不下",
+          "without": "主对话被无关内容占满,越做越乱。",
+          "with": "子代理隔离上下文,主对话只留结论,清爽高效。"
+        },
+        {
+          "scene": "子任务需要不同专业",
+          "without": "一个代理硬干所有类型。",
+          "with": "每个子代理只专注自己的任务,指令精确。"
+        }
+      ],
+      "demo": {
+        "prompt": "帮我同时做调研和写周报",
+        "steps": [
+          "AI:拆成独立任务,各配专属上下文。",
+          "AI:并行派发子代理执行。",
+          "AI:收齐结果,汇总给你。"
+        ]
+      }
+    },
+    "review": {
+      "stars": 4,
+      "summary": "并行子代理方法论,适合任务多且独立的场景;需要运行环境支持子代理。",
+      "level": "进阶向"
+    }
+  },
+  {
+    "slug": "baoyu-xhs-images",
+    "name": "baoyu-xhs-images",
+    "category": "可视化",
+    "summary": "把内容拆成 1-10 张小红书风格图文卡片,12 种视觉风格 × 8 种布局任选。",
+    "detail": "将复杂内容拆解为适合社媒传播的图文卡片系列,12 种视觉风格、8 种布局、3 种配色方案,专为小红书/微信图文场景优化。生成卡片前先确认内容与风格偏好。⚠️ 需要可用的图像生成后端(如 Codex imagegen 或 Cursor GenerateImage)。",
+    "author": "JimLiu",
+    "source_url": "https://github.com/JimLiu/baoyu-skills",
+    "source_path": "skills/baoyu-xhs-images",
+    "license": "MIT",
+    "license_url": "https://github.com/JimLiu/baoyu-skills/blob/main/LICENSE",
+    "source_stars": 24726,
+    "tags": [
+      "小红书",
+      "图文卡片",
+      "图像生成"
+    ],
+    "ask_phrase": "帮我安装 baoyu-xhs-images 这个技能,它来自 https://github.com/JimLiu/baoyu-skills ,装好告诉我是干什么的",
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "想发小红书但只有一段文字",
+          "without": "干巴巴一段话,没人看。",
+          "with": "AI 拆成多张图文卡片,风格任选,视觉抓人。"
+        },
+        {
+          "scene": "不会做卡片设计",
+          "without": "用模板做出来很土。",
+          "with": "12 种视觉风格 × 8 种布局,专业级设计。"
+        },
+        {
+          "scene": "内容太长不适合社交平台",
+          "without": "硬塞一段话,划走。",
+          "with": "自动拆解成 1-10 张卡片,节奏感强。"
+        }
+      ],
+      "demo": {
+        "prompt": "把这篇科普拆成小红书图文卡片",
+        "steps": [
+          "AI:确认内容与目标平台。",
+          "AI:选风格、布局,拆成卡片系列。",
+          "AI:逐张生成卡片,可调整。"
+        ]
+      }
+    },
+    "review": {
+      "stars": 4,
+      "summary": "小红书图文卡片神器,风格布局选项丰富;依赖图像生成后端,纯文本环境用不了。",
+      "level": "入门可用"
+    }
+  },
+  {
+    "slug": "baoyu-post-to-wechat",
+    "name": "baoyu-post-to-wechat",
+    "category": "工具",
+    "summary": "一键把文章/图文发布到微信公众号,自动排版、外部链接转文末引用。",
+    "detail": "通过 API 或浏览器自动化把内容发布到微信公众号,支持文章(HTML/Markdown/纯文本)和图文贴图两种形式。Markdown 文章默认把外部链接转换为文末引用,更符合公众号阅读习惯。⚠️ 需要公众号 API 凭据或 Chrome CDP 环境。",
+    "author": "JimLiu",
+    "source_url": "https://github.com/JimLiu/baoyu-skills",
+    "source_path": "skills/baoyu-post-to-wechat",
+    "license": "MIT",
+    "license_url": "https://github.com/JimLiu/baoyu-skills/blob/main/LICENSE",
+    "source_stars": 24726,
+    "tags": [
+      "公众号",
+      "发布",
+      "排版"
+    ],
+    "ask_phrase": "帮我安装 baoyu-post-to-wechat 这个技能,它来自 https://github.com/JimLiu/baoyu-skills ,装好告诉我是干什么的",
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "写好了文章要发公众号",
+          "without": "复制粘贴到后台,格式全乱,调半天。",
+          "with": "AI 直接发布,排版自动处理。"
+        },
+        {
+          "scene": "文章里一堆外部链接",
+          "without": "公众号不支持外链,读者点不了。",
+          "with": "自动转成文末引用,体验友好。"
+        },
+        {
+          "scene": "要发图文贴图",
+          "without": "一张张贴图再编辑,繁琐。",
+          "with": "多图图文一键发布。"
+        }
+      ],
+      "demo": {
+        "prompt": "帮我把这篇 Markdown 发到公众号",
+        "steps": [
+          "AI:确认发布形式(文章/贴图)。",
+          "AI:处理排版与外链。",
+          "AI:发布并回报结果。"
+        ]
+      }
+    },
+    "review": {
+      "stars": 4,
+      "summary": "公众号发布自动化,排版处理实用;需要 API 凭据或浏览器环境。",
+      "level": "入门可用"
+    }
+  },
+  {
+    "slug": "baoyu-translate",
+    "name": "baoyu-translate",
+    "category": "工具",
+    "summary": "中英互译的\"精翻\"神器:快翻/标准/精翻三档,支持术语表与长文分块。",
+    "detail": "面向中文用户的多模式翻译技能。三种模式:快速翻译、标准翻译、精细翻译;默认目标语言为中文,内置英中术语表,长文自动并行分块,支持学术/商务等风格预设。适合翻译文章、文档和网页。",
+    "author": "JimLiu",
+    "source_url": "https://github.com/JimLiu/baoyu-skills",
+    "source_path": "skills/baoyu-translate",
+    "license": "MIT",
+    "license_url": "https://github.com/JimLiu/baoyu-skills/blob/main/LICENSE",
+    "source_stars": 24726,
+    "tags": [
+      "翻译",
+      "中英",
+      "术语表"
+    ],
+    "ask_phrase": "帮我安装 baoyu-translate 这个技能,它来自 https://github.com/JimLiu/baoyu-skills ,装好告诉我是干什么的",
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "要翻译一篇长文",
+          "without": "直接丢给 AI 翻,后半段越翻越烂。",
+          "with": "长文自动分块,上下文连贯,风格统一。"
+        },
+        {
+          "scene": "专业术语总翻不准",
+          "without": "术语翻得五花八门。",
+          "with": "内置术语表,还可自定义,前后一致。"
+        },
+        {
+          "scene": "翻译质量要求高",
+          "without": "机翻味重,改半天。",
+          "with": "三档模式,精翻档质量接近人工。"
+        }
+      ],
+      "demo": {
+        "prompt": "把这篇文章精翻成中文",
+        "steps": [
+          "AI:识别语言与目标。",
+          "AI:选精翻模式,应用术语表。",
+          "AI:输出译文,保留格式。"
+        ]
+      }
+    },
+    "review": {
+      "stars": 5,
+      "summary": "中文用户最实用的翻译技能:三档模式+术语表+长文分块,默认中译很贴心。",
+      "level": "入门可用"
+    }
+  },
+  {
+    "slug": "baoyu-format-markdown",
+    "name": "baoyu-format-markdown",
+    "category": "工具",
+    "summary": "把杂乱文本/Markdown 排版成规整文章:标题、摘要、粗体、列表一次到位。",
+    "detail": "自动为纯文本或 Markdown 文件补充标题、摘要、粗体、列表和代码块等格式,让文章结构清晰、排版规整,输出为 {filename}-formatted.md。适合公众号文章、博客等内容的快速美化。",
+    "author": "JimLiu",
+    "source_url": "https://github.com/JimLiu/baoyu-skills",
+    "source_path": "skills/baoyu-format-markdown",
+    "license": "MIT",
+    "license_url": "https://github.com/JimLiu/baoyu-skills/blob/main/LICENSE",
+    "source_stars": 24726,
+    "tags": [
+      "Markdown",
+      "排版",
+      "中文"
+    ],
+    "ask_phrase": "帮我安装 baoyu-format-markdown 这个技能,它来自 https://github.com/JimLiu/baoyu-skills ,装好告诉我是干什么的",
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "文章是一坨纯文本",
+          "without": "没有标题没有重点,读者划走。",
+          "with": "自动补标题、粗体、列表,结构清晰。"
+        },
+        {
+          "scene": "写好的 Markdown 想美化",
+          "without": "手动调格式,费时间。",
+          "with": "一键排版成规整文章。"
+        },
+        {
+          "scene": "要发公众号/博客",
+          "without": "排版粗糙,阅读体验差。",
+          "with": "输出规整 Markdown,直接可用。"
+        }
+      ],
+      "demo": {
+        "prompt": "帮我把这段文字排版成文章",
+        "steps": [
+          "AI:分析内容结构。",
+          "AI:补标题、摘要、粗体、列表。",
+          "AI:输出格式化后的文件。"
+        ]
+      }
+    },
+    "review": {
+      "stars": 4,
+      "summary": "排版实用、输出规整;适合与公众号/博客发布流程搭配。",
+      "level": "入门可用"
+    }
+  },
+  {
+    "slug": "baoyu-cover-image",
+    "name": "baoyu-cover-image",
+    "category": "可视化",
+    "summary": "给文章生成高质量封面图:5 个设计维度 × 11 套配色 × 7 种渲染风格。",
+    "detail": "从类型、配色、渲染、文字、情绪 5 个维度生成文章封面图,组合 11 套配色与 7 种渲染风格,支持电影宽幅(2.35:1)、宽屏(16:9)和方形(1:1)多种比例。⚠️ 需要可用的图像生成后端。",
+    "author": "JimLiu",
+    "source_url": "https://github.com/JimLiu/baoyu-skills",
+    "source_path": "skills/baoyu-cover-image",
+    "license": "MIT",
+    "license_url": "https://github.com/JimLiu/baoyu-skills/blob/main/LICENSE",
+    "source_stars": 24726,
+    "tags": [
+      "封面图",
+      "图像生成",
+      "文章配图"
+    ],
+    "ask_phrase": "帮我安装 baoyu-cover-image 这个技能,它来自 https://github.com/JimLiu/baoyu-skills ,装好告诉我是干什么的",
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "文章没封面,发出去没排面",
+          "without": "随便找张图,风格不符。",
+          "with": "AI 按内容生成定制封面,专业感拉满。"
+        },
+        {
+          "scene": "不知道封面该用什么风格",
+          "without": "瞎选模板,千篇一律。",
+          "with": "5 个维度组合出独特设计。"
+        },
+        {
+          "scene": "不同平台要不同尺寸",
+          "without": "一张图到处裁,糊了。",
+          "with": "支持 2.35:1 / 16:9 / 1:1 多种比例。"
+        }
+      ],
+      "demo": {
+        "prompt": "给这篇教程生成封面",
+        "steps": [
+          "AI:确认文章主题与情绪。",
+          "AI:选配色、风格、比例。",
+          "AI:生成封面图。"
+        ]
+      }
+    },
+    "review": {
+      "stars": 4,
+      "summary": "封面生成维度丰富、比例齐全;依赖图像后端,纯文本环境不可用。",
+      "level": "入门可用"
+    }
+  },
+  {
+    "slug": "baoyu-infographic",
+    "name": "baoyu-infographic",
+    "category": "可视化",
+    "summary": "把内容做成专业信息图:21 种布局 × 22 种视觉风格,自动推荐最佳组合。",
+    "detail": "分析内容后自动推荐布局×风格组合,生成可直接发布的信息图。21 种布局类型、22 种视觉风格,适合数据总结、流程说明、科普内容等高密度信息可视化。⚠️ 需要可用的图像生成后端。",
+    "author": "JimLiu",
+    "source_url": "https://github.com/JimLiu/baoyu-skills",
+    "source_path": "skills/baoyu-infographic",
+    "license": "MIT",
+    "license_url": "https://github.com/JimLiu/baoyu-skills/blob/main/LICENSE",
+    "source_stars": 24726,
+    "tags": [
+      "信息图",
+      "可视化",
+      "数据展示"
+    ],
+    "ask_phrase": "帮我安装 baoyu-infographic 这个技能,它来自 https://github.com/JimLiu/baoyu-skills ,装好告诉我是干什么的",
+    "compare": {
+      "title": "有这个技能,差别在哪",
+      "rows": [
+        {
+          "scene": "一堆数据要讲清楚",
+          "without": "文字堆砌,读者没耐心。",
+          "with": "信息图一图看懂,重点突出。"
+        },
+        {
+          "scene": "不知道信息图怎么排版",
+          "without": "自己排得又乱又丑。",
+          "with": "21 种布局,AI 自动推荐最佳组合。"
+        },
+        {
+          "scene": "要发科普/总结内容",
+          "without": "长文没人看。",
+          "with": "高密度信息一图呈现,适合传播。"
+        }
+      ],
+      "demo": {
+        "prompt": "把这份数据做成信息图",
+        "steps": [
+          "AI:分析内容结构。",
+          "AI:推荐布局×风格。",
+          "AI:生成信息图。"
+        ]
+      }
+    },
+    "review": {
+      "stars": 4,
+      "summary": "信息图生成专业、布局风格海量;依赖图像后端。",
+      "level": "入门可用"
+    }
   }
 ]

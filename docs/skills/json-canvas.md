@@ -3,8 +3,8 @@ prev:
   text: "<span class=\"sk-name\">obsidian-cli</span><span class=\"sk-desc\">让 AI 能直接操作你的 Obsidian 笔记库:搜笔记、建笔记、整理笔记。</span>"
   link: "/skills/obsidian-cli"
 next:
-  text: "<span class=\"sk-name\">defuddle</span><span class=\"sk-desc\">让 AI 把网页变成干净的纯文字,去掉广告和导航,更省流量。</span>"
-  link: "/skills/defuddle"
+  text: "<span class=\"sk-name\">baoyu-xhs-images</span><span class=\"sk-desc\">把内容拆成 1-10 张小红书风格图文卡片,12 种视觉风格 × 8 种布局任选。</span>"
+  link: "/skills/baoyu-xhs-images"
 ---
 # json-canvas
 

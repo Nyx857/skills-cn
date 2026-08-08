@@ -1,7 +1,7 @@
 ---
 prev:
-  text: "<span class=\"sk-name\">defuddle</span><span class=\"sk-desc\">让 AI 把网页变成干净的纯文字,去掉广告和导航,更省流量。</span>"
-  link: "/skills/defuddle"
+  text: "<span class=\"sk-name\">baoyu-format-markdown</span><span class=\"sk-desc\">把杂乱文本/Markdown 排版成规整文章:标题、摘要、粗体、列表一次到位。</span>"
+  link: "/skills/baoyu-format-markdown"
 next:
   text: "<span class=\"sk-name\">output-skill</span><span class=\"sk-desc\">强制 AI 完整输出代码,禁止\"写一半省略\"和占位符。</span>"
   link: "/skills/output-skill"
