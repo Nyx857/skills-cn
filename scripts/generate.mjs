@@ -301,3 +301,22 @@ writeFileSync(join(agentOutDir, 'index.md'), agentListPage, 'utf8')
 console.log('generated: agents/index.md')
 console.log(`total: ${agents.length} agents`)
 
+// ===== 生成 functions 运行时数据模块(catalog-data.js)=====
+// 供 Cloudflare Pages Functions(/api/skills/recommend)运行时 import,字段为推荐服务所需子集
+const fnLibDir = join(root, 'functions', 'api', 'skills', 'lib')
+mkdirSync(fnLibDir, { recursive: true })
+const compactSkills = skills.map(s => ({
+  slug: s.slug, name: s.name, category: s.category, summary: s.summary,
+  tags: s.tags || [], ask_phrase: s.ask_phrase || ''
+}))
+const compactAgents = agents.map(a => ({
+  slug: a.slug, name: a.name, category: a.category, summary: a.summary,
+  tags: a.tags || [], ask_phrase: a.ask_phrase || ''
+}))
+const catalogData = `// 自动生成,勿手改 —— 由 scripts/generate.mjs 生成
+export const SKILLS = ${JSON.stringify(compactSkills, null, 2)}
+export const AGENTS = ${JSON.stringify(compactAgents, null, 2)}
+`
+writeFileSync(join(fnLibDir, 'catalog-data.js'), catalogData, 'utf8')
+console.log(`generated: functions/api/skills/lib/catalog-data.js (${compactSkills.length + compactAgents.length} entries)`)
+
