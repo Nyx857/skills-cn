@@ -11,6 +11,8 @@ skills-cn(中文 AI 技能库导航站)目前是纯静态导航:用户手动浏�
 
 核心价值:把"人逛库找技能"变成"Agent 按需找技能"(对应《深入理解 AI Agent》第 4 章主动工具发现 / 第 5 章代码作为系统适配器)。
 
+开放策略(用户确认):"开放"指**开源分发**——服务代码随仓库开源,任何人自部署、自配 key;不提供公共托管 API(费用各用各的 key)。skills-cn 公共站点永久保持纯静态导航。
+
 ## 2. 核心流程:三阶段混合引擎
 
 ```
@@ -124,7 +126,9 @@ skills-cn/
 - MCP 薄壳:本地 stdio MCP server 把 API 包装成 `recommend_skills` 工具,注册进 Reasonix/Claude Code
 
 **三期(开放)**
-- Remote MCP(Streamable HTTP)公开;网页助手面向公众
+- **开源分发模式**(用户 2026-08-08 确认):整个技能推荐服务(API + 网页助手 + MCP)作为独立开源模板/仓库发布(或并入 skills-cn 仓库),任何人 fork/克隆后自行部署、自配 `DEEPSEEK_API_KEY`——**不提供公共托管 API,API 费用各用各的 key**
+- skills-cn 公共站点保持纯静态导航(零成本),不带任何需要 key 的功能
+- 发布内容包括:functions/ 代码、data/ 技能库、部署文档(Cloudflare Pages 步骤)、网页助手页面
 - 若技能库规模显著增长,再评估向量检索
 
 ## 8. 测试方案
